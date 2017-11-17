@@ -106,7 +106,7 @@ void codegen::ModuleBuilder::visitFunctionDecl(ast::FunctionDecl *function) {
         irfunc->addFnAttr(llvm::Attribute::StackProtect);
         irfunc->addFnAttr(llvm::Attribute::UWTable);
         
-        assert(llvm::verifyFunction(&irfunc, &llvm::errs()) && "Function verification failed.");
+        //assert(llvm::verifyFunction(&irfunc, &llvm::errs()) && "Function verification failed.");
         
         table.setValForComponent(function, irfunc);
     }

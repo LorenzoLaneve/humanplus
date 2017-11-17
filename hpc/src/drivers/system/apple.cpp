@@ -25,7 +25,7 @@ int drivers::AppleDriver::invokeLinker(opts::LinkOptions &options) {
     flags << getLinkerPath();
     flags << " -demangle";
     flags << " -dynamic";
-    flags << " -arch " << llvm::Triple::getArchTypeName(llvm::Triple(llvm::sys::getDefaultTargetTriple()).getArch());
+    flags << " -arch " << llvm::Triple::getArchTypeName(llvm::Triple(llvm::sys::getDefaultTargetTriple()).getArch()).str();
     
     addOSLinkOptions(options, flags);
     

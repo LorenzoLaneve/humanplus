@@ -11,6 +11,8 @@
 #include <hpc/utils/printers.h>
 #include <hpc/ir/modules.h>
 
+#include <llvm/IR/LLVMContext.h>
+
 #include <sstream>
 
 using namespace hpc;
@@ -50,7 +52,7 @@ source::SourceFile::SourceFile(std::string filename) : fsys::InputFile(filename,
     
     caret = {this};
     
-    modulewrapper = new modules::ModuleWrapper(filename, llvm::getGlobalContext());
+    modulewrapper = new modules::ModuleWrapper(filename);
     modulewrapper->initialize();
 }
 

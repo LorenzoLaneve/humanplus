@@ -44,7 +44,7 @@ namespace hpc {
              \param modulename The name that the new module will have
              \param context The LLVM context to give to the new module
              */
-            ModuleWrapper(std::string modulename, llvm::LLVMContext &context);
+            ModuleWrapper(std::string modulename);
             virtual ~ModuleWrapper() {  }
             
             /*!

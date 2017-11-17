@@ -189,7 +189,7 @@ diag::Diagnostic::Diagnostic(DiagEngine &engine, DiagLevel level, std::string te
     while ((pos = text.find("%", pos)) != std::string::npos) {
         if (++pos < text.length()) {
             int index = text[pos] - '0';
-            assert('0' <= index && index <= '9' && "Invalid param placeholder.");
+            assert(0 <= index && index <= 9 && "Invalid param placeholder.");
             
             if (index >= maxIndex) {
                 maxIndex = index;

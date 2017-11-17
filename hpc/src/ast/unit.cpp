@@ -17,7 +17,7 @@ using namespace hpc;
 ast::AbstractSyntaxTree::AbstractSyntaxTree() : globalScope(new NameSpaceDecl()) {  }
 
 void ast::AbstractSyntaxTree::addUnit(ast::CompilationUnit *theUnit) {
-    assert(getUnitForFile(theUnit->getAssociatedFile()) && "There is already a unit associated to the given file.");
+    assert(getUnitForFile(theUnit->getAssociatedFile()) == nullptr && "There is already a unit associated to the given file.");
     compilationUnits[theUnit->getAssociatedFile()] = theUnit;
     unitsVector.push_back(theUnit);
 }

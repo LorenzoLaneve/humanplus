@@ -257,9 +257,9 @@ namespace hpc {
          */
         class TypeEncloser : public Type {
             
+        protected:
             Type *theType = nullptr;
             
-        protected:
             TypeEncloser(Type *theType = nullptr) : theType(theType) {  }
             
             virtual ~TypeEncloser() {  }

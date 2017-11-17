@@ -33,6 +33,7 @@
 #include <llvm/Target/TargetMachine.h>
 #include <llvm/Target/TargetSubtargetInfo.h>
 #include <llvm/Transforms/IPO.h>
+#include <llvm/Transforms/IPO/AlwaysInliner.h>
 #include <llvm/Transforms/Scalar.h>
 #include <llvm/Transforms/Utils/Cloning.h>
 
@@ -83,7 +84,7 @@ void backend::BackendHelper::bindModule(llvm::Module &module) {
     
     
     // FIXME add inliner passes flag
-    managerBuilder.Inliner = llvm::createAlwaysInlinerPass();
+    managerBuilder.Inliner = llvm::createAlwaysInlinerLegacyPass();
     
     managerBuilder.OptLevel = backendOptions.optimizationLevel;
     managerBuilder.SizeLevel = backendOptions.sizeLevel;
@@ -249,7 +250,7 @@ void backend::BackendHelper::runPasses() {
 
 bool backend::BackendHelper::emit(fsys::OutputFile *outfile) {
     assert(boundmodule && "No module is bound to the backend helper.");
-    assert(target && "No target is bound to the backend helper.");
+    assert(targetInfo && "No target is bound to the backend helper.");
     
     EmitType etype = EmitNothing;
     bool targetMachineNeeded = false;
@@ -328,7 +329,7 @@ void backend::init(diag::DiagEngine &diags, opts::BackendOptions &backendOptions
     llvm::initializeCodeGen(*registry);
     llvm::initializeLoopStrengthReducePass(*registry);
     llvm::initializeLowerIntrinsicsPass(*registry);
-    llvm::initializeUnreachableBlockElimPass(*registry);
+    llvm::initializeUnreachableBlockElimLegacyPassPass(*registry);
     
     llvm::SmallVector<const char *, 16> llvmargv;
     llvmargv.push_back("hpc"); // Fake name

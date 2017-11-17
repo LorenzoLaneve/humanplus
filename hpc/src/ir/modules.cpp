@@ -15,7 +15,9 @@
 
 using namespace hpc;
 
-modules::ModuleWrapper::ModuleWrapper(std::string modulename, llvm::LLVMContext &context) {
+static llvm::LLVMContext context;
+
+modules::ModuleWrapper::ModuleWrapper(std::string modulename) {
     module = new llvm::Module(modulename, context);
 }
 
@@ -34,7 +36,7 @@ void modules::ModuleWrapper::finalize() {
     // Add the last things to the module
     //target::addTargetAttribsToFunctions(*module);
     
-    module->setPICLevel(llvm::PICLevel::Large);
+    module->setPICLevel(llvm::PICLevel::BigPIC);
     
     llvm::NamedMDNode *ident = module->getOrInsertNamedMetadata("llvm.ident");
     ident->addOperand(llvm::MDNode::get(module->getContext(), { llvm::MDString::get(module->getContext(), __human_plus_compiler_signature) }));

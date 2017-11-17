@@ -110,7 +110,7 @@ llvm::GlobalVariable *codegen::SymbolTable::getOrCreateStringConstant(runtime::s
                                                                         ".str"
                                                                         );
         
-        stringConstant->setUnnamedAddr(true); // FIXME alignment
+        stringConstant->setUnnamedAddr(llvm::GlobalValue::UnnamedAddr::Local); // FIXME alignment
         //strcst->setAlignment(chrtype->getAlignment());
 
         stringTable[str] = stringConstant;
