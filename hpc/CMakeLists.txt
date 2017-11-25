@@ -74,3 +74,9 @@ hpc_take_targets("XCore" xcore       asmprinter codegen desc disassembler info)
 
 
 target_link_libraries(hpc ${HPC_LLVM_LIBS})
+
+install(TARGETS hpc
+    RUNTIME DESTINATION bin
+    LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib
+)
