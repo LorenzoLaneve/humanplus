@@ -11,7 +11,7 @@ cmake_minimum_required(VERSION 3.4.3)
 
 # Project should be built as different standalone projects?
 if(NOT HUMANPLUS_GEN_STANDALONE_PROJECTS)
-    project(HumanPlus VERSION 0.9 LANGUAGES C CXX ASM-NASM)
+    project(HumanPlus VERSION 0.9 LANGUAGES C CXX ASM)
     set(HUMANPLUS_GEN_AS_ONE_PROJECT ON)
 endif()
 

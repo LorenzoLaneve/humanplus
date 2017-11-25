@@ -11,7 +11,7 @@ cmake_minimum_required(VERSION 3.4.3)
 
 # Target: hpc
 if(NOT HUMANPLUS_GEN_AS_ONE_PROJECT) # If projects should be generated as standalone projects, declare the project.
-    project(hpc VERSION 0.9 LANGUAGES C CXX ASM-NASM)
+    project(hpc VERSION 0.9 LANGUAGES C CXX ASM)
 endif()
 
 message(STATUS "Detecting LLVM...")
