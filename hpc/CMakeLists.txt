@@ -12,6 +12,7 @@ cmake_minimum_required(VERSION 3.4.3)
 # Target: hpc
 if(NOT HUMANPLUS_GEN_AS_ONE_PROJECT) # If projects should be generated as standalone projects, declare the project.
     project(hpc VERSION 0.9 LANGUAGES C CXX ASM)
+    set(CMAKE_CXX_STANDARD 11)
 endif()
 
 message(STATUS "Detecting LLVM...")
@@ -34,12 +35,21 @@ endif()
 
 message(STATUS "Using LLVM build in ${LLVM_BUILD_DIR}")
 
-include_directories(${LLVM_INCLUDE_DIRS} "${CMAKE_CURRENT_SOURCE_DIR}/hpc/include")
+
+if(HUMANPLUS_GEN_AS_ONE_PROJECT) # if we need to generate one project then the folder we're working on is the main directory
+    set(TARG_DIR "hpc/")
+else() # this is standalone project and we're already in hpc/ directory
+    set(TARG_DIR "")
+endif()
+
+include_directories(${LLVM_INCLUDE_DIRS} "${TARG_DIR}include")
 add_definitions(${LLVM_DEFINITIONS})
 
-file(GLOB_RECURSE HUMANPLUS_HPC_SOURCE_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
-    "hpc/src/*.c"
-    "hpc/src/*.cpp"
+
+# using GLOB_RECURSE is a bad use and will be removed soon.
+file(GLOB_RECURSE HUMANPLUS_HPC_SOURCE_FILES
+    "${TARG_DIR}src/*.c"
+    "${TARG_DIR}src/*.cpp"
 )
 
 add_executable(hpc ${HUMANPLUS_HPC_SOURCE_FILES})
