@@ -10,7 +10,7 @@
 #ifndef __human_plus_compiler_system_drivers_apple
 #define __human_plus_compiler_system_drivers_apple
 
-#include <hpc/drivers/system/darwin.h>
+#include <hpc/drivers/system/unix.h>
 #include <hpc/utils/opts.h>
 
 #include <sstream>
@@ -18,6 +18,13 @@
 
 namespace hpc {
     namespace drivers {
+        
+        /*!
+         \brief Driver for all the Darwin OS systems.
+         */
+        class DarwinDriver : public UnixDriver {
+            
+        };
         
         /*!
          \brief Driver for all the Apple systems.
