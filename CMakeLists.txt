@@ -1,4 +1,4 @@
-# => CMakeLists.txt (main)
+# => /CMakeLists.txt
 #
 #                     The Human Plus Project
 #
