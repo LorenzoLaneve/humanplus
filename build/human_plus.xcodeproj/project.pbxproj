@@ -402,7 +402,6 @@
 		8C654DD41FDAEA9C009D9031 /* windows.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = windows.cpp; sourceTree = "<group>"; };
 		8C654DD61FDAEA9D009D9031 /* input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = input.cpp; sourceTree = "<group>"; };
 		8C654DD71FDAEA9D009D9031 /* linker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = linker.cpp; sourceTree = "<group>"; };
-		8C654E4A1FDAF353009D9031 /* new_file.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = new_file.h; sourceTree = "<group>"; };
 		D2AB632512554CADBCC496BF /* libhumanlogic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libhumanlogic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -446,7 +445,6 @@
 		8C57DCE91FD9DDD700CC5C76 /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				8C654E4A1FDAF353009D9031 /* new_file.h */,
 				8C57DD071FD9DE2700CC5C76 /* config.h */,
 				8C57DCEA1FD9DE2600CC5C76 /* utils */,
 				8C57DCF31FD9DE2600CC5C76 /* diagnostics */,
