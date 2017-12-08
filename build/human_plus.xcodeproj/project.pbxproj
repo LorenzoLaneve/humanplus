@@ -49,112 +49,112 @@
 /* Begin PBXBuildFile section */
 		8C57DD521FD9E51200CC5C76 /* entry.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C57DD501FD9E51200CC5C76 /* entry.c */; };
 		8C57DD531FD9E51200CC5C76 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C57DD511FD9E51200CC5C76 /* io.c */; };
-		8C654DD81FDAEA9D009D9031 /* bufferer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D541FDAEA9B009D9031 /* bufferer.cpp */; };
-		8C654DD91FDAEA9D009D9031 /* control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D551FDAEA9B009D9031 /* control.cpp */; };
-		8C654DDA1FDAEA9D009D9031 /* grammar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D561FDAEA9B009D9031 /* grammar.cpp */; };
-		8C654DDB1FDAEA9D009D9031 /* lexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D571FDAEA9B009D9031 /* lexer.cpp */; };
-		8C654DDC1FDAEA9D009D9031 /* literals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D581FDAEA9B009D9031 /* literals.cpp */; };
-		8C654DDD1FDAEA9D009D9031 /* tokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D591FDAEA9B009D9031 /* tokenizer.cpp */; };
-		8C654DDE1FDAEA9D009D9031 /* classes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D5B1FDAEA9B009D9031 /* classes.cpp */; };
-		8C654DDF1FDAEA9D009D9031 /* expressions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D5C1FDAEA9B009D9031 /* expressions.cpp */; };
-		8C654DE01FDAEA9D009D9031 /* parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D5D1FDAEA9B009D9031 /* parser.cpp */; };
-		8C654DE11FDAEA9D009D9031 /* statements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D5E1FDAEA9B009D9031 /* statements.cpp */; };
-		8C654DE21FDAEA9D009D9031 /* toplevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D5F1FDAEA9B009D9031 /* toplevel.cpp */; };
-		8C654DE31FDAEA9D009D9031 /* types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D601FDAEA9B009D9031 /* types.cpp */; };
-		8C654DE41FDAEA9D009D9031 /* sources.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D611FDAEA9B009D9031 /* sources.cpp */; };
-		8C654DE51FDAEA9D009D9031 /* operators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D631FDAEA9B009D9031 /* operators.cpp */; };
-		8C654DE61FDAEA9D009D9031 /* classes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D651FDAEA9B009D9031 /* classes.cpp */; };
-		8C654DE71FDAEA9D009D9031 /* binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D671FDAEA9B009D9031 /* binary.cpp */; };
-		8C654DE81FDAEA9D009D9031 /* castings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D681FDAEA9B009D9031 /* castings.cpp */; };
-		8C654DE91FDAEA9D009D9031 /* resolution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D691FDAEA9B009D9031 /* resolution.cpp */; };
-		8C654DEA1FDAEA9D009D9031 /* unary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D6A1FDAEA9B009D9031 /* unary.cpp */; };
-		8C654DEB1FDAEA9D009D9031 /* resolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D6B1FDAEA9B009D9031 /* resolver.cpp */; };
-		8C654DEC1FDAEA9D009D9031 /* root.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D6C1FDAEA9B009D9031 /* root.cpp */; };
-		8C654DED1FDAEA9D009D9031 /* iteration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D6E1FDAEA9B009D9031 /* iteration.cpp */; };
-		8C654DEE1FDAEA9D009D9031 /* selection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D6F1FDAEA9B009D9031 /* selection.cpp */; };
-		8C654DEF1FDAEA9D009D9031 /* statements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D701FDAEA9B009D9031 /* statements.cpp */; };
-		8C654DF01FDAEA9D009D9031 /* variables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D711FDAEA9B009D9031 /* variables.cpp */; };
-		8C654DF11FDAEA9D009D9031 /* toplevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D721FDAEA9B009D9031 /* toplevel.cpp */; };
-		8C654DF21FDAEA9D009D9031 /* types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D731FDAEA9B009D9031 /* types.cpp */; };
-		8C654DF31FDAEA9D009D9031 /* validator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D741FDAEA9B009D9031 /* validator.cpp */; };
-		8C654DF41FDAEA9D009D9031 /* diagnostics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D761FDAEA9B009D9031 /* diagnostics.cpp */; };
-		8C654DF51FDAEA9D009D9031 /* output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D771FDAEA9B009D9031 /* output.cpp */; };
-		8C654DF61FDAEA9D009D9031 /* actions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D791FDAEA9C009D9031 /* actions.cpp */; };
-		8C654DF71FDAEA9D009D9031 /* execution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D7A1FDAEA9C009D9031 /* execution.cpp */; };
-		8C654DF81FDAEA9D009D9031 /* instance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D7B1FDAEA9C009D9031 /* instance.cpp */; };
-		8C654DF91FDAEA9D009D9031 /* invocation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D7C1FDAEA9C009D9031 /* invocation.cpp */; };
-		8C654DFA1FDAEA9D009D9031 /* castings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D7F1FDAEA9C009D9031 /* castings.cpp */; };
-		8C654DFB1FDAEA9D009D9031 /* dump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D801FDAEA9C009D9031 /* dump.cpp */; };
-		8C654DFC1FDAEA9D009D9031 /* expressions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D811FDAEA9C009D9031 /* expressions.cpp */; };
-		8C654DFD1FDAEA9D009D9031 /* statements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D821FDAEA9C009D9031 /* statements.cpp */; };
-		8C654DFE1FDAEA9D009D9031 /* toplevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D831FDAEA9C009D9031 /* toplevel.cpp */; };
-		8C654DFF1FDAEA9D009D9031 /* types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D841FDAEA9C009D9031 /* types.cpp */; };
-		8C654E001FDAEA9D009D9031 /* files.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D861FDAEA9C009D9031 /* files.cpp */; };
-		8C654E011FDAEA9D009D9031 /* numbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D871FDAEA9C009D9031 /* numbers.cpp */; };
-		8C654E021FDAEA9D009D9031 /* opts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D881FDAEA9C009D9031 /* opts.cpp */; };
-		8C654E031FDAEA9D009D9031 /* printers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D891FDAEA9C009D9031 /* printers.cpp */; };
-		8C654E041FDAEA9D009D9031 /* strings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D8A1FDAEA9C009D9031 /* strings.cpp */; };
-		8C654E051FDAEA9D009D9031 /* hpc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D8B1FDAEA9C009D9031 /* hpc.cpp */; };
-		8C654E061FDAEA9D009D9031 /* builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D8E1FDAEA9C009D9031 /* builder.cpp */; };
-		8C654E071FDAEA9D009D9031 /* component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D8F1FDAEA9C009D9031 /* component.cpp */; };
-		8C654E081FDAEA9D009D9031 /* class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D911FDAEA9C009D9031 /* class.cpp */; };
-		8C654E091FDAEA9D009D9031 /* declaration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D921FDAEA9C009D9031 /* declaration.cpp */; };
-		8C654E0A1FDAEA9D009D9031 /* enumeration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D931FDAEA9C009D9031 /* enumeration.cpp */; };
-		8C654E0B1FDAEA9D009D9031 /* function.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D941FDAEA9C009D9031 /* function.cpp */; };
-		8C654E0C1FDAEA9D009D9031 /* namespace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D951FDAEA9C009D9031 /* namespace.cpp */; };
-		8C654E0D1FDAEA9D009D9031 /* protocol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D961FDAEA9C009D9031 /* protocol.cpp */; };
-		8C654E0E1FDAEA9D009D9031 /* typealias.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D971FDAEA9C009D9031 /* typealias.cpp */; };
-		8C654E0F1FDAEA9D009D9031 /* variable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D981FDAEA9C009D9031 /* variable.cpp */; };
-		8C654E101FDAEA9D009D9031 /* binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D9A1FDAEA9C009D9031 /* binary.cpp */; };
-		8C654E111FDAEA9D009D9031 /* castings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D9B1FDAEA9C009D9031 /* castings.cpp */; };
-		8C654E121FDAEA9D009D9031 /* constant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D9C1FDAEA9C009D9031 /* constant.cpp */; };
-		8C654E131FDAEA9D009D9031 /* expression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D9D1FDAEA9C009D9031 /* expression.cpp */; };
-		8C654E141FDAEA9D009D9031 /* members.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D9E1FDAEA9C009D9031 /* members.cpp */; };
-		8C654E151FDAEA9D009D9031 /* reference.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D9F1FDAEA9C009D9031 /* reference.cpp */; };
-		8C654E161FDAEA9D009D9031 /* unary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA01FDAEA9C009D9031 /* unary.cpp */; };
-		8C654E171FDAEA9D009D9031 /* table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA21FDAEA9C009D9031 /* table.cpp */; };
-		8C654E181FDAEA9D009D9031 /* writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA31FDAEA9C009D9031 /* writer.cpp */; };
-		8C654E191FDAEA9D009D9031 /* for.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA51FDAEA9C009D9031 /* for.cpp */; };
-		8C654E1A1FDAEA9D009D9031 /* ifelse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA61FDAEA9C009D9031 /* ifelse.cpp */; };
-		8C654E1B1FDAEA9D009D9031 /* statement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA71FDAEA9C009D9031 /* statement.cpp */; };
-		8C654E1C1FDAEA9D009D9031 /* switchselect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA81FDAEA9C009D9031 /* switchselect.cpp */; };
-		8C654E1D1FDAEA9D009D9031 /* whileuntil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA91FDAEA9C009D9031 /* whileuntil.cpp */; };
-		8C654E1E1FDAEA9D009D9031 /* symbols.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DAA1FDAEA9C009D9031 /* symbols.cpp */; };
-		8C654E1F1FDAEA9D009D9031 /* base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DAC1FDAEA9C009D9031 /* base.cpp */; };
-		8C654E201FDAEA9D009D9031 /* builtintype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DAD1FDAEA9C009D9031 /* builtintype.cpp */; };
-		8C654E211FDAEA9D009D9031 /* compoundtype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DAE1FDAEA9C009D9031 /* compoundtype.cpp */; };
-		8C654E221FDAEA9D009D9031 /* pointertype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DAF1FDAEA9C009D9031 /* pointertype.cpp */; };
-		8C654E231FDAEA9D009D9031 /* unit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB01FDAEA9C009D9031 /* unit.cpp */; };
-		8C654E241FDAEA9D009D9031 /* visitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB11FDAEA9C009D9031 /* visitor.cpp */; };
-		8C654E251FDAEA9D009D9031 /* builders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB31FDAEA9C009D9031 /* builders.cpp */; };
-		8C654E261FDAEA9D009D9031 /* classes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB41FDAEA9C009D9031 /* classes.cpp */; };
-		8C654E271FDAEA9D009D9031 /* binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB61FDAEA9C009D9031 /* binary.cpp */; };
-		8C654E281FDAEA9D009D9031 /* castings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB71FDAEA9C009D9031 /* castings.cpp */; };
-		8C654E291FDAEA9D009D9031 /* literals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB81FDAEA9C009D9031 /* literals.cpp */; };
-		8C654E2A1FDAEA9D009D9031 /* references.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB91FDAEA9C009D9031 /* references.cpp */; };
-		8C654E2B1FDAEA9D009D9031 /* unary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DBA1FDAEA9C009D9031 /* unary.cpp */; };
-		8C654E2C1FDAEA9D009D9031 /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DBB1FDAEA9C009D9031 /* functions.cpp */; };
-		8C654E2D1FDAEA9D009D9031 /* modules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DBC1FDAEA9C009D9031 /* modules.cpp */; };
-		8C654E2E1FDAEA9D009D9031 /* root.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DBD1FDAEA9C009D9031 /* root.cpp */; };
-		8C654E2F1FDAEA9D009D9031 /* iteration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DBF1FDAEA9C009D9031 /* iteration.cpp */; };
-		8C654E301FDAEA9D009D9031 /* selection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC01FDAEA9C009D9031 /* selection.cpp */; };
-		8C654E311FDAEA9D009D9031 /* statements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC11FDAEA9C009D9031 /* statements.cpp */; };
-		8C654E321FDAEA9D009D9031 /* toplevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC21FDAEA9C009D9031 /* toplevel.cpp */; };
-		8C654E331FDAEA9D009D9031 /* types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC31FDAEA9C009D9031 /* types.cpp */; };
 		8C654E341FDAEA9D009D9031 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC41FDAEA9C009D9031 /* main.c */; };
-		8C654E351FDAEA9D009D9031 /* runtime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC61FDAEA9C009D9031 /* runtime.cpp */; };
-		8C654E361FDAEA9D009D9031 /* abi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC81FDAEA9C009D9031 /* abi.cpp */; };
-		8C654E371FDAEA9D009D9031 /* mangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC91FDAEA9C009D9031 /* mangle.cpp */; };
-		8C654E381FDAEA9D009D9031 /* target.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DCA1FDAEA9C009D9031 /* target.cpp */; };
-		8C654E391FDAEA9D009D9031 /* backend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DCC1FDAEA9C009D9031 /* backend.cpp */; };
-		8C654E3A1FDAEA9D009D9031 /* driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DCE1FDAEA9C009D9031 /* driver.cpp */; };
-		8C654E3B1FDAEA9D009D9031 /* apple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD01FDAEA9C009D9031 /* apple.cpp */; };
-		8C654E3C1FDAEA9D009D9031 /* linux.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD11FDAEA9C009D9031 /* linux.cpp */; };
-		8C654E3D1FDAEA9D009D9031 /* system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD21FDAEA9C009D9031 /* system.cpp */; };
-		8C654E3E1FDAEA9D009D9031 /* unix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD31FDAEA9C009D9031 /* unix.cpp */; };
-		8C654E3F1FDAEA9D009D9031 /* windows.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD41FDAEA9C009D9031 /* windows.cpp */; };
-		8C654E401FDAEA9D009D9031 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD61FDAEA9D009D9031 /* input.cpp */; };
-		8C654E411FDAEA9D009D9031 /* linker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD71FDAEA9D009D9031 /* linker.cpp */; };
+		8CEA30511FDB130900C0B2B6 /* hpc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D8B1FDAEA9C009D9031 /* hpc.cpp */; };
+		8CEA30521FDB130D00C0B2B6 /* printers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D891FDAEA9C009D9031 /* printers.cpp */; };
+		8CEA30531FDB130F00C0B2B6 /* opts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D881FDAEA9C009D9031 /* opts.cpp */; };
+		8CEA30541FDB131600C0B2B6 /* numbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D871FDAEA9C009D9031 /* numbers.cpp */; };
+		8CEA30551FDB131900C0B2B6 /* strings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D8A1FDAEA9C009D9031 /* strings.cpp */; };
+		8CEA30561FDB131B00C0B2B6 /* files.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D861FDAEA9C009D9031 /* files.cpp */; };
+		8CEA30571FDB132900C0B2B6 /* diagnostics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D761FDAEA9B009D9031 /* diagnostics.cpp */; };
+		8CEA30581FDB132C00C0B2B6 /* output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D771FDAEA9B009D9031 /* output.cpp */; };
+		8CEA30591FDB133100C0B2B6 /* instance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D7B1FDAEA9C009D9031 /* instance.cpp */; };
+		8CEA305A1FDB133300C0B2B6 /* invocation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D7C1FDAEA9C009D9031 /* invocation.cpp */; };
+		8CEA305B1FDB133500C0B2B6 /* execution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D7A1FDAEA9C009D9031 /* execution.cpp */; };
+		8CEA305C1FDB133800C0B2B6 /* actions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D791FDAEA9C009D9031 /* actions.cpp */; };
+		8CEA305D1FDB134D00C0B2B6 /* sources.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D611FDAEA9B009D9031 /* sources.cpp */; };
+		8CEA305E1FDB135000C0B2B6 /* lexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D571FDAEA9B009D9031 /* lexer.cpp */; };
+		8CEA305F1FDB135A00C0B2B6 /* tokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D591FDAEA9B009D9031 /* tokenizer.cpp */; };
+		8CEA30601FDB135A00C0B2B6 /* control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D551FDAEA9B009D9031 /* control.cpp */; };
+		8CEA30611FDB135A00C0B2B6 /* bufferer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D541FDAEA9B009D9031 /* bufferer.cpp */; };
+		8CEA30621FDB135A00C0B2B6 /* grammar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D561FDAEA9B009D9031 /* grammar.cpp */; };
+		8CEA30631FDB135A00C0B2B6 /* literals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D581FDAEA9B009D9031 /* literals.cpp */; };
+		8CEA30641FDB136100C0B2B6 /* operators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D631FDAEA9B009D9031 /* operators.cpp */; };
+		8CEA30651FDB137100C0B2B6 /* parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D5D1FDAEA9B009D9031 /* parser.cpp */; };
+		8CEA30661FDB137100C0B2B6 /* types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D601FDAEA9B009D9031 /* types.cpp */; };
+		8CEA30671FDB137100C0B2B6 /* toplevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D5F1FDAEA9B009D9031 /* toplevel.cpp */; };
+		8CEA30681FDB137100C0B2B6 /* statements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D5E1FDAEA9B009D9031 /* statements.cpp */; };
+		8CEA30691FDB137100C0B2B6 /* expressions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D5C1FDAEA9B009D9031 /* expressions.cpp */; };
+		8CEA306A1FDB137100C0B2B6 /* classes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D5B1FDAEA9B009D9031 /* classes.cpp */; };
+		8CEA306B1FDB137C00C0B2B6 /* validator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D741FDAEA9B009D9031 /* validator.cpp */; };
+		8CEA306C1FDB137C00C0B2B6 /* resolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D6B1FDAEA9B009D9031 /* resolver.cpp */; };
+		8CEA306D1FDB137C00C0B2B6 /* root.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D6C1FDAEA9B009D9031 /* root.cpp */; };
+		8CEA306E1FDB137C00C0B2B6 /* toplevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D721FDAEA9B009D9031 /* toplevel.cpp */; };
+		8CEA306F1FDB137C00C0B2B6 /* types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D731FDAEA9B009D9031 /* types.cpp */; };
+		8CEA30701FDB137C00C0B2B6 /* classes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D651FDAEA9B009D9031 /* classes.cpp */; };
+		8CEA30711FDB138600C0B2B6 /* iteration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D6E1FDAEA9B009D9031 /* iteration.cpp */; };
+		8CEA30721FDB138600C0B2B6 /* selection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D6F1FDAEA9B009D9031 /* selection.cpp */; };
+		8CEA30731FDB138600C0B2B6 /* statements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D701FDAEA9B009D9031 /* statements.cpp */; };
+		8CEA30741FDB138600C0B2B6 /* variables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D711FDAEA9B009D9031 /* variables.cpp */; };
+		8CEA30751FDB13A100C0B2B6 /* binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D671FDAEA9B009D9031 /* binary.cpp */; };
+		8CEA30761FDB13A100C0B2B6 /* castings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D681FDAEA9B009D9031 /* castings.cpp */; };
+		8CEA30771FDB13A100C0B2B6 /* resolution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D691FDAEA9B009D9031 /* resolution.cpp */; };
+		8CEA30781FDB13A100C0B2B6 /* unary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D6A1FDAEA9B009D9031 /* unary.cpp */; };
+		8CEA30791FDB13B100C0B2B6 /* visitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB11FDAEA9C009D9031 /* visitor.cpp */; };
+		8CEA307A1FDB13B100C0B2B6 /* component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D8F1FDAEA9C009D9031 /* component.cpp */; };
+		8CEA307B1FDB13B100C0B2B6 /* unit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB01FDAEA9C009D9031 /* unit.cpp */; };
+		8CEA307C1FDB13B100C0B2B6 /* symbols.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DAA1FDAEA9C009D9031 /* symbols.cpp */; };
+		8CEA307D1FDB13B700C0B2B6 /* builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D8E1FDAEA9C009D9031 /* builder.cpp */; };
+		8CEA307E1FDB13BD00C0B2B6 /* table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA21FDAEA9C009D9031 /* table.cpp */; };
+		8CEA307F1FDB13C000C0B2B6 /* writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA31FDAEA9C009D9031 /* writer.cpp */; };
+		8CEA30801FDB13C500C0B2B6 /* base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DAC1FDAEA9C009D9031 /* base.cpp */; };
+		8CEA30811FDB13C800C0B2B6 /* builtintype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DAD1FDAEA9C009D9031 /* builtintype.cpp */; };
+		8CEA30821FDB13CC00C0B2B6 /* compoundtype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DAE1FDAEA9C009D9031 /* compoundtype.cpp */; };
+		8CEA30831FDB13D800C0B2B6 /* pointertype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DAF1FDAEA9C009D9031 /* pointertype.cpp */; };
+		8CEA30841FDB13E400C0B2B6 /* declaration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D921FDAEA9C009D9031 /* declaration.cpp */; };
+		8CEA30851FDB13E400C0B2B6 /* namespace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D951FDAEA9C009D9031 /* namespace.cpp */; };
+		8CEA30861FDB13E400C0B2B6 /* variable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D981FDAEA9C009D9031 /* variable.cpp */; };
+		8CEA30871FDB13E400C0B2B6 /* function.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D941FDAEA9C009D9031 /* function.cpp */; };
+		8CEA30881FDB13E400C0B2B6 /* typealias.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D971FDAEA9C009D9031 /* typealias.cpp */; };
+		8CEA30891FDB13E400C0B2B6 /* class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D911FDAEA9C009D9031 /* class.cpp */; };
+		8CEA308A1FDB13E400C0B2B6 /* protocol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D961FDAEA9C009D9031 /* protocol.cpp */; };
+		8CEA308B1FDB13E400C0B2B6 /* enumeration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D931FDAEA9C009D9031 /* enumeration.cpp */; };
+		8CEA308C1FDB13F400C0B2B6 /* expression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D9D1FDAEA9C009D9031 /* expression.cpp */; };
+		8CEA308D1FDB13F400C0B2B6 /* constant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D9C1FDAEA9C009D9031 /* constant.cpp */; };
+		8CEA308E1FDB13F400C0B2B6 /* reference.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D9F1FDAEA9C009D9031 /* reference.cpp */; };
+		8CEA308F1FDB13F400C0B2B6 /* binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D9A1FDAEA9C009D9031 /* binary.cpp */; };
+		8CEA30901FDB13F400C0B2B6 /* unary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA01FDAEA9C009D9031 /* unary.cpp */; };
+		8CEA30911FDB13F400C0B2B6 /* castings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D9B1FDAEA9C009D9031 /* castings.cpp */; };
+		8CEA30921FDB13F400C0B2B6 /* members.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D9E1FDAEA9C009D9031 /* members.cpp */; };
+		8CEA30931FDB140300C0B2B6 /* statement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA71FDAEA9C009D9031 /* statement.cpp */; };
+		8CEA30941FDB140300C0B2B6 /* ifelse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA61FDAEA9C009D9031 /* ifelse.cpp */; };
+		8CEA30951FDB140300C0B2B6 /* switchselect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA81FDAEA9C009D9031 /* switchselect.cpp */; };
+		8CEA30961FDB140300C0B2B6 /* whileuntil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA91FDAEA9C009D9031 /* whileuntil.cpp */; };
+		8CEA30971FDB140300C0B2B6 /* for.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DA51FDAEA9C009D9031 /* for.cpp */; };
+		8CEA30981FDB141000C0B2B6 /* modules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DBC1FDAEA9C009D9031 /* modules.cpp */; };
+		8CEA30991FDB141000C0B2B6 /* builders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB31FDAEA9C009D9031 /* builders.cpp */; };
+		8CEA309A1FDB141000C0B2B6 /* root.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DBD1FDAEA9C009D9031 /* root.cpp */; };
+		8CEA309B1FDB141000C0B2B6 /* toplevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC21FDAEA9C009D9031 /* toplevel.cpp */; };
+		8CEA309C1FDB141000C0B2B6 /* types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC31FDAEA9C009D9031 /* types.cpp */; };
+		8CEA309D1FDB141000C0B2B6 /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DBB1FDAEA9C009D9031 /* functions.cpp */; };
+		8CEA309E1FDB141000C0B2B6 /* classes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB41FDAEA9C009D9031 /* classes.cpp */; };
+		8CEA309F1FDB141500C0B2B6 /* statements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC11FDAEA9C009D9031 /* statements.cpp */; };
+		8CEA30A01FDB141800C0B2B6 /* selection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC01FDAEA9C009D9031 /* selection.cpp */; };
+		8CEA30A11FDB141B00C0B2B6 /* iteration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DBF1FDAEA9C009D9031 /* iteration.cpp */; };
+		8CEA30A21FDB142200C0B2B6 /* literals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB81FDAEA9C009D9031 /* literals.cpp */; };
+		8CEA30A31FDB142600C0B2B6 /* binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB61FDAEA9C009D9031 /* binary.cpp */; };
+		8CEA30A41FDB142C00C0B2B6 /* unary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DBA1FDAEA9C009D9031 /* unary.cpp */; };
+		8CEA30A51FDB143000C0B2B6 /* castings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB71FDAEA9C009D9031 /* castings.cpp */; };
+		8CEA30A61FDB143200C0B2B6 /* references.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DB91FDAEA9C009D9031 /* references.cpp */; };
+		8CEA30A71FDB144600C0B2B6 /* target.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DCA1FDAEA9C009D9031 /* target.cpp */; };
+		8CEA30A81FDB144900C0B2B6 /* abi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC81FDAEA9C009D9031 /* abi.cpp */; };
+		8CEA30A91FDB144B00C0B2B6 /* mangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC91FDAEA9C009D9031 /* mangle.cpp */; };
+		8CEA30AA1FDB145000C0B2B6 /* backend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DCC1FDAEA9C009D9031 /* backend.cpp */; };
+		8CEA30AB1FDB145500C0B2B6 /* driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DCE1FDAEA9C009D9031 /* driver.cpp */; };
+		8CEA30AC1FDB145D00C0B2B6 /* system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD21FDAEA9C009D9031 /* system.cpp */; };
+		8CEA30AD1FDB145D00C0B2B6 /* unix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD31FDAEA9C009D9031 /* unix.cpp */; };
+		8CEA30AE1FDB145D00C0B2B6 /* linux.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD11FDAEA9C009D9031 /* linux.cpp */; };
+		8CEA30AF1FDB145D00C0B2B6 /* apple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD01FDAEA9C009D9031 /* apple.cpp */; };
+		8CEA30B01FDB145D00C0B2B6 /* windows.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD41FDAEA9C009D9031 /* windows.cpp */; };
+		8CEA30B11FDB146300C0B2B6 /* linker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD71FDAEA9D009D9031 /* linker.cpp */; };
+		8CEA30B21FDB146600C0B2B6 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD61FDAEA9D009D9031 /* input.cpp */; };
+		8CEA30B31FDB146C00C0B2B6 /* runtime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC61FDAEA9C009D9031 /* runtime.cpp */; };
+		8CEA30B41FDB147900C0B2B6 /* dump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D801FDAEA9C009D9031 /* dump.cpp */; };
+		8CEA30B51FDB147900C0B2B6 /* castings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D7F1FDAEA9C009D9031 /* castings.cpp */; };
+		8CEA30B61FDB147900C0B2B6 /* types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D841FDAEA9C009D9031 /* types.cpp */; };
+		8CEA30B71FDB147900C0B2B6 /* toplevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D831FDAEA9C009D9031 /* toplevel.cpp */; };
+		8CEA30B81FDB147900C0B2B6 /* statements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D821FDAEA9C009D9031 /* statements.cpp */; };
+		8CEA30B91FDB147900C0B2B6 /* expressions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D811FDAEA9C009D9031 /* expressions.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -404,6 +404,16 @@
 		8C654DD71FDAEA9D009D9031 /* linker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = linker.cpp; sourceTree = "<group>"; };
 		D2AB632512554CADBCC496BF /* libhumanlogic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libhumanlogic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CEA30BA1FDB14B600C0B2B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		09BD3FB25BCF43DC8ED54670 /* CMake Project */ = {
@@ -1106,6 +1116,7 @@
 			buildConfigurationList = 7C9B608EEFE247D0A5FFC3AA /* Build configuration list for PBXNativeTarget "hpc" */;
 			buildPhases = (
 				90E1F5A7FDC14ACFAF54440D /* Sources */,
+				8CEA30BA1FDB14B600C0B2B6 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1140,7 +1151,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = BAF1B847B5A4432ABD54D42B /* Build configuration list for PBXProject "human_plus" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1191,10 +1202,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
 			name = "Install Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "make -C /Tiamat/git/humanplus/build -f /Tiamat/git/humanplus/build/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			shellScript = "cp ${BUILD_PATH}/${CONFIGURATION}/hpc /usr/local/bin/hpc\ncp ${BUILD_PATH}/${CONFIGURATION}/libhumanlogic.a /usr/local/lib/libhumanlogic.a";
 			showEnvVarsInLog = 0;
 		};
 		EA0647759E894E9CB6C8744D /* CMake Rules */ = {
@@ -1235,112 +1248,112 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C654E021FDAEA9D009D9031 /* opts.cpp in Sources */,
-				8C654E361FDAEA9D009D9031 /* abi.cpp in Sources */,
-				8C654DEA1FDAEA9D009D9031 /* unary.cpp in Sources */,
-				8C654E171FDAEA9D009D9031 /* table.cpp in Sources */,
-				8C654E091FDAEA9D009D9031 /* declaration.cpp in Sources */,
-				8C654E211FDAEA9D009D9031 /* compoundtype.cpp in Sources */,
-				8C654E131FDAEA9D009D9031 /* expression.cpp in Sources */,
-				8C654E3F1FDAEA9D009D9031 /* windows.cpp in Sources */,
-				8C654DE71FDAEA9D009D9031 /* binary.cpp in Sources */,
-				8C654DEC1FDAEA9D009D9031 /* root.cpp in Sources */,
-				8C654E351FDAEA9D009D9031 /* runtime.cpp in Sources */,
-				8C654E0E1FDAEA9D009D9031 /* typealias.cpp in Sources */,
-				8C654DD81FDAEA9D009D9031 /* bufferer.cpp in Sources */,
-				8C654E3B1FDAEA9D009D9031 /* apple.cpp in Sources */,
-				8C654E0C1FDAEA9D009D9031 /* namespace.cpp in Sources */,
-				8C654E061FDAEA9D009D9031 /* builder.cpp in Sources */,
-				8C654E1B1FDAEA9D009D9031 /* statement.cpp in Sources */,
-				8C654E231FDAEA9D009D9031 /* unit.cpp in Sources */,
 				8C654E341FDAEA9D009D9031 /* main.c in Sources */,
-				8C654DDD1FDAEA9D009D9031 /* tokenizer.cpp in Sources */,
-				8C654DE41FDAEA9D009D9031 /* sources.cpp in Sources */,
-				8C654E1D1FDAEA9D009D9031 /* whileuntil.cpp in Sources */,
-				8C654E381FDAEA9D009D9031 /* target.cpp in Sources */,
-				8C654DE21FDAEA9D009D9031 /* toplevel.cpp in Sources */,
-				8C654DFC1FDAEA9D009D9031 /* expressions.cpp in Sources */,
-				8C654E3C1FDAEA9D009D9031 /* linux.cpp in Sources */,
-				8C654E181FDAEA9D009D9031 /* writer.cpp in Sources */,
-				8C654E111FDAEA9D009D9031 /* castings.cpp in Sources */,
-				8C654E2B1FDAEA9D009D9031 /* unary.cpp in Sources */,
-				8C654DDC1FDAEA9D009D9031 /* literals.cpp in Sources */,
-				8C654E261FDAEA9D009D9031 /* classes.cpp in Sources */,
-				8C654E391FDAEA9D009D9031 /* backend.cpp in Sources */,
-				8C654E3A1FDAEA9D009D9031 /* driver.cpp in Sources */,
-				8C654E1F1FDAEA9D009D9031 /* base.cpp in Sources */,
-				8C654DF51FDAEA9D009D9031 /* output.cpp in Sources */,
-				8C654DF21FDAEA9D009D9031 /* types.cpp in Sources */,
-				8C654E2D1FDAEA9D009D9031 /* modules.cpp in Sources */,
-				8C654E031FDAEA9D009D9031 /* printers.cpp in Sources */,
-				8C654E311FDAEA9D009D9031 /* statements.cpp in Sources */,
-				8C654E281FDAEA9D009D9031 /* castings.cpp in Sources */,
-				8C654E0B1FDAEA9D009D9031 /* function.cpp in Sources */,
-				8C654E0D1FDAEA9D009D9031 /* protocol.cpp in Sources */,
-				8C654DE51FDAEA9D009D9031 /* operators.cpp in Sources */,
-				8C654DFB1FDAEA9D009D9031 /* dump.cpp in Sources */,
-				8C654DED1FDAEA9D009D9031 /* iteration.cpp in Sources */,
-				8C654E071FDAEA9D009D9031 /* component.cpp in Sources */,
-				8C654E011FDAEA9D009D9031 /* numbers.cpp in Sources */,
-				8C654DDF1FDAEA9D009D9031 /* expressions.cpp in Sources */,
-				8C654E101FDAEA9D009D9031 /* binary.cpp in Sources */,
-				8C654E241FDAEA9D009D9031 /* visitor.cpp in Sources */,
-				8C654DFD1FDAEA9D009D9031 /* statements.cpp in Sources */,
-				8C654E3E1FDAEA9D009D9031 /* unix.cpp in Sources */,
-				8C654DE81FDAEA9D009D9031 /* castings.cpp in Sources */,
-				8C654DE01FDAEA9D009D9031 /* parser.cpp in Sources */,
-				8C654E1E1FDAEA9D009D9031 /* symbols.cpp in Sources */,
-				8C654DDE1FDAEA9D009D9031 /* classes.cpp in Sources */,
-				8C654DEE1FDAEA9D009D9031 /* selection.cpp in Sources */,
-				8C654E301FDAEA9D009D9031 /* selection.cpp in Sources */,
-				8C654E121FDAEA9D009D9031 /* constant.cpp in Sources */,
-				8C654E2E1FDAEA9D009D9031 /* root.cpp in Sources */,
-				8C654DE61FDAEA9D009D9031 /* classes.cpp in Sources */,
-				8C654DF81FDAEA9D009D9031 /* instance.cpp in Sources */,
-				8C654E1C1FDAEA9D009D9031 /* switchselect.cpp in Sources */,
-				8C654E1A1FDAEA9D009D9031 /* ifelse.cpp in Sources */,
-				8C654E271FDAEA9D009D9031 /* binary.cpp in Sources */,
-				8C654E2F1FDAEA9D009D9031 /* iteration.cpp in Sources */,
-				8C654DFE1FDAEA9D009D9031 /* toplevel.cpp in Sources */,
-				8C654E291FDAEA9D009D9031 /* literals.cpp in Sources */,
-				8C654DF71FDAEA9D009D9031 /* execution.cpp in Sources */,
-				8C654E0A1FDAEA9D009D9031 /* enumeration.cpp in Sources */,
-				8C654E201FDAEA9D009D9031 /* builtintype.cpp in Sources */,
-				8C654E321FDAEA9D009D9031 /* toplevel.cpp in Sources */,
-				8C654E081FDAEA9D009D9031 /* class.cpp in Sources */,
-				8C654E141FDAEA9D009D9031 /* members.cpp in Sources */,
-				8C654DF41FDAEA9D009D9031 /* diagnostics.cpp in Sources */,
-				8C654E161FDAEA9D009D9031 /* unary.cpp in Sources */,
-				8C654DDA1FDAEA9D009D9031 /* grammar.cpp in Sources */,
-				8C654E401FDAEA9D009D9031 /* input.cpp in Sources */,
-				8C654E051FDAEA9D009D9031 /* hpc.cpp in Sources */,
-				8C654E2C1FDAEA9D009D9031 /* functions.cpp in Sources */,
-				8C654E041FDAEA9D009D9031 /* strings.cpp in Sources */,
-				8C654DE91FDAEA9D009D9031 /* resolution.cpp in Sources */,
-				8C654DF61FDAEA9D009D9031 /* actions.cpp in Sources */,
-				8C654DDB1FDAEA9D009D9031 /* lexer.cpp in Sources */,
-				8C654E251FDAEA9D009D9031 /* builders.cpp in Sources */,
-				8C654DD91FDAEA9D009D9031 /* control.cpp in Sources */,
-				8C654DE11FDAEA9D009D9031 /* statements.cpp in Sources */,
-				8C654E371FDAEA9D009D9031 /* mangle.cpp in Sources */,
-				8C654DE31FDAEA9D009D9031 /* types.cpp in Sources */,
-				8C654E3D1FDAEA9D009D9031 /* system.cpp in Sources */,
-				8C654DF11FDAEA9D009D9031 /* toplevel.cpp in Sources */,
-				8C654E2A1FDAEA9D009D9031 /* references.cpp in Sources */,
-				8C654E411FDAEA9D009D9031 /* linker.cpp in Sources */,
-				8C654DF91FDAEA9D009D9031 /* invocation.cpp in Sources */,
-				8C654E221FDAEA9D009D9031 /* pointertype.cpp in Sources */,
-				8C654DFA1FDAEA9D009D9031 /* castings.cpp in Sources */,
-				8C654DF31FDAEA9D009D9031 /* validator.cpp in Sources */,
-				8C654DEB1FDAEA9D009D9031 /* resolver.cpp in Sources */,
-				8C654E0F1FDAEA9D009D9031 /* variable.cpp in Sources */,
-				8C654E001FDAEA9D009D9031 /* files.cpp in Sources */,
-				8C654DEF1FDAEA9D009D9031 /* statements.cpp in Sources */,
-				8C654E331FDAEA9D009D9031 /* types.cpp in Sources */,
-				8C654DF01FDAEA9D009D9031 /* variables.cpp in Sources */,
-				8C654E191FDAEA9D009D9031 /* for.cpp in Sources */,
-				8C654DFF1FDAEA9D009D9031 /* types.cpp in Sources */,
-				8C654E151FDAEA9D009D9031 /* reference.cpp in Sources */,
+				8CEA30511FDB130900C0B2B6 /* hpc.cpp in Sources */,
+				8CEA30521FDB130D00C0B2B6 /* printers.cpp in Sources */,
+				8CEA30531FDB130F00C0B2B6 /* opts.cpp in Sources */,
+				8CEA30541FDB131600C0B2B6 /* numbers.cpp in Sources */,
+				8CEA30551FDB131900C0B2B6 /* strings.cpp in Sources */,
+				8CEA30561FDB131B00C0B2B6 /* files.cpp in Sources */,
+				8CEA30571FDB132900C0B2B6 /* diagnostics.cpp in Sources */,
+				8CEA30581FDB132C00C0B2B6 /* output.cpp in Sources */,
+				8CEA30591FDB133100C0B2B6 /* instance.cpp in Sources */,
+				8CEA305A1FDB133300C0B2B6 /* invocation.cpp in Sources */,
+				8CEA305B1FDB133500C0B2B6 /* execution.cpp in Sources */,
+				8CEA305C1FDB133800C0B2B6 /* actions.cpp in Sources */,
+				8CEA305D1FDB134D00C0B2B6 /* sources.cpp in Sources */,
+				8CEA305E1FDB135000C0B2B6 /* lexer.cpp in Sources */,
+				8CEA305F1FDB135A00C0B2B6 /* tokenizer.cpp in Sources */,
+				8CEA30601FDB135A00C0B2B6 /* control.cpp in Sources */,
+				8CEA30611FDB135A00C0B2B6 /* bufferer.cpp in Sources */,
+				8CEA30621FDB135A00C0B2B6 /* grammar.cpp in Sources */,
+				8CEA30631FDB135A00C0B2B6 /* literals.cpp in Sources */,
+				8CEA30641FDB136100C0B2B6 /* operators.cpp in Sources */,
+				8CEA30651FDB137100C0B2B6 /* parser.cpp in Sources */,
+				8CEA30661FDB137100C0B2B6 /* types.cpp in Sources */,
+				8CEA30671FDB137100C0B2B6 /* toplevel.cpp in Sources */,
+				8CEA30681FDB137100C0B2B6 /* statements.cpp in Sources */,
+				8CEA30691FDB137100C0B2B6 /* expressions.cpp in Sources */,
+				8CEA306A1FDB137100C0B2B6 /* classes.cpp in Sources */,
+				8CEA306B1FDB137C00C0B2B6 /* validator.cpp in Sources */,
+				8CEA306C1FDB137C00C0B2B6 /* resolver.cpp in Sources */,
+				8CEA306D1FDB137C00C0B2B6 /* root.cpp in Sources */,
+				8CEA306E1FDB137C00C0B2B6 /* toplevel.cpp in Sources */,
+				8CEA306F1FDB137C00C0B2B6 /* types.cpp in Sources */,
+				8CEA30701FDB137C00C0B2B6 /* classes.cpp in Sources */,
+				8CEA30711FDB138600C0B2B6 /* iteration.cpp in Sources */,
+				8CEA30721FDB138600C0B2B6 /* selection.cpp in Sources */,
+				8CEA30731FDB138600C0B2B6 /* statements.cpp in Sources */,
+				8CEA30741FDB138600C0B2B6 /* variables.cpp in Sources */,
+				8CEA30751FDB13A100C0B2B6 /* binary.cpp in Sources */,
+				8CEA30761FDB13A100C0B2B6 /* castings.cpp in Sources */,
+				8CEA30771FDB13A100C0B2B6 /* resolution.cpp in Sources */,
+				8CEA30781FDB13A100C0B2B6 /* unary.cpp in Sources */,
+				8CEA30791FDB13B100C0B2B6 /* visitor.cpp in Sources */,
+				8CEA307A1FDB13B100C0B2B6 /* component.cpp in Sources */,
+				8CEA307B1FDB13B100C0B2B6 /* unit.cpp in Sources */,
+				8CEA307C1FDB13B100C0B2B6 /* symbols.cpp in Sources */,
+				8CEA307D1FDB13B700C0B2B6 /* builder.cpp in Sources */,
+				8CEA307E1FDB13BD00C0B2B6 /* table.cpp in Sources */,
+				8CEA307F1FDB13C000C0B2B6 /* writer.cpp in Sources */,
+				8CEA30801FDB13C500C0B2B6 /* base.cpp in Sources */,
+				8CEA30811FDB13C800C0B2B6 /* builtintype.cpp in Sources */,
+				8CEA30821FDB13CC00C0B2B6 /* compoundtype.cpp in Sources */,
+				8CEA30831FDB13D800C0B2B6 /* pointertype.cpp in Sources */,
+				8CEA30841FDB13E400C0B2B6 /* declaration.cpp in Sources */,
+				8CEA30851FDB13E400C0B2B6 /* namespace.cpp in Sources */,
+				8CEA30861FDB13E400C0B2B6 /* variable.cpp in Sources */,
+				8CEA30871FDB13E400C0B2B6 /* function.cpp in Sources */,
+				8CEA30881FDB13E400C0B2B6 /* typealias.cpp in Sources */,
+				8CEA30891FDB13E400C0B2B6 /* class.cpp in Sources */,
+				8CEA308A1FDB13E400C0B2B6 /* protocol.cpp in Sources */,
+				8CEA308B1FDB13E400C0B2B6 /* enumeration.cpp in Sources */,
+				8CEA308C1FDB13F400C0B2B6 /* expression.cpp in Sources */,
+				8CEA308D1FDB13F400C0B2B6 /* constant.cpp in Sources */,
+				8CEA308E1FDB13F400C0B2B6 /* reference.cpp in Sources */,
+				8CEA308F1FDB13F400C0B2B6 /* binary.cpp in Sources */,
+				8CEA30901FDB13F400C0B2B6 /* unary.cpp in Sources */,
+				8CEA30911FDB13F400C0B2B6 /* castings.cpp in Sources */,
+				8CEA30921FDB13F400C0B2B6 /* members.cpp in Sources */,
+				8CEA30931FDB140300C0B2B6 /* statement.cpp in Sources */,
+				8CEA30941FDB140300C0B2B6 /* ifelse.cpp in Sources */,
+				8CEA30951FDB140300C0B2B6 /* switchselect.cpp in Sources */,
+				8CEA30961FDB140300C0B2B6 /* whileuntil.cpp in Sources */,
+				8CEA30971FDB140300C0B2B6 /* for.cpp in Sources */,
+				8CEA30981FDB141000C0B2B6 /* modules.cpp in Sources */,
+				8CEA30991FDB141000C0B2B6 /* builders.cpp in Sources */,
+				8CEA309A1FDB141000C0B2B6 /* root.cpp in Sources */,
+				8CEA309B1FDB141000C0B2B6 /* toplevel.cpp in Sources */,
+				8CEA309C1FDB141000C0B2B6 /* types.cpp in Sources */,
+				8CEA309D1FDB141000C0B2B6 /* functions.cpp in Sources */,
+				8CEA309E1FDB141000C0B2B6 /* classes.cpp in Sources */,
+				8CEA309F1FDB141500C0B2B6 /* statements.cpp in Sources */,
+				8CEA30A01FDB141800C0B2B6 /* selection.cpp in Sources */,
+				8CEA30A11FDB141B00C0B2B6 /* iteration.cpp in Sources */,
+				8CEA30A21FDB142200C0B2B6 /* literals.cpp in Sources */,
+				8CEA30A31FDB142600C0B2B6 /* binary.cpp in Sources */,
+				8CEA30A41FDB142C00C0B2B6 /* unary.cpp in Sources */,
+				8CEA30A51FDB143000C0B2B6 /* castings.cpp in Sources */,
+				8CEA30A61FDB143200C0B2B6 /* references.cpp in Sources */,
+				8CEA30A71FDB144600C0B2B6 /* target.cpp in Sources */,
+				8CEA30A81FDB144900C0B2B6 /* abi.cpp in Sources */,
+				8CEA30A91FDB144B00C0B2B6 /* mangle.cpp in Sources */,
+				8CEA30AA1FDB145000C0B2B6 /* backend.cpp in Sources */,
+				8CEA30AB1FDB145500C0B2B6 /* driver.cpp in Sources */,
+				8CEA30AC1FDB145D00C0B2B6 /* system.cpp in Sources */,
+				8CEA30AD1FDB145D00C0B2B6 /* unix.cpp in Sources */,
+				8CEA30AE1FDB145D00C0B2B6 /* linux.cpp in Sources */,
+				8CEA30AF1FDB145D00C0B2B6 /* apple.cpp in Sources */,
+				8CEA30B01FDB145D00C0B2B6 /* windows.cpp in Sources */,
+				8CEA30B11FDB146300C0B2B6 /* linker.cpp in Sources */,
+				8CEA30B21FDB146600C0B2B6 /* input.cpp in Sources */,
+				8CEA30B31FDB146C00C0B2B6 /* runtime.cpp in Sources */,
+				8CEA30B41FDB147900C0B2B6 /* dump.cpp in Sources */,
+				8CEA30B51FDB147900C0B2B6 /* castings.cpp in Sources */,
+				8CEA30B61FDB147900C0B2B6 /* types.cpp in Sources */,
+				8CEA30B71FDB147900C0B2B6 /* toplevel.cpp in Sources */,
+				8CEA30B81FDB147900C0B2B6 /* statements.cpp in Sources */,
+				8CEA30B91FDB147900C0B2B6 /* expressions.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1389,26 +1402,19 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
+					"$(LLVM_PATH)/include",
+					"$(LLVM_BUILD_PATH)/include",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = (
-					"-DLLVM_BUILD_GLOBAL_ISEL",
 					"-D__STDC_CONSTANT_MACROS",
 					"-D__STDC_FORMAT_MACROS",
 					"-D__STDC_LIMIT_MACROS",
 				);
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = humanlogic;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
+				TARGET_PATH = "$(inherited)/humanlogic";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1422,60 +1428,14 @@
 		1279B60E9B0F43458D06EBCB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
-				);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
 			};
 			name = Debug;
 		};
 		1610F2B61A5B4C40B496675A /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
-				);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
 			};
 			name = MinSizeRel;
 		};
@@ -1483,20 +1443,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
+					"$(LLVM_PATH)/include",
+					"$(LLVM_BUILD_PATH)/include",
+					"$(TARGET_PATH)/include",
 				);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = (
 					"-DLLVM_BUILD_GLOBAL_ISEL",
 					"-D__STDC_CONSTANT_MACROS",
@@ -1513,194 +1468,136 @@
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMCore.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSupport.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMOption.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMDebugInfoPDB.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMDebugInfoDWARF.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMDebugInfoCodeView.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMLTO.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSymbolize.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMIRParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMLibDriver.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMTableGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAsmParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMC.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMCParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMCDisassembler.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMCJIT.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMPasses.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMTransformUtils.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMipo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMInstCombine.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMVectorize.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMIRReader.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMLinker.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMInterpreter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMCodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMScalarOpts.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMInstrumentation.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMProfileData.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMBitReader.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMBitWriter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMOrcJIT.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMExecutionEngine.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMTarget.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAnalysis.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMRuntimeDyld.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMObject.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSelectionDAG.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAArch64AsmParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAArch64AsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAArch64CodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAArch64Desc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAArch64Disassembler.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAArch64Info.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAArch64Utils.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAMDGPUAsmParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAMDGPUAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAMDGPUCodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAMDGPUDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAMDGPUDisassembler.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAMDGPUInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAMDGPUUtils.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMARMAsmParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMARMAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMARMCodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMARMDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMARMDisassembler.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMARMInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMBPFAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMBPFCodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMBPFDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMBPFDisassembler.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMBPFInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMHexagonAsmParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMHexagonCodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMHexagonDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMHexagonDisassembler.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMHexagonInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMLanaiAsmParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMLanaiAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMLanaiCodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMLanaiDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMLanaiDisassembler.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMLanaiInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMipsAsmParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMipsAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMipsCodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMipsDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMipsDisassembler.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMipsInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMSP430AsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMSP430CodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMSP430Desc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMSP430Info.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMNVPTXAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMNVPTXCodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMNVPTXDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMNVPTXInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMPowerPCAsmParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMPowerPCAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMPowerPCCodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMPowerPCDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMPowerPCDisassembler.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMPowerPCInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSparcAsmParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSparcAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSparcCodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSparcDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSparcDisassembler.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSparcInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSystemZAsmParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSystemZAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSystemZCodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSystemZDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSystemZDisassembler.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSystemZInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMX86AsmParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMX86AsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMX86CodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMX86Desc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMX86Disassembler.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMX86Info.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMX86Utils.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMXCoreAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMXCoreCodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMXCoreDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMXCoreDisassembler.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMXCoreInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMObjCARCOpts.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMDebugInfoPDB.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMDebugInfoDWARF.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMOption.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAArch64Desc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAArch64AsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAArch64Info.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAArch64Utils.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAMDGPUDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAMDGPUAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAMDGPUInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAMDGPUUtils.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMARMDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMARMAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMARMInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMBPFAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMHexagonAsmParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMHexagonDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMHexagonInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMLanaiAsmParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMLanaiDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMLanaiAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMLanaiInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMipsAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMSP430AsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMipo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMIRReader.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAsmParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMLinker.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMInstrumentation.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMVectorize.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMNVPTXAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMPowerPCAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSparcAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSystemZDesc.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSystemZAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSystemZInfo.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMX86AsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMX86Utils.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMGlobalISel.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMDebugInfoCodeView.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMDebugInfoMSF.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSelectionDAG.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMCodeGen.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMScalarOpts.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMInstCombine.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMTransformUtils.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMBitWriter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMTarget.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMAnalysis.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMProfileData.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMObject.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMCParser.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMBitReader.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMCore.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMBinaryFormat.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMXCoreAsmPrinter.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMCDisassembler.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMMC.a,
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMSupport.a,
+					"-L/Tiamat/git/llvm/build/$(CONFIGURATION)/lib",
+					"-lLLVMCore",
+					"-lLLVMSupport",
+					"-lLLVMOption",
+					"-lLLVMDebugInfoPDB",
+					"-lLLVMDebugInfoDWARF",
+					"-lLLVMDebugInfoMSF",
+					"-lLLVMDebugInfoCodeView",
+					"-lLLVMLTO",
+					"-lLLVMSymbolize",
+					"-lLLVMMIRParser",
+					"-lLLVMLibDriver",
+					"-lLLVMTableGen",
+					"-lLLVMAsmParser",
+					"-lLLVMAsmPrinter",
+					"-lLLVMMC",
+					"-lLLVMMCParser",
+					"-lLLVMMCDisassembler",
+					"-lLLVMMCJIT",
+					"-lLLVMPasses",
+					"-lLLVMTransformUtils",
+					"-lLLVMipo",
+					"-lLLVMInstCombine",
+					"-lLLVMVectorize",
+					"-lLLVMIRReader",
+					"-lLLVMLinker",
+					"-lLLVMInterpreter",
+					"-lLLVMCodeGen",
+					"-lLLVMScalarOpts",
+					"-lLLVMInstrumentation",
+					"-lLLVMProfileData",
+					"-lLLVMBitReader",
+					"-lLLVMBitWriter",
+					"-lLLVMOrcJIT",
+					"-lLLVMExecutionEngine",
+					"-lLLVMTarget",
+					"-lLLVMAnalysis",
+					"-lLLVMRuntimeDyld",
+					"-lLLVMObject",
+					"-lLLVMSelectionDAG",
+					"-lLLVMAArch64AsmParser",
+					"-lLLVMAArch64AsmPrinter",
+					"-lLLVMAArch64CodeGen",
+					"-lLLVMAArch64Desc",
+					"-lLLVMAArch64Disassembler",
+					"-lLLVMAArch64Info",
+					"-lLLVMAArch64Utils",
+					"-lLLVMAMDGPUAsmParser",
+					"-lLLVMAMDGPUAsmPrinter",
+					"-lLLVMAMDGPUCodeGen",
+					"-lLLVMAMDGPUDesc",
+					"-lLLVMAMDGPUDisassembler",
+					"-lLLVMAMDGPUInfo",
+					"-lLLVMAMDGPUUtils",
+					"-lLLVMARMAsmParser",
+					"-lLLVMARMAsmPrinter",
+					"-lLLVMARMCodeGen",
+					"-lLLVMARMDesc",
+					"-lLLVMARMDisassembler",
+					"-lLLVMARMInfo",
+					"-lLLVMBPFAsmPrinter",
+					"-lLLVMBPFCodeGen",
+					"-lLLVMBPFDesc",
+					"-lLLVMBPFDisassembler",
+					"-lLLVMBPFInfo",
+					"-lLLVMHexagonAsmParser",
+					"-lLLVMHexagonCodeGen",
+					"-lLLVMHexagonDesc",
+					"-lLLVMHexagonDisassembler",
+					"-lLLVMHexagonInfo",
+					"-lLLVMLanaiAsmParser",
+					"-lLLVMLanaiAsmPrinter",
+					"-lLLVMLanaiCodeGen",
+					"-lLLVMLanaiDesc",
+					"-lLLVMLanaiDisassembler",
+					"-lLLVMLanaiInfo",
+					"-lLLVMMipsAsmParser",
+					"-lLLVMMipsAsmPrinter",
+					"-lLLVMMipsCodeGen",
+					"-lLLVMMipsDesc",
+					"-lLLVMMipsDisassembler",
+					"-lLLVMMipsInfo",
+					"-lLLVMMSP430AsmPrinter",
+					"-lLLVMMSP430CodeGen",
+					"-lLLVMMSP430Desc",
+					"-lLLVMMSP430Info",
+					"-lLLVMNVPTXAsmPrinter",
+					"-lLLVMNVPTXCodeGen",
+					"-lLLVMNVPTXDesc",
+					"-lLLVMNVPTXInfo",
+					"-lLLVMPowerPCAsmParser",
+					"-lLLVMPowerPCAsmPrinter",
+					"-lLLVMPowerPCCodeGen",
+					"-lLLVMPowerPCDesc",
+					"-lLLVMPowerPCDisassembler",
+					"-lLLVMPowerPCInfo",
+					"-lLLVMSparcAsmParser",
+					"-lLLVMSparcAsmPrinter",
+					"-lLLVMSparcCodeGen",
+					"-lLLVMSparcDesc",
+					"-lLLVMSparcDisassembler",
+					"-lLLVMSparcInfo",
+					"-lLLVMSystemZAsmParser",
+					"-lLLVMSystemZAsmPrinter",
+					"-lLLVMSystemZCodeGen",
+					"-lLLVMSystemZDesc",
+					"-lLLVMSystemZDisassembler",
+					"-lLLVMSystemZInfo",
+					"-lLLVMX86AsmParser",
+					"-lLLVMX86AsmPrinter",
+					"-lLLVMX86CodeGen",
+					"-lLLVMX86Desc",
+					"-lLLVMX86Disassembler",
+					"-lLLVMX86Info",
+					"-lLLVMX86Utils",
+					"-lLLVMXCoreAsmPrinter",
+					"-lLLVMXCoreCodeGen",
+					"-lLLVMXCoreDesc",
+					"-lLLVMXCoreDisassembler",
+					"-lLLVMXCoreInfo",
+					"-lLLVMObjCARCOpts",
+					"-lLLVMGlobalISel",
+					"-lLLVMBinaryFormat",
+					"-lLLVMDemangle",
 					"-lcurses",
 					"-lz",
 					"-lm",
-					/Tiamat/git/llvm/build/Debug/lib/libLLVMDemangle.a,
 				);
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = hpc;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
+				TARGET_PATH = "$(inherited)/hpc";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1720,27 +1617,20 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
+					"$(LLVM_PATH)/include",
+					"$(LLVM_BUILD_PATH)/include",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = (
 					"-DNDEBUG",
-					"-DLLVM_BUILD_GLOBAL_ISEL",
 					"-D__STDC_CONSTANT_MACROS",
 					"-D__STDC_FORMAT_MACROS",
 					"-D__STDC_LIMIT_MACROS",
 				);
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = humanlogic;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
+				TARGET_PATH = "$(inherited)/humanlogic";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1755,20 +1645,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
+					"$(LLVM_PATH)/include",
+					"$(LLVM_BUILD_PATH)/include",
+					"$(TARGET_PATH)/include",
 				);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = (
 					"-DNDEBUG",
 					"-DLLVM_BUILD_GLOBAL_ISEL",
@@ -1787,194 +1672,136 @@
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMCore.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSupport.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMOption.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMDebugInfoPDB.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMDebugInfoDWARF.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMDebugInfoCodeView.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMLTO.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSymbolize.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMIRParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMLibDriver.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMTableGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAsmParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMC.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMCParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMCDisassembler.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMCJIT.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMPasses.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMTransformUtils.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMipo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMInstCombine.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMVectorize.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMIRReader.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMLinker.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMInterpreter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMCodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMScalarOpts.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMInstrumentation.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMProfileData.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMBitReader.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMBitWriter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMOrcJIT.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMExecutionEngine.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMTarget.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAnalysis.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMRuntimeDyld.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMObject.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSelectionDAG.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAArch64AsmParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAArch64AsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAArch64CodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAArch64Desc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAArch64Disassembler.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAArch64Info.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAArch64Utils.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAMDGPUAsmParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAMDGPUAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAMDGPUCodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAMDGPUDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAMDGPUDisassembler.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAMDGPUInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAMDGPUUtils.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMARMAsmParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMARMAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMARMCodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMARMDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMARMDisassembler.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMARMInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMBPFAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMBPFCodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMBPFDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMBPFDisassembler.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMBPFInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMHexagonAsmParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMHexagonCodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMHexagonDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMHexagonDisassembler.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMHexagonInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMLanaiAsmParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMLanaiAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMLanaiCodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMLanaiDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMLanaiDisassembler.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMLanaiInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMipsAsmParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMipsAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMipsCodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMipsDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMipsDisassembler.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMipsInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMSP430AsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMSP430CodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMSP430Desc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMSP430Info.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMNVPTXAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMNVPTXCodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMNVPTXDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMNVPTXInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMPowerPCAsmParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMPowerPCAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMPowerPCCodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMPowerPCDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMPowerPCDisassembler.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMPowerPCInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSparcAsmParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSparcAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSparcCodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSparcDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSparcDisassembler.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSparcInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSystemZAsmParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSystemZAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSystemZCodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSystemZDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSystemZDisassembler.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSystemZInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMX86AsmParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMX86AsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMX86CodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMX86Desc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMX86Disassembler.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMX86Info.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMX86Utils.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMXCoreAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMXCoreCodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMXCoreDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMXCoreDisassembler.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMXCoreInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMObjCARCOpts.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMDebugInfoPDB.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMDebugInfoDWARF.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMOption.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAArch64Desc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAArch64AsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAArch64Info.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAArch64Utils.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAMDGPUDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAMDGPUAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAMDGPUInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAMDGPUUtils.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMARMDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMARMAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMARMInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMBPFAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMHexagonAsmParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMHexagonDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMHexagonInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMLanaiAsmParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMLanaiDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMLanaiAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMLanaiInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMipsAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMSP430AsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMipo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMIRReader.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAsmParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMLinker.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMInstrumentation.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMVectorize.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMNVPTXAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMPowerPCAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSparcAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSystemZDesc.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSystemZAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSystemZInfo.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMX86AsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMX86Utils.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMGlobalISel.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMDebugInfoCodeView.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMDebugInfoMSF.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSelectionDAG.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMCodeGen.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMScalarOpts.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMInstCombine.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMTransformUtils.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMBitWriter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMTarget.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMAnalysis.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMProfileData.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMObject.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMCParser.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMBitReader.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMCore.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMBinaryFormat.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMXCoreAsmPrinter.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMCDisassembler.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMMC.a,
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMSupport.a,
+					"-L/Tiamat/git/llvm/build/$(CONFIGURATION)/lib",
+					"-lLLVMCore",
+					"-lLLVMSupport",
+					"-lLLVMOption",
+					"-lLLVMDebugInfoPDB",
+					"-lLLVMDebugInfoDWARF",
+					"-lLLVMDebugInfoMSF",
+					"-lLLVMDebugInfoCodeView",
+					"-lLLVMLTO",
+					"-lLLVMSymbolize",
+					"-lLLVMMIRParser",
+					"-lLLVMLibDriver",
+					"-lLLVMTableGen",
+					"-lLLVMAsmParser",
+					"-lLLVMAsmPrinter",
+					"-lLLVMMC",
+					"-lLLVMMCParser",
+					"-lLLVMMCDisassembler",
+					"-lLLVMMCJIT",
+					"-lLLVMPasses",
+					"-lLLVMTransformUtils",
+					"-lLLVMipo",
+					"-lLLVMInstCombine",
+					"-lLLVMVectorize",
+					"-lLLVMIRReader",
+					"-lLLVMLinker",
+					"-lLLVMInterpreter",
+					"-lLLVMCodeGen",
+					"-lLLVMScalarOpts",
+					"-lLLVMInstrumentation",
+					"-lLLVMProfileData",
+					"-lLLVMBitReader",
+					"-lLLVMBitWriter",
+					"-lLLVMOrcJIT",
+					"-lLLVMExecutionEngine",
+					"-lLLVMTarget",
+					"-lLLVMAnalysis",
+					"-lLLVMRuntimeDyld",
+					"-lLLVMObject",
+					"-lLLVMSelectionDAG",
+					"-lLLVMAArch64AsmParser",
+					"-lLLVMAArch64AsmPrinter",
+					"-lLLVMAArch64CodeGen",
+					"-lLLVMAArch64Desc",
+					"-lLLVMAArch64Disassembler",
+					"-lLLVMAArch64Info",
+					"-lLLVMAArch64Utils",
+					"-lLLVMAMDGPUAsmParser",
+					"-lLLVMAMDGPUAsmPrinter",
+					"-lLLVMAMDGPUCodeGen",
+					"-lLLVMAMDGPUDesc",
+					"-lLLVMAMDGPUDisassembler",
+					"-lLLVMAMDGPUInfo",
+					"-lLLVMAMDGPUUtils",
+					"-lLLVMARMAsmParser",
+					"-lLLVMARMAsmPrinter",
+					"-lLLVMARMCodeGen",
+					"-lLLVMARMDesc",
+					"-lLLVMARMDisassembler",
+					"-lLLVMARMInfo",
+					"-lLLVMBPFAsmPrinter",
+					"-lLLVMBPFCodeGen",
+					"-lLLVMBPFDesc",
+					"-lLLVMBPFDisassembler",
+					"-lLLVMBPFInfo",
+					"-lLLVMHexagonAsmParser",
+					"-lLLVMHexagonCodeGen",
+					"-lLLVMHexagonDesc",
+					"-lLLVMHexagonDisassembler",
+					"-lLLVMHexagonInfo",
+					"-lLLVMLanaiAsmParser",
+					"-lLLVMLanaiAsmPrinter",
+					"-lLLVMLanaiCodeGen",
+					"-lLLVMLanaiDesc",
+					"-lLLVMLanaiDisassembler",
+					"-lLLVMLanaiInfo",
+					"-lLLVMMipsAsmParser",
+					"-lLLVMMipsAsmPrinter",
+					"-lLLVMMipsCodeGen",
+					"-lLLVMMipsDesc",
+					"-lLLVMMipsDisassembler",
+					"-lLLVMMipsInfo",
+					"-lLLVMMSP430AsmPrinter",
+					"-lLLVMMSP430CodeGen",
+					"-lLLVMMSP430Desc",
+					"-lLLVMMSP430Info",
+					"-lLLVMNVPTXAsmPrinter",
+					"-lLLVMNVPTXCodeGen",
+					"-lLLVMNVPTXDesc",
+					"-lLLVMNVPTXInfo",
+					"-lLLVMPowerPCAsmParser",
+					"-lLLVMPowerPCAsmPrinter",
+					"-lLLVMPowerPCCodeGen",
+					"-lLLVMPowerPCDesc",
+					"-lLLVMPowerPCDisassembler",
+					"-lLLVMPowerPCInfo",
+					"-lLLVMSparcAsmParser",
+					"-lLLVMSparcAsmPrinter",
+					"-lLLVMSparcCodeGen",
+					"-lLLVMSparcDesc",
+					"-lLLVMSparcDisassembler",
+					"-lLLVMSparcInfo",
+					"-lLLVMSystemZAsmParser",
+					"-lLLVMSystemZAsmPrinter",
+					"-lLLVMSystemZCodeGen",
+					"-lLLVMSystemZDesc",
+					"-lLLVMSystemZDisassembler",
+					"-lLLVMSystemZInfo",
+					"-lLLVMX86AsmParser",
+					"-lLLVMX86AsmPrinter",
+					"-lLLVMX86CodeGen",
+					"-lLLVMX86Desc",
+					"-lLLVMX86Disassembler",
+					"-lLLVMX86Info",
+					"-lLLVMX86Utils",
+					"-lLLVMXCoreAsmPrinter",
+					"-lLLVMXCoreCodeGen",
+					"-lLLVMXCoreDesc",
+					"-lLLVMXCoreDisassembler",
+					"-lLLVMXCoreInfo",
+					"-lLLVMObjCARCOpts",
+					"-lLLVMGlobalISel",
+					"-lLLVMBinaryFormat",
+					"-lLLVMDemangle",
 					"-lcurses",
 					"-lz",
 					"-lm",
-					/Tiamat/git/llvm/build/RelWithDebInfo/lib/libLLVMDemangle.a,
 				);
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = hpc;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
+				TARGET_PATH = "$(inherited)/hpc";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1988,99 +1815,58 @@
 		4D9687B5F0B44FA3B77DBAAA /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_PATH = "$(PROJECT_PATH)/build";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LLVM_BUILD_PATH = "$(LLVM_PATH)/build";
+				LLVM_PATH = /Tiamat/git/llvm;
 				ONLY_ACTIVE_ARCH = YES;
+				PROJECT_PATH = "$(SRCROOT)";
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = /Tiamat/git/humanplus/build/build;
+				SYMROOT = "$(BUILD_PATH)";
+				TARGET_PATH = "$(PROJECT_PATH)";
 			};
 			name = RelWithDebInfo;
 		};
 		53ACC968AE9D45FAAE77E0F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
-				);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
 			};
 			name = Debug;
 		};
 		696C3662E8044BDA8814A331 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
-				);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
 			};
 			name = RelWithDebInfo;
 		};
 		697462D3B80A40C980B3D8C1 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
-				);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
 			};
 			name = RelWithDebInfo;
 		};
@@ -2088,20 +1874,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
+					"$(LLVM_PATH)/include",
+					"$(LLVM_BUILD_PATH)/include",
+					"$(TARGET_PATH)/include",
 				);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = (
 					"-DNDEBUG",
 					"-DLLVM_BUILD_GLOBAL_ISEL",
@@ -2120,194 +1901,136 @@
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					/Tiamat/git/llvm/build/Release/lib/libLLVMCore.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSupport.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMOption.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMDebugInfoPDB.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMDebugInfoDWARF.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMDebugInfoCodeView.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMLTO.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSymbolize.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMIRParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMLibDriver.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMTableGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAsmParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMC.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMCParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMCDisassembler.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMCJIT.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMPasses.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMTransformUtils.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMipo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMInstCombine.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMVectorize.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMIRReader.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMLinker.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMInterpreter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMCodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMScalarOpts.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMInstrumentation.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMProfileData.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMBitReader.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMBitWriter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMOrcJIT.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMExecutionEngine.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMTarget.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAnalysis.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMRuntimeDyld.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMObject.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSelectionDAG.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAArch64AsmParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAArch64AsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAArch64CodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAArch64Desc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAArch64Disassembler.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAArch64Info.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAArch64Utils.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAMDGPUAsmParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAMDGPUAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAMDGPUCodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAMDGPUDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAMDGPUDisassembler.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAMDGPUInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAMDGPUUtils.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMARMAsmParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMARMAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMARMCodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMARMDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMARMDisassembler.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMARMInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMBPFAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMBPFCodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMBPFDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMBPFDisassembler.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMBPFInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMHexagonAsmParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMHexagonCodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMHexagonDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMHexagonDisassembler.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMHexagonInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMLanaiAsmParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMLanaiAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMLanaiCodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMLanaiDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMLanaiDisassembler.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMLanaiInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMipsAsmParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMipsAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMipsCodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMipsDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMipsDisassembler.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMipsInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMSP430AsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMSP430CodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMSP430Desc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMSP430Info.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMNVPTXAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMNVPTXCodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMNVPTXDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMNVPTXInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMPowerPCAsmParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMPowerPCAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMPowerPCCodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMPowerPCDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMPowerPCDisassembler.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMPowerPCInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSparcAsmParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSparcAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSparcCodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSparcDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSparcDisassembler.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSparcInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSystemZAsmParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSystemZAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSystemZCodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSystemZDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSystemZDisassembler.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSystemZInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMX86AsmParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMX86AsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMX86CodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMX86Desc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMX86Disassembler.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMX86Info.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMX86Utils.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMXCoreAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMXCoreCodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMXCoreDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMXCoreDisassembler.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMXCoreInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMObjCARCOpts.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMDebugInfoPDB.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMDebugInfoDWARF.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMOption.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAArch64Desc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAArch64AsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAArch64Info.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAArch64Utils.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAMDGPUDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAMDGPUAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAMDGPUInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAMDGPUUtils.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMARMDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMARMAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMARMInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMBPFAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMHexagonAsmParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMHexagonDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMHexagonInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMLanaiAsmParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMLanaiDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMLanaiAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMLanaiInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMipsAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMSP430AsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMipo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMIRReader.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAsmParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMLinker.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMInstrumentation.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMVectorize.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMNVPTXAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMPowerPCAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSparcAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSystemZDesc.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSystemZAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSystemZInfo.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMX86AsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMX86Utils.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMGlobalISel.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMDebugInfoCodeView.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMDebugInfoMSF.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSelectionDAG.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMCodeGen.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMScalarOpts.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMInstCombine.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMTransformUtils.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMBitWriter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMTarget.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMAnalysis.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMProfileData.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMObject.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMCParser.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMBitReader.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMCore.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMBinaryFormat.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMXCoreAsmPrinter.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMCDisassembler.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMMC.a,
-					/Tiamat/git/llvm/build/Release/lib/libLLVMSupport.a,
+					"-L/Tiamat/git/llvm/build/$(CONFIGURATION)/lib",
+					"-lLLVMCore",
+					"-lLLVMSupport",
+					"-lLLVMOption",
+					"-lLLVMDebugInfoPDB",
+					"-lLLVMDebugInfoDWARF",
+					"-lLLVMDebugInfoMSF",
+					"-lLLVMDebugInfoCodeView",
+					"-lLLVMLTO",
+					"-lLLVMSymbolize",
+					"-lLLVMMIRParser",
+					"-lLLVMLibDriver",
+					"-lLLVMTableGen",
+					"-lLLVMAsmParser",
+					"-lLLVMAsmPrinter",
+					"-lLLVMMC",
+					"-lLLVMMCParser",
+					"-lLLVMMCDisassembler",
+					"-lLLVMMCJIT",
+					"-lLLVMPasses",
+					"-lLLVMTransformUtils",
+					"-lLLVMipo",
+					"-lLLVMInstCombine",
+					"-lLLVMVectorize",
+					"-lLLVMIRReader",
+					"-lLLVMLinker",
+					"-lLLVMInterpreter",
+					"-lLLVMCodeGen",
+					"-lLLVMScalarOpts",
+					"-lLLVMInstrumentation",
+					"-lLLVMProfileData",
+					"-lLLVMBitReader",
+					"-lLLVMBitWriter",
+					"-lLLVMOrcJIT",
+					"-lLLVMExecutionEngine",
+					"-lLLVMTarget",
+					"-lLLVMAnalysis",
+					"-lLLVMRuntimeDyld",
+					"-lLLVMObject",
+					"-lLLVMSelectionDAG",
+					"-lLLVMAArch64AsmParser",
+					"-lLLVMAArch64AsmPrinter",
+					"-lLLVMAArch64CodeGen",
+					"-lLLVMAArch64Desc",
+					"-lLLVMAArch64Disassembler",
+					"-lLLVMAArch64Info",
+					"-lLLVMAArch64Utils",
+					"-lLLVMAMDGPUAsmParser",
+					"-lLLVMAMDGPUAsmPrinter",
+					"-lLLVMAMDGPUCodeGen",
+					"-lLLVMAMDGPUDesc",
+					"-lLLVMAMDGPUDisassembler",
+					"-lLLVMAMDGPUInfo",
+					"-lLLVMAMDGPUUtils",
+					"-lLLVMARMAsmParser",
+					"-lLLVMARMAsmPrinter",
+					"-lLLVMARMCodeGen",
+					"-lLLVMARMDesc",
+					"-lLLVMARMDisassembler",
+					"-lLLVMARMInfo",
+					"-lLLVMBPFAsmPrinter",
+					"-lLLVMBPFCodeGen",
+					"-lLLVMBPFDesc",
+					"-lLLVMBPFDisassembler",
+					"-lLLVMBPFInfo",
+					"-lLLVMHexagonAsmParser",
+					"-lLLVMHexagonCodeGen",
+					"-lLLVMHexagonDesc",
+					"-lLLVMHexagonDisassembler",
+					"-lLLVMHexagonInfo",
+					"-lLLVMLanaiAsmParser",
+					"-lLLVMLanaiAsmPrinter",
+					"-lLLVMLanaiCodeGen",
+					"-lLLVMLanaiDesc",
+					"-lLLVMLanaiDisassembler",
+					"-lLLVMLanaiInfo",
+					"-lLLVMMipsAsmParser",
+					"-lLLVMMipsAsmPrinter",
+					"-lLLVMMipsCodeGen",
+					"-lLLVMMipsDesc",
+					"-lLLVMMipsDisassembler",
+					"-lLLVMMipsInfo",
+					"-lLLVMMSP430AsmPrinter",
+					"-lLLVMMSP430CodeGen",
+					"-lLLVMMSP430Desc",
+					"-lLLVMMSP430Info",
+					"-lLLVMNVPTXAsmPrinter",
+					"-lLLVMNVPTXCodeGen",
+					"-lLLVMNVPTXDesc",
+					"-lLLVMNVPTXInfo",
+					"-lLLVMPowerPCAsmParser",
+					"-lLLVMPowerPCAsmPrinter",
+					"-lLLVMPowerPCCodeGen",
+					"-lLLVMPowerPCDesc",
+					"-lLLVMPowerPCDisassembler",
+					"-lLLVMPowerPCInfo",
+					"-lLLVMSparcAsmParser",
+					"-lLLVMSparcAsmPrinter",
+					"-lLLVMSparcCodeGen",
+					"-lLLVMSparcDesc",
+					"-lLLVMSparcDisassembler",
+					"-lLLVMSparcInfo",
+					"-lLLVMSystemZAsmParser",
+					"-lLLVMSystemZAsmPrinter",
+					"-lLLVMSystemZCodeGen",
+					"-lLLVMSystemZDesc",
+					"-lLLVMSystemZDisassembler",
+					"-lLLVMSystemZInfo",
+					"-lLLVMX86AsmParser",
+					"-lLLVMX86AsmPrinter",
+					"-lLLVMX86CodeGen",
+					"-lLLVMX86Desc",
+					"-lLLVMX86Disassembler",
+					"-lLLVMX86Info",
+					"-lLLVMX86Utils",
+					"-lLLVMXCoreAsmPrinter",
+					"-lLLVMXCoreCodeGen",
+					"-lLLVMXCoreDesc",
+					"-lLLVMXCoreDisassembler",
+					"-lLLVMXCoreInfo",
+					"-lLLVMObjCARCOpts",
+					"-lLLVMGlobalISel",
+					"-lLLVMBinaryFormat",
+					"-lLLVMDemangle",
 					"-lcurses",
 					"-lz",
 					"-lm",
-					/Tiamat/git/llvm/build/Release/lib/libLLVMDemangle.a,
 				);
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = hpc;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
+				TARGET_PATH = "$(inherited)/hpc";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -2321,39 +2044,44 @@
 		738882F8719B4120A9F60A00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_PATH = "$(PROJECT_PATH)/build";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LLVM_BUILD_PATH = "$(LLVM_PATH)/build";
+				LLVM_PATH = /Tiamat/git/llvm;
 				ONLY_ACTIVE_ARCH = YES;
+				PROJECT_PATH = "$(SRCROOT)";
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = /Tiamat/git/humanplus/build/build;
+				SYMROOT = "$(BUILD_PATH)";
+				TARGET_PATH = "$(PROJECT_PATH)";
 			};
 			name = Release;
 		};
 		7649D8B60B73483C9DC302D1 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
-				);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
 			};
 			name = RelWithDebInfo;
 		};
@@ -2361,20 +2089,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
+					"$(LLVM_PATH)/include",
+					"$(LLVM_BUILD_PATH)/include",
+					"$(TARGET_PATH)/include",
 				);
-				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = (
 					"-DNDEBUG",
 					"-DLLVM_BUILD_GLOBAL_ISEL",
@@ -2393,194 +2116,136 @@
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMCore.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSupport.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMOption.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMDebugInfoPDB.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMDebugInfoDWARF.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMDebugInfoCodeView.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMLTO.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSymbolize.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMIRParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMLibDriver.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMTableGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAsmParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMC.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMCParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMCDisassembler.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMCJIT.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMPasses.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMTransformUtils.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMipo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMInstCombine.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMVectorize.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMIRReader.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMLinker.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMInterpreter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMCodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMScalarOpts.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMInstrumentation.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMProfileData.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMBitReader.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMBitWriter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMOrcJIT.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMExecutionEngine.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMTarget.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAnalysis.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMRuntimeDyld.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMObject.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSelectionDAG.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAArch64AsmParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAArch64AsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAArch64CodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAArch64Desc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAArch64Disassembler.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAArch64Info.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAArch64Utils.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAMDGPUAsmParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAMDGPUAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAMDGPUCodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAMDGPUDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAMDGPUDisassembler.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAMDGPUInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAMDGPUUtils.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMARMAsmParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMARMAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMARMCodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMARMDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMARMDisassembler.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMARMInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMBPFAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMBPFCodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMBPFDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMBPFDisassembler.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMBPFInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMHexagonAsmParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMHexagonCodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMHexagonDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMHexagonDisassembler.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMHexagonInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMLanaiAsmParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMLanaiAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMLanaiCodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMLanaiDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMLanaiDisassembler.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMLanaiInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMipsAsmParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMipsAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMipsCodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMipsDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMipsDisassembler.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMipsInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMSP430AsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMSP430CodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMSP430Desc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMSP430Info.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMNVPTXAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMNVPTXCodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMNVPTXDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMNVPTXInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMPowerPCAsmParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMPowerPCAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMPowerPCCodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMPowerPCDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMPowerPCDisassembler.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMPowerPCInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSparcAsmParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSparcAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSparcCodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSparcDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSparcDisassembler.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSparcInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSystemZAsmParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSystemZAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSystemZCodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSystemZDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSystemZDisassembler.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSystemZInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMX86AsmParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMX86AsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMX86CodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMX86Desc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMX86Disassembler.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMX86Info.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMX86Utils.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMXCoreAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMXCoreCodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMXCoreDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMXCoreDisassembler.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMXCoreInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMObjCARCOpts.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMDebugInfoPDB.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMDebugInfoDWARF.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMOption.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAArch64Desc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAArch64AsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAArch64Info.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAArch64Utils.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAMDGPUDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAMDGPUAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAMDGPUInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAMDGPUUtils.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMARMDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMARMAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMARMInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMBPFAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMHexagonAsmParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMHexagonDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMHexagonInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMLanaiAsmParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMLanaiDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMLanaiAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMLanaiInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMipsAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMSP430AsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMipo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMIRReader.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAsmParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMLinker.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMInstrumentation.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMVectorize.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMNVPTXAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMPowerPCAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSparcAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSystemZDesc.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSystemZAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSystemZInfo.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMX86AsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMX86Utils.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMGlobalISel.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMDebugInfoCodeView.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMDebugInfoMSF.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSelectionDAG.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMCodeGen.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMScalarOpts.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMInstCombine.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMTransformUtils.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMBitWriter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMTarget.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMAnalysis.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMProfileData.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMObject.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMCParser.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMBitReader.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMCore.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMBinaryFormat.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMXCoreAsmPrinter.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMCDisassembler.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMMC.a,
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMSupport.a,
+					"-L/Tiamat/git/llvm/build/$(CONFIGURATION)/lib",
+					"-lLLVMCore",
+					"-lLLVMSupport",
+					"-lLLVMOption",
+					"-lLLVMDebugInfoPDB",
+					"-lLLVMDebugInfoDWARF",
+					"-lLLVMDebugInfoMSF",
+					"-lLLVMDebugInfoCodeView",
+					"-lLLVMLTO",
+					"-lLLVMSymbolize",
+					"-lLLVMMIRParser",
+					"-lLLVMLibDriver",
+					"-lLLVMTableGen",
+					"-lLLVMAsmParser",
+					"-lLLVMAsmPrinter",
+					"-lLLVMMC",
+					"-lLLVMMCParser",
+					"-lLLVMMCDisassembler",
+					"-lLLVMMCJIT",
+					"-lLLVMPasses",
+					"-lLLVMTransformUtils",
+					"-lLLVMipo",
+					"-lLLVMInstCombine",
+					"-lLLVMVectorize",
+					"-lLLVMIRReader",
+					"-lLLVMLinker",
+					"-lLLVMInterpreter",
+					"-lLLVMCodeGen",
+					"-lLLVMScalarOpts",
+					"-lLLVMInstrumentation",
+					"-lLLVMProfileData",
+					"-lLLVMBitReader",
+					"-lLLVMBitWriter",
+					"-lLLVMOrcJIT",
+					"-lLLVMExecutionEngine",
+					"-lLLVMTarget",
+					"-lLLVMAnalysis",
+					"-lLLVMRuntimeDyld",
+					"-lLLVMObject",
+					"-lLLVMSelectionDAG",
+					"-lLLVMAArch64AsmParser",
+					"-lLLVMAArch64AsmPrinter",
+					"-lLLVMAArch64CodeGen",
+					"-lLLVMAArch64Desc",
+					"-lLLVMAArch64Disassembler",
+					"-lLLVMAArch64Info",
+					"-lLLVMAArch64Utils",
+					"-lLLVMAMDGPUAsmParser",
+					"-lLLVMAMDGPUAsmPrinter",
+					"-lLLVMAMDGPUCodeGen",
+					"-lLLVMAMDGPUDesc",
+					"-lLLVMAMDGPUDisassembler",
+					"-lLLVMAMDGPUInfo",
+					"-lLLVMAMDGPUUtils",
+					"-lLLVMARMAsmParser",
+					"-lLLVMARMAsmPrinter",
+					"-lLLVMARMCodeGen",
+					"-lLLVMARMDesc",
+					"-lLLVMARMDisassembler",
+					"-lLLVMARMInfo",
+					"-lLLVMBPFAsmPrinter",
+					"-lLLVMBPFCodeGen",
+					"-lLLVMBPFDesc",
+					"-lLLVMBPFDisassembler",
+					"-lLLVMBPFInfo",
+					"-lLLVMHexagonAsmParser",
+					"-lLLVMHexagonCodeGen",
+					"-lLLVMHexagonDesc",
+					"-lLLVMHexagonDisassembler",
+					"-lLLVMHexagonInfo",
+					"-lLLVMLanaiAsmParser",
+					"-lLLVMLanaiAsmPrinter",
+					"-lLLVMLanaiCodeGen",
+					"-lLLVMLanaiDesc",
+					"-lLLVMLanaiDisassembler",
+					"-lLLVMLanaiInfo",
+					"-lLLVMMipsAsmParser",
+					"-lLLVMMipsAsmPrinter",
+					"-lLLVMMipsCodeGen",
+					"-lLLVMMipsDesc",
+					"-lLLVMMipsDisassembler",
+					"-lLLVMMipsInfo",
+					"-lLLVMMSP430AsmPrinter",
+					"-lLLVMMSP430CodeGen",
+					"-lLLVMMSP430Desc",
+					"-lLLVMMSP430Info",
+					"-lLLVMNVPTXAsmPrinter",
+					"-lLLVMNVPTXCodeGen",
+					"-lLLVMNVPTXDesc",
+					"-lLLVMNVPTXInfo",
+					"-lLLVMPowerPCAsmParser",
+					"-lLLVMPowerPCAsmPrinter",
+					"-lLLVMPowerPCCodeGen",
+					"-lLLVMPowerPCDesc",
+					"-lLLVMPowerPCDisassembler",
+					"-lLLVMPowerPCInfo",
+					"-lLLVMSparcAsmParser",
+					"-lLLVMSparcAsmPrinter",
+					"-lLLVMSparcCodeGen",
+					"-lLLVMSparcDesc",
+					"-lLLVMSparcDisassembler",
+					"-lLLVMSparcInfo",
+					"-lLLVMSystemZAsmParser",
+					"-lLLVMSystemZAsmPrinter",
+					"-lLLVMSystemZCodeGen",
+					"-lLLVMSystemZDesc",
+					"-lLLVMSystemZDisassembler",
+					"-lLLVMSystemZInfo",
+					"-lLLVMX86AsmParser",
+					"-lLLVMX86AsmPrinter",
+					"-lLLVMX86CodeGen",
+					"-lLLVMX86Desc",
+					"-lLLVMX86Disassembler",
+					"-lLLVMX86Info",
+					"-lLLVMX86Utils",
+					"-lLLVMXCoreAsmPrinter",
+					"-lLLVMXCoreCodeGen",
+					"-lLLVMXCoreDesc",
+					"-lLLVMXCoreDisassembler",
+					"-lLLVMXCoreInfo",
+					"-lLLVMObjCARCOpts",
+					"-lLLVMGlobalISel",
+					"-lLLVMBinaryFormat",
+					"-lLLVMDemangle",
 					"-lcurses",
 					"-lz",
 					"-lm",
-					/Tiamat/git/llvm/build/MinSizeRel/lib/libLLVMDemangle.a,
 				);
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = hpc;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
+				TARGET_PATH = "$(inherited)/hpc";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -2594,69 +2259,52 @@
 		84589A61C41F4B19A4E47BC7 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
-				);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
 			};
 			name = MinSizeRel;
 		};
 		8D424EF39CBD4D7480C28F9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
-				);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
 			};
 			name = Release;
 		};
 		C9691D51E0C7435DA707B7D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_PATH = "$(PROJECT_PATH)/build";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LLVM_BUILD_PATH = "$(LLVM_PATH)/build";
+				LLVM_PATH = /Tiamat/git/llvm;
 				ONLY_ACTIVE_ARCH = YES;
+				PROJECT_PATH = "$(SRCROOT)";
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = /Tiamat/git/humanplus/build/build;
+				SYMROOT = "$(BUILD_PATH)";
+				TARGET_PATH = "$(PROJECT_PATH)";
 			};
 			name = Debug;
 		};
@@ -2669,27 +2317,20 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
+					"$(LLVM_PATH)/include",
+					"$(LLVM_BUILD_PATH)/include",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = (
 					"-DNDEBUG",
-					"-DLLVM_BUILD_GLOBAL_ISEL",
 					"-D__STDC_CONSTANT_MACROS",
 					"-D__STDC_FORMAT_MACROS",
 					"-D__STDC_LIMIT_MACROS",
 				);
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = humanlogic;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
+				TARGET_PATH = "$(inherited)/humanlogic";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -2703,129 +2344,65 @@
 		CD06F309BE42449CB27377B1 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_PATH = "$(PROJECT_PATH)/build";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LLVM_BUILD_PATH = "$(LLVM_PATH)/build";
+				LLVM_PATH = /Tiamat/git/llvm;
 				ONLY_ACTIVE_ARCH = YES;
+				PROJECT_PATH = "$(SRCROOT)";
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
-				SYMROOT = /Tiamat/git/humanplus/build/build;
+				SYMROOT = "$(BUILD_PATH)";
+				TARGET_PATH = "$(PROJECT_PATH)";
 			};
 			name = MinSizeRel;
 		};
 		CD6B53EFAA624398B313F5B1 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
-				);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
 			};
 			name = MinSizeRel;
 		};
 		CE99802A3028405C88C2F33F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
-				);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
 			};
 			name = Debug;
 		};
 		D1CAD6F24460450D9380B921 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
-				);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
 			};
 			name = Release;
 		};
 		DAB5964DDB37483FBCD8AC12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
-				);
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-					"$(inherited)",
-				);
 			};
 			name = Release;
 		};
@@ -2838,27 +2415,20 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Tiamat/git/llvm/include,
-					/Tiamat/git/llvm/build/include,
-					/Tiamat/git/humanplus/hpc/include,
+					"$(LLVM_PATH)/include",
+					"$(LLVM_BUILD_PATH)/include",
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
 				OTHER_CFLAGS = (
 					"-DNDEBUG",
-					"-DLLVM_BUILD_GLOBAL_ISEL",
 					"-D__STDC_CONSTANT_MACROS",
 					"-D__STDC_FORMAT_MACROS",
 					"-D__STDC_LIMIT_MACROS",
 				);
-				OTHER_LIBTOOLFLAGS = " ";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = humanlogic;
-				SECTORDER_FLAGS = "";
-				SYMROOT = /Tiamat/git/humanplus/build;
+				TARGET_PATH = "$(inherited)/humanlogic";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
