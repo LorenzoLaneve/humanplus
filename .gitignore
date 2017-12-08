@@ -1,1 +1,5 @@
+.gitignore
 build/**
+!build/human_plus.xcodeproj
+!build/human_plus.xcodeproj/**
+
