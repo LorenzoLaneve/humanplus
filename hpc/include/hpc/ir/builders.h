@@ -53,7 +53,7 @@ namespace hpc {
              \brief It keeps all the links between the strings value and the string constants declared in the module being built.
              \note Use \c getOrCreateStringConstant()
              */
-            std::map<runtime::string_ty, llvm::GlobalVariable *> stringTable;
+            std::map<rt::string_ty, llvm::GlobalVariable *> stringTable;
             /*!
              \brief It keeps all the links between a \c break receiver, and the block any break statement should jump to.
              \note Use \c setBreakBlock() and \c makeBreak()
@@ -87,7 +87,7 @@ namespace hpc {
             void setBreakBlock(ast::Stmt &stmt, llvm::BasicBlock *block);
             void setContinueBlock(ast::Stmt &stmt, llvm::BasicBlock *block);
             
-            llvm::GlobalVariable *getOrCreateStringConstant(runtime::string_ty str);
+            llvm::GlobalVariable *getOrCreateStringConstant(rt::string_ty str);
             
             llvm::BranchInst *makeBreak(ast::Stmt *stmt);
             llvm::BranchInst *makeContinue(ast::Stmt *stmt);

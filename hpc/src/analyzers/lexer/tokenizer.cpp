@@ -248,7 +248,7 @@ lexer::token_ty lexer::LexerInstance::getNewToken(source::TokenRef *tkref) {
         std::ostringstream strliteral("");
         
         while ((lastChar = fetch()) != '"') {
-            runtime::utf7_char_ty sc = getASCIIChar('"');
+            rt::utf7_char_ty sc = getASCIIChar('"');
             if (sc == EOF) return TokenEOF;
             strliteral << sc;
         }
@@ -413,7 +413,7 @@ lexer::token_ty lexer::LexerInstance::getLastToken(source::TokenRef *tkref) {
     return lastToken;
 }
 
-runtime::utf7_char_ty lexer::LexerInstance::getASCIIChar(source::sourcechar quote) {
+rt::utf7_char_ty lexer::LexerInstance::getASCIIChar(source::sourcechar quote) {
     if (lastChar == '\\') { // TODO octal number character literal
         switch (lastChar = fetch()) {
             case '\\':

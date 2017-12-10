@@ -91,7 +91,7 @@ void codegen::SymbolTable::setContinueBlock(ast::Stmt &stmt, llvm::BasicBlock *b
     continueTable[&stmt] = block;
 }
 
-llvm::GlobalVariable *codegen::SymbolTable::getOrCreateStringConstant(runtime::string_ty str) {
+llvm::GlobalVariable *codegen::SymbolTable::getOrCreateStringConstant(rt::string_ty str) {
     if (!stringTable[str]) {
         
         llvm::Module &module = moduleBuilder.getModule();

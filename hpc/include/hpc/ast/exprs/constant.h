@@ -56,9 +56,9 @@ namespace hpc {
         /*!
          \brief An object describing a \c char literal.
          */
-        class CharLiteral : public Literal<runtime::utf7_char_ty> {
+        class CharLiteral : public Literal<rt::utf7_char_ty> {
         public:
-            CharLiteral(const runtime::utf7_char_ty val) : Literal(val) {  };
+            CharLiteral(const rt::utf7_char_ty val) : Literal(val) {  };
             
             virtual Type *evalType();
             
@@ -69,9 +69,9 @@ namespace hpc {
         /*!
          \brief An object describing an \c integer literal.
          */
-        class IntegerLiteral : public Literal<runtime::int32_ty> {
+        class IntegerLiteral : public Literal<rt::int32_ty> {
         public:
-            IntegerLiteral(const runtime::int32_ty val) : Literal(val) {  };
+            IntegerLiteral(const rt::int32_ty val) : Literal(val) {  };
             
             virtual bool isNullPointer() const { return !val; }
             
@@ -84,9 +84,9 @@ namespace hpc {
         /*!
          \brief An object describing an \c unsigned &nbsp;\c integer literal.
          */
-        class UIntegerLiteral : public Literal<runtime::uint32_ty> {
+        class UIntegerLiteral : public Literal<rt::uint32_ty> {
         public:
-            UIntegerLiteral(const runtime::uint32_ty val) : Literal(val) {  };
+            UIntegerLiteral(const rt::uint32_ty val) : Literal(val) {  };
             
             virtual Type *evalType();
             
@@ -97,9 +97,9 @@ namespace hpc {
         /*!
          \brief An object describing a \c long literal.
          */
-        class LongLiteral : public Literal<runtime::int64_ty> {
+        class LongLiteral : public Literal<rt::int64_ty> {
         public:
-            LongLiteral(const runtime::int64_ty val) : Literal(val) {  };
+            LongLiteral(const rt::int64_ty val) : Literal(val) {  };
             
             virtual Type *evalType();
             
@@ -110,9 +110,9 @@ namespace hpc {
         /*!
          \brief An object describing an \c unsigned &nbsp;\c long literal.
          */
-        class ULongLiteral : public Literal<runtime::uint64_ty> {
+        class ULongLiteral : public Literal<rt::uint64_ty> {
         public:
-            ULongLiteral(const runtime::uint64_ty val) : Literal(val) {  };
+            ULongLiteral(const rt::uint64_ty val) : Literal(val) {  };
             
             virtual Type *evalType();
             
@@ -123,9 +123,9 @@ namespace hpc {
         /*!
          \brief An object describing a \c float literal.
          */
-        class FloatLiteral : public Literal<runtime::fp_single_ty> {
+        class FloatLiteral : public Literal<rt::fp_single_ty> {
         public:
-            FloatLiteral(const runtime::fp_single_ty val) : Literal(val) {  };
+            FloatLiteral(const rt::fp_single_ty val) : Literal(val) {  };
             
             virtual Type *evalType();
             
@@ -136,9 +136,9 @@ namespace hpc {
         /*!
          \brief An object describing a \c double literal.
          */
-        class DoubleLiteral : public Literal<runtime::fp_double_ty> {
+        class DoubleLiteral : public Literal<rt::fp_double_ty> {
         public:
-            DoubleLiteral(const runtime::fp_double_ty val) : Literal(val) {  };
+            DoubleLiteral(const rt::fp_double_ty val) : Literal(val) {  };
             
             virtual Type *evalType();
             
@@ -149,9 +149,9 @@ namespace hpc {
         /*!
          \brief An object describing a \c boolean literal.
          */
-        class BoolLiteral : public Literal<runtime::boolean_ty> {
+        class BoolLiteral : public Literal<rt::boolean_ty> {
         public:
-            BoolLiteral(const runtime::boolean_ty val) : Literal(val) {  };
+            BoolLiteral(const rt::boolean_ty val) : Literal(val) {  };
             
             virtual Type *evalType();
             
@@ -162,9 +162,9 @@ namespace hpc {
         /*!
          \brief An object describing a \c string literal.
          */
-        class StringLiteral : public Literal<runtime::string_ty> {
+        class StringLiteral : public Literal<rt::string_ty> {
         public:
-            StringLiteral(const runtime::string_ty val) : Literal(val) {  };
+            StringLiteral(const rt::string_ty val) : Literal(val) {  };
             
             virtual Type *evalType();
             

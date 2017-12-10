@@ -14,7 +14,7 @@
 #include <string>
 
 namespace hpc {
-    namespace runtime {
+    namespace rt {
        
         typedef void void_ty;               ///< <tt>void</tt> type in the Human Plus Runtime.
         typedef bool boolean_ty;            ///< <tt>boolean</tt> type in the Human Plus Runtime.
