@@ -36,10 +36,10 @@ namespace hpc {
         /*!
          \brief A structure pointing to a little part of code in a specific source file.
          */
-        struct TokenRef {
+        struct SrcLoc {
             enum {
                 /*!
-                 \brief Value that should be give as \c length for \c TokenRef 's who should continue until the end of the line.
+                 \brief Value that should be give as \c length for \c SrcLoc 's who should continue until the end of the line.
                  */
                 UntilEndOfLine = -1
             };
@@ -65,16 +65,16 @@ namespace hpc {
             long length;
             
             /*!
-             \brief Constructor for \c TokenRef that simply initializes all the members.
+             \brief Constructor for \c SrcLoc that simply initializes all the members.
              */
-            TokenRef(SourceFile *srcfile = nullptr, long line = 0, long column = 0, long length = 0);
+            SrcLoc(SourceFile *srcfile = nullptr, long line = 0, long column = 0, long length = 0);
             /*!
              \brief Copy constructor.
              */
-            TokenRef(TokenRef &tkref);
+            SrcLoc(SrcLoc &tkref);
             
             /*!
-             \brief Returns a new \c TokenRef structure pointing to the character immediately next to the chunk of code pointed by this structure.
+             \brief Returns a new \c SrcLoc structure pointing to the character immediately next to the chunk of code pointed by this structure.
              \code
              he's pointing me...
              ^~~~~~~~~~~~~~~~~~~ this
@@ -83,7 +83,7 @@ namespace hpc {
                                 ^ this->getNextPoint()
              \endcode
              */
-            TokenRef getNextPoint();
+            SrcLoc getNextPoint();
             
             /*!
              \brief Returns a \c std::string with the format \c <line>:<column>
@@ -96,14 +96,14 @@ namespace hpc {
             void dump(llvm::raw_ostream &stream = llvm::outs());
             
             /*!
-             \brief Returns a pointer to a \c TokenRef structure that points to the whole chunk of code included by the two \c TokenRef 's
+             \brief Returns a pointer to a \c SrcLoc structure that points to the whole chunk of code included by the two \c SrcLoc 's
              \note If \c ref1 and \c ref2 point to different files, \c nullptr is returned.
              \code
              abc + xyz        abc + xyz
              ^~~   ^~~   =>   ^~~~~~~~~
              \endcode
              */
-            static TokenRef *join(TokenRef *ref1, TokenRef *ref2);
+            static SrcLoc *join(SrcLoc *ref1, SrcLoc *ref2);
         };
         
         /*!
@@ -120,9 +120,9 @@ namespace hpc {
              */
             modules::ModuleWrapper *modulewrapper;
             /*!
-             \brief A \c TokenRef structure pointing to the last character the lexer read from this file.
+             \brief A \c SrcLoc structure pointing to the last character the lexer read from this file.
              */
-            TokenRef caret = {0, 0};
+            SrcLoc caret = {0, 0};
             
         public:
             /*!
@@ -144,9 +144,9 @@ namespace hpc {
              */
             modules::ModuleWrapper *getModuleWrapper();
             /*!
-             \brief Returns a \c TokenRef structure pointing to the last character the lexer read from this file.
+             \brief Returns a \c SrcLoc structure pointing to the last character the lexer read from this file.
              */
-            TokenRef *getCaret();
+            SrcLoc *getCaret();
             
             /*!
              \brief Reads the next character from the associated file, and updates the caret.

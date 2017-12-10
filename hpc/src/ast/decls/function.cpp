@@ -27,7 +27,7 @@ using namespace hpc;
 
 void ast::FunctionDecl::setStatementsBlock(CompoundStmt *stg) {
     this->statements = stg;
-    if (stg) if (source::TokenRef *endref = stg->tokenRef(PointToEndOfCompoundStatement))
+    if (stg) if (source::SrcLoc *endref = stg->tokenRef(PointToEndOfCompoundStatement))
         tokenRef(PointToEndOfFunction, *endref);
     localdecls.clear();
 }

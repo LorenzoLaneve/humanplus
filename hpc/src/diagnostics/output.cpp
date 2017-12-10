@@ -18,8 +18,8 @@ diag::DiagPrinter::DiagPrinter(llvm::raw_ostream &stream, opts::DiagnosticsOptio
 void diag::DiagPrinter::handleDiag(Diagnostic &diag) {
     assert(diag.isComplete() && "diag is not complete.");
     
-    if (diag.getTokenRef()) {
-        diag.getTokenRef()->dump();
+    if (diag.getSrcLoc()) {
+        diag.getSrcLoc()->dump();
         stream << ": ";
     } else if (diag.getLevel() != Blank) {
         stream << "hpc: ";

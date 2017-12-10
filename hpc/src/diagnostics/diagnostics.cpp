@@ -180,7 +180,7 @@ static std::map<diag::DiagID, std::string> diagStrings = {
 };
 
 
-diag::Diagnostic::Diagnostic(DiagEngine &engine, DiagLevel level, std::string text, source::TokenRef *tkref)
+diag::Diagnostic::Diagnostic(DiagEngine &engine, DiagLevel level, std::string text, source::SrcLoc *tkref)
 : engine(engine), level(level), text(text), tkref(tkref) {
     // A little algorithm searching for the %i with the max i. e.g.: if %8 if the max index contained in text, then we asssume the diagnostic needs 9 params.
     int maxIndex = -1;
@@ -236,7 +236,7 @@ void diag::DiagnosticsReport::passToEngine(DiagEngine &engine, bool printIfCompl
 }
 
 
-diag::Diagnostic &diag::DiagEngine::reportDiag(DiagLevel level, DiagID ID, source::TokenRef *tkref) {
+diag::Diagnostic &diag::DiagEngine::reportDiag(DiagLevel level, DiagID ID, source::SrcLoc *tkref) {
     return reportCustomDiag(level, diagStrings[ID], tkref);
 }
 
@@ -250,7 +250,7 @@ diag::Diagnostic &diag::DiagEngine::reportDiag(Diagnostic *diag) {
     return *diag;
 }
 
-diag::Diagnostic &diag::DiagEngine::reportCustomDiag(DiagLevel level, std::string text, source::TokenRef *tkref) {
+diag::Diagnostic &diag::DiagEngine::reportCustomDiag(DiagLevel level, std::string text, source::SrcLoc *tkref) {
     return reportDiag(new Diagnostic(*this, level, text, tkref));
 }
 

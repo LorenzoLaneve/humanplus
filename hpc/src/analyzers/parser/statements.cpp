@@ -59,7 +59,7 @@ bool parser::ParserInstance::parseComplement(ast::Stmt *&statement) {
 }
 
 bool parser::ParserInstance::parseVarDeclarationStatement(ast::Stmt *&parsing, ast::FunctionDecl *containerFunc) {
-    source::TokenRef lastidref;
+    source::SrcLoc lastidref;
     if (lexer->getNextToken(&lastidref) == lexer::TokenIdentifier) {
         ast::VarDeclStmt *declaration = new ast::VarDeclStmt(containerFunc);
         
@@ -67,7 +67,7 @@ bool parser::ParserInstance::parseVarDeclarationStatement(ast::Stmt *&parsing, a
             std::vector<ast::SymbolIdentifier> names;
             
             while (1) {
-                names.push_back({ lexer->getCurrentIdentifier(), new source::TokenRef(lastidref) });
+                names.push_back({ lexer->getCurrentIdentifier(), new source::SrcLoc(lastidref) });
                 
                 if (lexer->getNextToken() == ',') {
                     if (lexer->getNextToken(&lastidref) != lexer::TokenIdentifier) {
@@ -82,7 +82,7 @@ bool parser::ParserInstance::parseVarDeclarationStatement(ast::Stmt *&parsing, a
                 }
             }
             
-            source::TokenRef betkref;
+            source::SrcLoc betkref;
             if (lexer->getCurrentToken(&betkref) != lexer::TokenBe) {
                 report_eof();
                 diags.reportError(diag::ExpectedTokenBeAfterLetDeclaration, &betkref);
@@ -93,7 +93,7 @@ bool parser::ParserInstance::parseVarDeclarationStatement(ast::Stmt *&parsing, a
             
             ast::Type *type = nullptr;
             ast::Expr *initval = nullptr;
-            source::TokenRef equalref;
+            source::SrcLoc equalref;
             if (lexer->getCurrentToken(&equalref) == '=') {
                 lexer->getNextToken();
                 initval = parseExpression();
@@ -128,7 +128,7 @@ bool parser::ParserInstance::parseVarDeclarationStatement(ast::Stmt *&parsing, a
                 declaration->addVariable(newlocvar);
             }
             
-            source::TokenRef delimref;
+            source::SrcLoc delimref;
             lexer->getLastToken(&delimref);
             delimref = delimref.getNextPoint();
             if (lexer->getCurrentToken() == ',') {
@@ -222,7 +222,7 @@ bool parser::ParserInstance::parsePostConditionedIterationStatement(ast::Stmt *&
     
     lexer::token_ty itertype = 0;
     
-    source::TokenRef whileuntilref;
+    source::SrcLoc whileuntilref;
     switch (lexer->getCurrentToken(&whileuntilref)) {
         case lexer::TokenWhile:
         case lexer::TokenUntil:
@@ -245,7 +245,7 @@ bool parser::ParserInstance::parsePostConditionedIterationStatement(ast::Stmt *&
         parsing = new ast::PostWhileStmt(condition, block);
     else parsing = new ast::PostUntilStmt(condition, block);
 
-    source::TokenRef delimref;
+    source::SrcLoc delimref;
     lexer->getLastToken(&delimref);
     if (!lexer::isDelimiter(lexer->getCurrentToken())) {
         report_eof();
@@ -315,7 +315,7 @@ bool parser::ParserInstance::parseForIterationStatement(ast::Stmt *&parsing, ast
         endstmt.push_back(endst);
     } while (lexer->getCurrentToken() == ',');
     
-    source::TokenRef cltupleref;
+    source::SrcLoc cltupleref;
     if (hasTuple && lexer->getCurrentToken(&cltupleref) != ')') {
         report_eof();
         diags.reportError(diag::ExpectedClosedTuple, &cltupleref);
@@ -332,7 +332,7 @@ bool parser::ParserInstance::parseForIterationStatement(ast::Stmt *&parsing, ast
 }
 
 bool parser::ParserInstance::parseReturnStatement(ast::Stmt *&parsing, ast::FunctionDecl *containerFunc) {
-    source::TokenRef qualifref;
+    source::SrcLoc qualifref;
     lexer->getCurrentToken(&qualifref);
     
     lexer->getNextToken();
@@ -352,7 +352,7 @@ bool parser::ParserInstance::parseReturnStatement(ast::Stmt *&parsing, ast::Func
     
     parseComplement(parsing);
     
-    source::TokenRef delimref;
+    source::SrcLoc delimref;
     lexer->getLastToken(&delimref);
     delimref = delimref.getNextPoint();
     if (!lexer::isDelimiter(lexer->getCurrentToken())) {
@@ -365,7 +365,7 @@ bool parser::ParserInstance::parseReturnStatement(ast::Stmt *&parsing, ast::Func
 }
 
 bool parser::ParserInstance::parseBreakStatement(ast::Stmt *&parsing, ast::FunctionDecl *containerFunc) {
-    source::TokenRef qualifref;
+    source::SrcLoc qualifref;
     lexer->getCurrentToken(&qualifref);
     lexer->getNextToken();
     
@@ -373,7 +373,7 @@ bool parser::ParserInstance::parseBreakStatement(ast::Stmt *&parsing, ast::Funct
     parsing->tokenRef(ast::PointToStatementQualifier, qualifref);
     parseComplement(parsing);
     
-    source::TokenRef delimref;
+    source::SrcLoc delimref;
     lexer->getLastToken(&delimref);
     delimref = delimref.getNextPoint();
     if (!lexer::isDelimiter(lexer->getCurrentToken())) {
@@ -386,7 +386,7 @@ bool parser::ParserInstance::parseBreakStatement(ast::Stmt *&parsing, ast::Funct
 }
 
 bool parser::ParserInstance::parseContinueStatement(ast::Stmt *&parsing, ast::FunctionDecl *containerFunc) {
-    source::TokenRef qualifref;
+    source::SrcLoc qualifref;
     lexer->getCurrentToken(&qualifref);
     lexer->getNextToken();
     
@@ -394,7 +394,7 @@ bool parser::ParserInstance::parseContinueStatement(ast::Stmt *&parsing, ast::Fu
     parsing->tokenRef(ast::PointToStatementQualifier, qualifref);
     parseComplement(parsing);
     
-    source::TokenRef delimref;
+    source::SrcLoc delimref;
     lexer->getLastToken(&delimref);
     delimref = delimref.getNextPoint();
     if (!lexer::isDelimiter(lexer->getCurrentToken())) {
@@ -442,7 +442,7 @@ bool parser::ParserInstance::parseSubStatement(ast::Stmt *&parsing, ast::Functio
                 
                 parseComplement(parsing);
                 
-                source::TokenRef delimref;
+                source::SrcLoc delimref;
                 lexer->getLastToken(&delimref);
                 delimref = delimref.getNextPoint();
                 if (!lexer::isDelimiter(lexer->getCurrentToken())) {
@@ -476,7 +476,7 @@ bool parser::ParserInstance::parseCompoundStatement(ast::Stmt *&parsing, ast::Fu
         if (statement) cmpstmt->pushSubStatement(statement);
     }
     
-    source::TokenRef endref;
+    source::SrcLoc endref;
     lexer->getCurrentToken(&endref);
     cmpstmt->tokenRef(ast::PointToEndOfCompoundStatement, endref);
     

@@ -58,7 +58,7 @@ namespace hpc {
         } ASTComponentKind;
         
         /*!
-         \brief Values to use with components token refs. Each of these values indicates a specific \c source::TokenRef object for a source code that composed an \c ast::Component
+         \brief Values to use with components token refs. Each of these values indicates a specific \c source::SrcLoc object for a source code that composed an \c ast::Component
          \note Not all these values will exist in every Component.
          \see \c ast::Component::tokenRef() function to use this value.
          */
@@ -107,9 +107,9 @@ namespace hpc {
         class Component {
 
             /*!
-             \brief A \c std::map object containing the \c source::TokenRef objects pointing the code which composed this \c ast::Component.
+             \brief A \c std::map object containing the \c source::SrcLoc objects pointing the code which composed this \c ast::Component.
              */
-            std::map<TokenRole, source::TokenRef *> tkrefs;
+            std::map<TokenRole, source::SrcLoc *> tkrefs;
             
         protected:
             /*!
@@ -137,15 +137,15 @@ namespace hpc {
             }
             
             /*!
-             \brief Copies the given \c source::TokenRef and bounds it to the current component, with a specific \c TokenRole, then returns it.
+             \brief Copies the given \c source::SrcLoc and bounds it to the current component, with a specific \c TokenRole, then returns it.
              \param i The role the part of code pointed by \c tkref had generating the component
              */
-            source::TokenRef *tokenRef(TokenRole i, source::TokenRef &tkref) { return tkrefs[i] = new source::TokenRef(tkref); }
+            source::SrcLoc *tokenRef(TokenRole i, source::SrcLoc &tkref) { return tkrefs[i] = new source::SrcLoc(tkref); }
             /*!
-             \brief Returns a \c source::TokenRef object which had a specific \c TokenRole when this component has been generated.
+             \brief Returns a \c source::SrcLoc object which had a specific \c TokenRole when this component has been generated.
              \param i The role the part of code pointed by \c tkref had generating the component
              */
-            source::TokenRef *tokenRef(TokenRole i) { return tkrefs[i]; }
+            source::SrcLoc *tokenRef(TokenRole i) { return tkrefs[i]; }
             
             
             virtual ASTComponentKind getKind() const { return ASTCK_Component; }

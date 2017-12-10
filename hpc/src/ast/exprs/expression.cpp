@@ -12,8 +12,8 @@
 
 using namespace hpc;
 
-source::TokenRef *ast::Expr::completeRef() {
-    return source::TokenRef::join(tokenRef(PointToBeginOfExpression), tokenRef(PointToEndOfExpression));
+source::SrcLoc *ast::Expr::completeRef() {
+    return source::SrcLoc::join(tokenRef(PointToBeginOfExpression), tokenRef(PointToEndOfExpression));
 }
 
 

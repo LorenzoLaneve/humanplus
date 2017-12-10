@@ -30,13 +30,13 @@ namespace hpc {
             virtual ~Expr() {  }
             
             /*!
-             \brief A \c source::TokenRef object pointing to the whole value.
+             \brief A \c source::SrcLoc object pointing to the whole value.
              \code 
              a + foo() - bar(x, y)
              ^~~~~~~~~~~~~~~~~~~~~
              \endcode
              */
-            source::TokenRef *completeRef();
+            source::SrcLoc *completeRef();
 
             /*!
              \brief Returns the type of this expression.

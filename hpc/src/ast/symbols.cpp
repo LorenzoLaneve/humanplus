@@ -13,7 +13,7 @@
 
 using namespace hpc;
 
-ast::Symbol::Symbol(std::string symroot, source::TokenRef *tkref) {
+ast::Symbol::Symbol(std::string symroot, source::SrcLoc *tkref) {
     pushBackChild(symroot, tkref);
 }
 
@@ -31,12 +31,12 @@ ast::Symbol ast::Symbol::containerSymbol() const {
     return symclone;
 }
 
-void ast::Symbol::pushBackChild(std::string childsym, source::TokenRef *tkref) {
-    sympath.push_back({childsym, tkref ? new source::TokenRef(*tkref) : nullptr });
+void ast::Symbol::pushBackChild(std::string childsym, source::SrcLoc *tkref) {
+    sympath.push_back({childsym, tkref ? new source::SrcLoc(*tkref) : nullptr });
 }
 
-void ast::Symbol::pushFrontChild(std::string childsym, source::TokenRef *tkref) {
-    sympath.insert(sympath.begin(), {childsym, tkref ? new source::TokenRef(*tkref) : nullptr });
+void ast::Symbol::pushFrontChild(std::string childsym, source::SrcLoc *tkref) {
+    sympath.insert(sympath.begin(), {childsym, tkref ? new source::SrcLoc(*tkref) : nullptr });
 }
 
 std::string ast::Symbol::str() const {

@@ -27,7 +27,7 @@ std::string lexer::LexerInstance::getCurrentIdentifier() {
     return currentIdentifier;
 }
 
-lexer::token_ty lexer::LexerInstance::getNewToken(source::TokenRef *tkref) {
+lexer::token_ty lexer::LexerInstance::getNewToken(source::SrcLoc *tkref) {
     while (isspace(lastChar)) lastChar = fetch();
     
     emit_tokenref();
@@ -175,7 +175,7 @@ lexer::token_ty lexer::LexerInstance::getNewToken(source::TokenRef *tkref) {
         if (isalpha(lastChar) || lastChar == '_') {
             suffixtype = 0;
             
-            source::TokenRef suffixref;
+            source::SrcLoc suffixref;
             if (getNextToken(&suffixref) == TokenIdentifier) {
                 std::string suffix = currentIdentifier;
                 if (hasFP) {
@@ -397,18 +397,18 @@ lexer::token_ty lexer::LexerInstance::getNewToken(source::TokenRef *tkref) {
     return returning;
 }
 
-lexer::token_ty lexer::LexerInstance::getNextToken(source::TokenRef *tkref) {
+lexer::token_ty lexer::LexerInstance::getNextToken(source::SrcLoc *tkref) {
     lastRef = currentRef;
     lastToken = currentToken;
     return currentToken = getNewToken(tkref);
 }
 
-lexer::token_ty lexer::LexerInstance::getCurrentToken(source::TokenRef *tkref) {
+lexer::token_ty lexer::LexerInstance::getCurrentToken(source::SrcLoc *tkref) {
     if (tkref) *tkref = currentRef;
     return currentToken;
 }
 
-lexer::token_ty lexer::LexerInstance::getLastToken(source::TokenRef *tkref) {
+lexer::token_ty lexer::LexerInstance::getLastToken(source::SrcLoc *tkref) {
     if (tkref) *tkref = lastRef;
     return lastToken;
 }

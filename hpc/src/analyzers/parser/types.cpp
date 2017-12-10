@@ -20,7 +20,7 @@ using namespace hpc;
 
 
 ast::TypeQualifiers *parser::ParserInstance::parseQualifiers(bool report) {
-    source::TokenRef lastidref;
+    source::SrcLoc lastidref;
     
     ast::TypeQualifiers *typeQuals = new ast::TypeQualifiers();
     
@@ -46,7 +46,7 @@ ast::TypeQualifiers *parser::ParserInstance::parseQualifiers(bool report) {
 ast::Type *parser::ParserInstance::parseType(bool report) {
     ast::Type *parsedType = nullptr;
     
-    source::TokenRef lastidref;
+    source::SrcLoc lastidref;
 
     ast::TypeQualifiers *typeQuals = parseQualifiers();
     if (!typeQuals) {
@@ -162,7 +162,7 @@ ast::Type *parser::ParserInstance::parseType(bool report) {
     
     if (!parsedType) {
         
-        source::TokenRef curtkref;
+        source::SrcLoc curtkref;
         if (lexer->getCurrentToken(&curtkref) == lexer::TokenNull) {
             parsedType = ast::BuiltinType::get(ast::BuiltinType::Void);
             lexer->getNextToken();

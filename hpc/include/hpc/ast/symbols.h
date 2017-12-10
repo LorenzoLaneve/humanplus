@@ -23,11 +23,11 @@ namespace hpc {
         /*!
          \brief Structure which defines an identifier contained in an \c ast::Symbol object.
          \param identitier The unqualified identifier parsed by the parser
-         \param symref A \c source::TokenRef pointing to the identifier in the source code
+         \param symref A \c source::SrcLoc pointing to the identifier in the source code
          */
         typedef struct {
             std::string identifier;
-            source::TokenRef *symref;
+            source::SrcLoc *symref;
         } SymbolIdentifier;
         
         /*!
@@ -47,10 +47,10 @@ namespace hpc {
             /*!
              \brief Makes a new \c ast::Symbol, initializing it with the members for a first \c SymbolIdentifier object.
              \param symroot A string containing the first identifier
-             \param tkref A \c source::TokenRef object pointing to the identifier in the source file.
+             \param tkref A \c source::SrcLoc object pointing to the identifier in the source file.
              \see \c SymbolIdentifier for the structure in which the costructor arguments will be stored in the \c ast::Symbol object.
              */
-            Symbol(std::string symroot, source::TokenRef *tkref = nullptr);
+            Symbol(std::string symroot, source::SrcLoc *tkref = nullptr);
             
             
             Symbol(ast::SymbolIdentifier &symbolID);
@@ -106,16 +106,16 @@ namespace hpc {
             /*!
              \brief Adds a new identifier to the chain of the Symbol as last element.
              \param childsym A string containing the parsed unqualified identifier
-             \param tkref A \c source::TokenRef object pointing to the identifier in the source code
+             \param tkref A \c source::SrcLoc object pointing to the identifier in the source code
              */
-            void pushBackChild(std::string childsym, source::TokenRef *tkref = nullptr);
+            void pushBackChild(std::string childsym, source::SrcLoc *tkref = nullptr);
             
             /*!
              \brief Adds a new identifier to the chain of the Symbol as first element.
              \param childsym A string containing the parsed unqualified identifier
-             \param tkref A \c source::TokenRef object pointing to the identifier in the source code
+             \param tkref A \c source::SrcLoc object pointing to the identifier in the source code
              */
-            void pushFrontChild(std::string childsym, source::TokenRef *tkref = nullptr);
+            void pushFrontChild(std::string childsym, source::SrcLoc *tkref = nullptr);
             
             /*!
              \brief Returns a string containing the identifier in the Symbol at given index (starting from 0).

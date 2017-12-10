@@ -17,34 +17,34 @@
 
 using namespace hpc;
 
-source::TokenRef::TokenRef(SourceFile *srcfile, long line, long column, long length) : srcfile(srcfile), line(line), column(column), length(length) {  }
+source::SrcLoc::SrcLoc(SourceFile *srcfile, long line, long column, long length) : srcfile(srcfile), line(line), column(column), length(length) {  }
 
-source::TokenRef::TokenRef(source::TokenRef &tkref) : srcfile(tkref.srcfile), line(tkref.line), column(tkref.column) {  }
+source::SrcLoc::SrcLoc(source::SrcLoc &tkref) : srcfile(tkref.srcfile), line(tkref.line), column(tkref.column) {  }
 
-source::TokenRef source::TokenRef::getNextPoint() {
+source::SrcLoc source::SrcLoc::getNextPoint() {
     return {srcfile, line, column+length};
 }
 
-std::string source::TokenRef::str() {
+std::string source::SrcLoc::str() {
     std::ostringstream os;
     os << line+1 << ":" << column;
     return os.str();
 }
 
-void source::TokenRef::dump(llvm::raw_ostream &stream) {
+void source::SrcLoc::dump(llvm::raw_ostream &stream) {
     stream << srcfile->getFileName() << ":" << line+1 << ":" << column;
 }
 
-source::TokenRef *source::TokenRef::join(source::TokenRef *ref1, source::TokenRef *ref2) {
+source::SrcLoc *source::SrcLoc::join(source::SrcLoc *ref1, source::SrcLoc *ref2) {
     if (ref1->srcfile != ref2->srcfile) return nullptr;
     
-    if (ref1->line < ref2->line) return new source::TokenRef(ref1->srcfile, ref1->line, ref1->column, UntilEndOfLine);
-    if (ref1->line > ref2->line) return new source::TokenRef(ref1->srcfile, ref1->line, 1, ref1->column + ref1->length);
+    if (ref1->line < ref2->line) return new source::SrcLoc(ref1->srcfile, ref1->line, ref1->column, UntilEndOfLine);
+    if (ref1->line > ref2->line) return new source::SrcLoc(ref1->srcfile, ref1->line, 1, ref1->column + ref1->length);
     
-    if (ref1->column < ref2->column) return new source::TokenRef(ref1->srcfile, ref1->line, ref1->column, ref2->column - ref1->column + ref2->length);
-    if (ref1->column > ref2->column) return new source::TokenRef(ref1->srcfile, ref1->line, ref2->column, ref1->column - ref2->column + ref1->length);
+    if (ref1->column < ref2->column) return new source::SrcLoc(ref1->srcfile, ref1->line, ref1->column, ref2->column - ref1->column + ref2->length);
+    if (ref1->column > ref2->column) return new source::SrcLoc(ref1->srcfile, ref1->line, ref2->column, ref1->column - ref2->column + ref1->length);
     
-    return new source::TokenRef(*ref1);
+    return new source::SrcLoc(*ref1);
 }
 
 source::SourceFile::SourceFile(std::string filename) : fsys::InputFile(filename, fsys::SourceFile) {
@@ -62,8 +62,8 @@ modules::ModuleWrapper *source::SourceFile::getModuleWrapper() {
     return modulewrapper;
 }
 
-source::TokenRef *source::SourceFile::getCaret() {
-    return new TokenRef(this, caret.line, caret.column);
+source::SrcLoc *source::SourceFile::getCaret() {
+    return new SrcLoc(this, caret.line, caret.column);
 }
 
 source::sourcechar source::SourceFile::fetchChar() {
