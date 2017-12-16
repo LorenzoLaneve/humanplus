@@ -19,17 +19,6 @@
 			name = install;
 			productName = install;
 		};
-		5755E77A02344263906104FF /* CMAKE_CHECK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 2A1A6C98178442C8BA91BC7C /* Build configuration list for PBXAggregateTarget "CMAKE_CHECK" */;
-			buildPhases = (
-				FB1CBB2166F44ED1BF9DA2C7 /* CMake Rules */,
-			);
-			dependencies = (
-			);
-			name = CMAKE_CHECK;
-			productName = ZERO_CHECK;
-		};
 		68C25730260E4E419FFB47AB /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 1CB2B5D3298D4BD1B4ACBF6C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
@@ -37,7 +26,6 @@
 				EA0647759E894E9CB6C8744D /* CMake Rules */,
 			);
 			dependencies = (
-				4589CA014D3744D5AD3BC6D0 /* PBXTargetDependency */,
 				70B0A10B3D654D85AB6CD328 /* PBXTargetDependency */,
 				4774C1F43D1A452286FA95BE /* PBXTargetDependency */,
 			);
@@ -66,7 +54,7 @@
 		8CEA305E1FDB135000C0B2B6 /* lexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D571FDAEA9B009D9031 /* lexer.cpp */; };
 		8CEA305F1FDB135A00C0B2B6 /* tokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D591FDAEA9B009D9031 /* tokenizer.cpp */; };
 		8CEA30601FDB135A00C0B2B6 /* control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D551FDAEA9B009D9031 /* control.cpp */; };
-		8CEA30611FDB135A00C0B2B6 /* bufferer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D541FDAEA9B009D9031 /* bufferer.cpp */; };
+		8CEA30611FDB135A00C0B2B6 /* reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D541FDAEA9B009D9031 /* reader.cpp */; };
 		8CEA30621FDB135A00C0B2B6 /* grammar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D561FDAEA9B009D9031 /* grammar.cpp */; };
 		8CEA30631FDB135A00C0B2B6 /* literals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D581FDAEA9B009D9031 /* literals.cpp */; };
 		8CEA30641FDB136100C0B2B6 /* operators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D631FDAEA9B009D9031 /* operators.cpp */; };
@@ -148,13 +136,13 @@
 		8CEA30B01FDB145D00C0B2B6 /* windows.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD41FDAEA9C009D9031 /* windows.cpp */; };
 		8CEA30B11FDB146300C0B2B6 /* linker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD71FDAEA9D009D9031 /* linker.cpp */; };
 		8CEA30B21FDB146600C0B2B6 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DD61FDAEA9D009D9031 /* input.cpp */; };
-		8CEA30B31FDB146C00C0B2B6 /* runtime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654DC61FDAEA9C009D9031 /* runtime.cpp */; };
 		8CEA30B41FDB147900C0B2B6 /* dump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D801FDAEA9C009D9031 /* dump.cpp */; };
 		8CEA30B51FDB147900C0B2B6 /* castings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D7F1FDAEA9C009D9031 /* castings.cpp */; };
 		8CEA30B61FDB147900C0B2B6 /* types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D841FDAEA9C009D9031 /* types.cpp */; };
 		8CEA30B71FDB147900C0B2B6 /* toplevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D831FDAEA9C009D9031 /* toplevel.cpp */; };
 		8CEA30B81FDB147900C0B2B6 /* statements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D821FDAEA9C009D9031 /* statements.cpp */; };
 		8CEA30B91FDB147900C0B2B6 /* expressions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8C654D811FDAEA9C009D9031 /* expressions.cpp */; };
+		8CED2FAB1FDDF2C900049A32 /* tokens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8CED2FAA1FDDF2C900049A32 /* tokens.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,13 +159,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = F68875D03D4E4BF0864213C5;
 			remoteInfo = humanlogic;
-		};
-		79D832EA2E4E4F4BBF3E56EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7A3059F44AFA44E58B06692F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5755E77A02344263906104FF;
-			remoteInfo = ZERO_CHECK;
 		};
 		8C57DCE31FD9DBBC00CC5C76 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -200,25 +181,12 @@
 			remoteGlobalIDString = 68C25730260E4E419FFB47AB;
 			remoteInfo = ALL_BUILD;
 		};
-		AC1F150C4F15443B921BD095 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7A3059F44AFA44E58B06692F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5755E77A02344263906104FF;
-			remoteInfo = ZERO_CHECK;
-		};
-		DFFF55EAAA4A4B3FB2D754BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7A3059F44AFA44E58B06692F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5755E77A02344263906104FF;
-			remoteInfo = ZERO_CHECK;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4AB31833D6B2432591EC1980 /* hpc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = hpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCF32C837074C4494D5BEDD /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8C41104F1FE599CE00F9C6E9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8C57DCDB1FD9DBBC00CC5C76 /* HumanPlus.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HumanPlus.xcodeproj; path = build/HumanPlus.xcodeproj; sourceTree = "<group>"; };
 		8C57DCEB1FD9DE2600CC5C76 /* files.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = files.h; sourceTree = "<group>"; };
 		8C57DCEC1FD9DE2600CC5C76 /* numbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = numbers.h; sourceTree = "<group>"; };
@@ -285,7 +253,6 @@
 		8C57DD3C1FD9DE2800CC5C76 /* builders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = builders.h; sourceTree = "<group>"; };
 		8C57DD3D1FD9DE2800CC5C76 /* modules.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = modules.h; sourceTree = "<group>"; };
 		8C57DD3F1FD9DE2800CC5C76 /* backend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = backend.h; sourceTree = "<group>"; };
-		8C57DD421FD9DE2800CC5C76 /* bufferer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bufferer.h; sourceTree = "<group>"; };
 		8C57DD431FD9DE2800CC5C76 /* lexer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lexer.h; sourceTree = "<group>"; };
 		8C57DD451FD9DE2800CC5C76 /* parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
 		8C57DD461FD9DE2800CC5C76 /* sources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sources.h; sourceTree = "<group>"; };
@@ -296,7 +263,7 @@
 		8C57DD4E1FD9E4BE00CC5C76 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		8C57DD501FD9E51200CC5C76 /* entry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entry.c; sourceTree = "<group>"; };
 		8C57DD511FD9E51200CC5C76 /* io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = io.c; sourceTree = "<group>"; };
-		8C654D541FDAEA9B009D9031 /* bufferer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bufferer.cpp; sourceTree = "<group>"; };
+		8C654D541FDAEA9B009D9031 /* reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = reader.cpp; sourceTree = "<group>"; };
 		8C654D551FDAEA9B009D9031 /* control.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = control.cpp; sourceTree = "<group>"; };
 		8C654D561FDAEA9B009D9031 /* grammar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = grammar.cpp; sourceTree = "<group>"; };
 		8C654D571FDAEA9B009D9031 /* lexer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lexer.cpp; sourceTree = "<group>"; };
@@ -389,7 +356,6 @@
 		8C654DC21FDAEA9C009D9031 /* toplevel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = toplevel.cpp; sourceTree = "<group>"; };
 		8C654DC31FDAEA9C009D9031 /* types.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = types.cpp; sourceTree = "<group>"; };
 		8C654DC41FDAEA9C009D9031 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		8C654DC61FDAEA9C009D9031 /* runtime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = runtime.cpp; sourceTree = "<group>"; };
 		8C654DC81FDAEA9C009D9031 /* abi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = abi.cpp; sourceTree = "<group>"; };
 		8C654DC91FDAEA9C009D9031 /* mangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mangle.cpp; sourceTree = "<group>"; };
 		8C654DCA1FDAEA9C009D9031 /* target.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = target.cpp; sourceTree = "<group>"; };
@@ -402,6 +368,9 @@
 		8C654DD41FDAEA9C009D9031 /* windows.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = windows.cpp; sourceTree = "<group>"; };
 		8C654DD61FDAEA9D009D9031 /* input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = input.cpp; sourceTree = "<group>"; };
 		8C654DD71FDAEA9D009D9031 /* linker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = linker.cpp; sourceTree = "<group>"; };
+		8CED2FA11FDDC2DA00049A32 /* reader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		8CED2FA91FDDCB7200049A32 /* tokens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tokens.h; sourceTree = "<group>"; };
+		8CED2FAA1FDDF2C900049A32 /* tokens.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tokens.cpp; sourceTree = "<group>"; };
 		D2AB632512554CADBCC496BF /* libhumanlogic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libhumanlogic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -709,8 +678,9 @@
 		8C57DD411FD9DE2800CC5C76 /* lexer */ = {
 			isa = PBXGroup;
 			children = (
+				8CED2FA91FDDCB7200049A32 /* tokens.h */,
 				8C57DD431FD9DE2800CC5C76 /* lexer.h */,
-				8C57DD421FD9DE2800CC5C76 /* bufferer.h */,
+				8CED2FA11FDDC2DA00049A32 /* reader.h */,
 			);
 			path = lexer;
 			sourceTree = "<group>";
@@ -796,10 +766,11 @@
 		8C654D531FDAEA9B009D9031 /* lexer */ = {
 			isa = PBXGroup;
 			children = (
+				8CED2FAA1FDDF2C900049A32 /* tokens.cpp */,
 				8C654D571FDAEA9B009D9031 /* lexer.cpp */,
+				8C654D541FDAEA9B009D9031 /* reader.cpp */,
 				8C654D591FDAEA9B009D9031 /* tokenizer.cpp */,
 				8C654D551FDAEA9B009D9031 /* control.cpp */,
-				8C654D541FDAEA9B009D9031 /* bufferer.cpp */,
 				8C654D561FDAEA9B009D9031 /* grammar.cpp */,
 				8C654D581FDAEA9B009D9031 /* literals.cpp */,
 			);
@@ -1044,7 +1015,6 @@
 		8C654DC51FDAEA9C009D9031 /* runtime */ = {
 			isa = PBXGroup;
 			children = (
-				8C654DC61FDAEA9C009D9031 /* runtime.cpp */,
 			);
 			path = runtime;
 			sourceTree = "<group>";
@@ -1100,6 +1070,7 @@
 		FCBE74BAC7714C12A86BE77A = {
 			isa = PBXGroup;
 			children = (
+				8C41104F1FE599CE00F9C6E9 /* .gitignore */,
 				4DCF32C837074C4494D5BEDD /* CMakeLists.txt */,
 				8C57DCE81FD9DD9E00CC5C76 /* hpc */,
 				8C57DD4D1FD9E45E00CC5C76 /* humanlogic */,
@@ -1121,7 +1092,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A46EE975BDC44939B52922F9 /* PBXTargetDependency */,
 			);
 			name = hpc;
 			productName = hpc;
@@ -1137,7 +1107,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				412934009CFA40188DCDE29C /* PBXTargetDependency */,
 			);
 			name = humanlogic;
 			productName = humanlogic;
@@ -1171,7 +1140,6 @@
 			projectRoot = "";
 			targets = (
 				68C25730260E4E419FFB47AB /* ALL_BUILD */,
-				5755E77A02344263906104FF /* CMAKE_CHECK */,
 				05D94232622649B9AE402A34 /* hpc */,
 				F68875D03D4E4BF0864213C5 /* humanlogic */,
 				1492141F44D0428E9FD4F926 /* install */,
@@ -1221,17 +1189,6 @@
 			shellScript = "make -C /Tiamat/git/humanplus/build -f /Tiamat/git/humanplus/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		FB1CBB2166F44ED1BF9DA2C7 /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Tiamat/git/humanplus/build -f /Tiamat/git/humanplus/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1265,7 +1222,7 @@
 				8CEA305E1FDB135000C0B2B6 /* lexer.cpp in Sources */,
 				8CEA305F1FDB135A00C0B2B6 /* tokenizer.cpp in Sources */,
 				8CEA30601FDB135A00C0B2B6 /* control.cpp in Sources */,
-				8CEA30611FDB135A00C0B2B6 /* bufferer.cpp in Sources */,
+				8CEA30611FDB135A00C0B2B6 /* reader.cpp in Sources */,
 				8CEA30621FDB135A00C0B2B6 /* grammar.cpp in Sources */,
 				8CEA30631FDB135A00C0B2B6 /* literals.cpp in Sources */,
 				8CEA30641FDB136100C0B2B6 /* operators.cpp in Sources */,
@@ -1336,6 +1293,7 @@
 				8CEA30A51FDB143000C0B2B6 /* castings.cpp in Sources */,
 				8CEA30A61FDB143200C0B2B6 /* references.cpp in Sources */,
 				8CEA30A71FDB144600C0B2B6 /* target.cpp in Sources */,
+				8CED2FAB1FDDF2C900049A32 /* tokens.cpp in Sources */,
 				8CEA30A81FDB144900C0B2B6 /* abi.cpp in Sources */,
 				8CEA30A91FDB144B00C0B2B6 /* mangle.cpp in Sources */,
 				8CEA30AA1FDB145000C0B2B6 /* backend.cpp in Sources */,
@@ -1347,7 +1305,6 @@
 				8CEA30B01FDB145D00C0B2B6 /* windows.cpp in Sources */,
 				8CEA30B11FDB146300C0B2B6 /* linker.cpp in Sources */,
 				8CEA30B21FDB146600C0B2B6 /* input.cpp in Sources */,
-				8CEA30B31FDB146C00C0B2B6 /* runtime.cpp in Sources */,
 				8CEA30B41FDB147900C0B2B6 /* dump.cpp in Sources */,
 				8CEA30B51FDB147900C0B2B6 /* castings.cpp in Sources */,
 				8CEA30B61FDB147900C0B2B6 /* types.cpp in Sources */,
@@ -1365,16 +1322,6 @@
 			target = 68C25730260E4E419FFB47AB /* ALL_BUILD */;
 			targetProxy = A3C6F23235F647199C33F92E /* PBXContainerItemProxy */;
 		};
-		412934009CFA40188DCDE29C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5755E77A02344263906104FF /* CMAKE_CHECK */;
-			targetProxy = AC1F150C4F15443B921BD095 /* PBXContainerItemProxy */;
-		};
-		4589CA014D3744D5AD3BC6D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5755E77A02344263906104FF /* CMAKE_CHECK */;
-			targetProxy = DFFF55EAAA4A4B3FB2D754BE /* PBXContainerItemProxy */;
-		};
 		4774C1F43D1A452286FA95BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F68875D03D4E4BF0864213C5 /* humanlogic */;
@@ -1384,11 +1331,6 @@
 			isa = PBXTargetDependency;
 			target = 05D94232622649B9AE402A34 /* hpc */;
 			targetProxy = 2B6933A5C84A48D4ACCE0644 /* PBXContainerItemProxy */;
-		};
-		A46EE975BDC44939B52922F9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5755E77A02344263906104FF /* CMAKE_CHECK */;
-			targetProxy = 79D832EA2E4E4F4BBF3E56EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1425,13 +1367,6 @@
 			};
 			name = Debug;
 		};
-		1279B60E9B0F43458D06EBCB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = ZERO_CHECK;
-			};
-			name = Debug;
-		};
 		1610F2B61A5B4C40B496675A /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1457,6 +1392,7 @@
 					"-D__STDC_CONSTANT_MACROS",
 					"-D__STDC_FORMAT_MACROS",
 					"-D__STDC_LIMIT_MACROS",
+					"-DDEBUG=1",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"'-std=gnu++11'",
@@ -1840,10 +1776,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LLVM_BUILD_PATH = "$(LLVM_PATH)/build";
-				LLVM_PATH = /Tiamat/git/llvm;
+				LLVM_PATH = /Archie/git/llvm;
 				ONLY_ACTIVE_ARCH = YES;
 				PROJECT_PATH = "$(SRCROOT)";
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SDKROOT = macosx;
 				SYMROOT = "$(BUILD_PATH)";
 				TARGET_PATH = "$(PROJECT_PATH)";
 			};
@@ -1860,13 +1796,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = install;
-			};
-			name = RelWithDebInfo;
-		};
-		697462D3B80A40C980B3D8C1 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = ZERO_CHECK;
 			};
 			name = RelWithDebInfo;
 		};
@@ -2069,10 +1998,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LLVM_BUILD_PATH = "$(LLVM_PATH)/build";
-				LLVM_PATH = /Tiamat/git/llvm;
+				LLVM_PATH = /Archie/git/llvm;
 				ONLY_ACTIVE_ARCH = YES;
 				PROJECT_PATH = "$(SRCROOT)";
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SDKROOT = macosx;
 				SYMROOT = "$(BUILD_PATH)";
 				TARGET_PATH = "$(PROJECT_PATH)";
 			};
@@ -2256,13 +2185,6 @@
 			};
 			name = MinSizeRel;
 		};
-		84589A61C41F4B19A4E47BC7 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = ZERO_CHECK;
-			};
-			name = MinSizeRel;
-		};
 		8D424EF39CBD4D7480C28F9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2299,10 +2221,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LLVM_BUILD_PATH = "$(LLVM_PATH)/build";
-				LLVM_PATH = /Tiamat/git/llvm;
+				LLVM_PATH = /Archie/git/llvm;
 				ONLY_ACTIVE_ARCH = YES;
 				PROJECT_PATH = "$(SRCROOT)";
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SDKROOT = macosx;
 				SYMROOT = "$(BUILD_PATH)";
 				TARGET_PATH = "$(PROJECT_PATH)";
 			};
@@ -2369,10 +2291,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LLVM_BUILD_PATH = "$(LLVM_PATH)/build";
-				LLVM_PATH = /Tiamat/git/llvm;
+				LLVM_PATH = /Archie/git/llvm;
 				ONLY_ACTIVE_ARCH = YES;
 				PROJECT_PATH = "$(SRCROOT)";
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SDKROOT = macosx;
 				SYMROOT = "$(BUILD_PATH)";
 				TARGET_PATH = "$(PROJECT_PATH)";
 			};
@@ -2391,13 +2313,6 @@
 				PRODUCT_NAME = install;
 			};
 			name = Debug;
-		};
-		D1CAD6F24460450D9380B921 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = ZERO_CHECK;
-			};
-			name = Release;
 		};
 		DAB5964DDB37483FBCD8AC12 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2449,17 +2364,6 @@
 				8D424EF39CBD4D7480C28F9D /* Release */,
 				CD6B53EFAA624398B313F5B1 /* MinSizeRel */,
 				7649D8B60B73483C9DC302D1 /* RelWithDebInfo */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		2A1A6C98178442C8BA91BC7C /* Build configuration list for PBXAggregateTarget "CMAKE_CHECK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1279B60E9B0F43458D06EBCB /* Debug */,
-				D1CAD6F24460450D9380B921 /* Release */,
-				84589A61C41F4B19A4E47BC7 /* MinSizeRel */,
-				697462D3B80A40C980B3D8C1 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
