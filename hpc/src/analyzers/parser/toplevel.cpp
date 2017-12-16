@@ -23,11 +23,11 @@
 using namespace hpc;
 
 bool parser::ParserInstance::parseNameSpace(ast::NameSpaceDecl *current) {
-    source::SrcLoc idref;
+    src::SrcLoc idref;
     if (lexer->getNextToken(&idref) == lexer::TokenIdentifier) {
         ast::NameSpaceDecl *lib = builder.getOrCreateNameSpace(lexer->getCurrentIdentifier());
         
-        source::SrcLoc openbref;
+        src::SrcLoc openbref;
         if (lexer->getNextToken(&openbref) == '{') {
             lexer->getNextToken();
             
@@ -53,12 +53,12 @@ bool parser::ParserInstance::parseNameSpace(ast::NameSpaceDecl *current) {
 }
 
 bool parser::ParserInstance::parseGlobalLetDecl(ast::NameSpaceDecl *current) {
-    source::SrcLoc lastidref;
+    src::SrcLoc lastidref;
     if (lexer->getNextToken(&lastidref) == lexer::TokenIdentifier) {
         while (1) {
             std::vector<ast::SymbolIdentifier> names;
             while (1) {
-                names.push_back({ lexer->getCurrentIdentifier(), new source::SrcLoc(lastidref) });
+                names.push_back({ lexer->getCurrentIdentifier(), new src::SrcLoc(lastidref) });
                 
                 if (lexer->getNextToken() == ',') {
                     if (lexer->getNextToken(&lastidref) != lexer::TokenIdentifier) {
@@ -70,7 +70,7 @@ bool parser::ParserInstance::parseGlobalLetDecl(ast::NameSpaceDecl *current) {
             }
             report_eof();
             
-            source::SrcLoc betkref;
+            src::SrcLoc betkref;
             if (lexer->getCurrentToken(&betkref) != lexer::TokenBe) {
                 report_eof();
                 diags.reportError(diag::ExpectedTokenBeAfterLetDeclaration, &betkref);
@@ -119,7 +119,7 @@ bool parser::ParserInstance::parseGlobalLetDecl(ast::NameSpaceDecl *current) {
                         newgvar->tokenRef(ast::PointToVariableIdentifier, *gvid.symref);
                 }
             } else { // old alias declaration
-                source::SrcLoc oftkref;
+                src::SrcLoc oftkref;
                 if (lexer->getNextToken(&oftkref) == lexer::TokenIdentifier && lexer->getCurrentIdentifier() == "of") {
                     lexer->getNextToken();
                     ast::Type *original = parseType();
@@ -138,11 +138,11 @@ bool parser::ParserInstance::parseGlobalLetDecl(ast::NameSpaceDecl *current) {
                 }
             }
             
-            source::SrcLoc delimref;
+            src::SrcLoc delimref;
             lexer->getLastToken(&delimref);
             delimref = delimref.getNextPoint();
             if (lexer->getCurrentToken() == ',') {
-                source::SrcLoc newvarref;
+                src::SrcLoc newvarref;
                 if (lexer->getNextToken(&newvarref) != lexer::TokenIdentifier) {
                     report_eof();
                     diags.reportError(diag::ExpectedUnqualifiedIdentifier, &newvarref);
@@ -165,12 +165,12 @@ bool parser::ParserInstance::parseGlobalLetDecl(ast::NameSpaceDecl *current) {
 }
 
 bool parser::ParserInstance::parseAliasDecl(ast::NameSpaceDecl *current) {
-    source::SrcLoc lastidref;
+    src::SrcLoc lastidref;
     if (lexer->getNextToken(&lastidref) == lexer::TokenIdentifier) {
         while (1) {
             std::vector<ast::SymbolIdentifier> names;
             while (1) {
-                names.push_back({ lexer->getCurrentIdentifier(), new source::SrcLoc(lastidref) });
+                names.push_back({ lexer->getCurrentIdentifier(), new src::SrcLoc(lastidref) });
                 
                 if (lexer->getNextToken() == ',') {
                     if (lexer->getNextToken(&lastidref) != lexer::TokenIdentifier) {
@@ -182,7 +182,7 @@ bool parser::ParserInstance::parseAliasDecl(ast::NameSpaceDecl *current) {
             }
             report_eof();
             
-            source::SrcLoc eqtkref;
+            src::SrcLoc eqtkref;
             if (lexer->getCurrentToken(&eqtkref) == '=' /*|| (lexer->getCurrentToken() == lexer::TokenIdentifier && lexer->getCurrentIdentifier() == "of")*/) {
                 // FIXME "of" as token and lexer contexts
                 lexer->getNextToken();
@@ -201,11 +201,11 @@ bool parser::ParserInstance::parseAliasDecl(ast::NameSpaceDecl *current) {
                 abort_parse();
             }
             
-            source::SrcLoc delimref;
+            src::SrcLoc delimref;
             lexer->getLastToken(&delimref);
             delimref = delimref.getNextPoint();
             if (lexer->getCurrentToken() == ',') {
-                source::SrcLoc newvarref;
+                src::SrcLoc newvarref;
                 if (lexer->getNextToken(&newvarref) != lexer::TokenIdentifier) {
                     report_eof();
                     diags.reportError(diag::ExpectedUnqualifiedIdentifier, &newvarref);
@@ -230,7 +230,7 @@ bool parser::ParserInstance::parseAliasDecl(ast::NameSpaceDecl *current) {
 bool parser::ParserInstance::parseFunction(ast::NameSpaceDecl *current) {
     ast::FunctionDecl::FunctionAttributes attributes;
     
-    source::SrcLoc funckwref;
+    src::SrcLoc funckwref;
     bool finished = false;
     while (!finished) {
         switch (lexer->getCurrentToken()) {
@@ -248,11 +248,11 @@ bool parser::ParserInstance::parseFunction(ast::NameSpaceDecl *current) {
         report_eof();
     }
     
-    source::SrcLoc funcidref;
+    src::SrcLoc funcidref;
     if (lexer->getCurrentToken(&funcidref) == lexer::TokenIdentifier) {
         std::string funcname = lexer->getCurrentIdentifier();
         
-        source::SrcLoc argopenref;
+        src::SrcLoc argopenref;
         if (lexer->getNextToken(&argopenref) == '(') {
             
             std::vector<ast::ParamVar *> args;
@@ -266,13 +266,13 @@ bool parser::ParserInstance::parseFunction(ast::NameSpaceDecl *current) {
                 report_eof();
                 if (!argtype) { abort_parse(); }
                 
-                source::SrcLoc argidref;
+                src::SrcLoc argidref;
                 if (lexer->getCurrentToken(&argidref) == lexer::TokenIdentifier) {
                     std::string argname = lexer->getCurrentIdentifier();
                     
                     args.push_back(new ast::ParamVar(argname, argtype, nullptr));
                     
-                    source::SrcLoc commaref;
+                    src::SrcLoc commaref;
                     if (lexer->getNextToken(&commaref) == ',') {
                         lexer->getNextToken();
                     } else if (lexer->getCurrentToken() != ')') {
@@ -310,7 +310,7 @@ bool parser::ParserInstance::parseFunction(ast::NameSpaceDecl *current) {
             
             newFunc->tokenRef(ast::PointToVariableIdentifier, funcidref);
             
-            source::SrcLoc stmtopenref;
+            src::SrcLoc stmtopenref;
             if (lexer->getCurrentToken(&stmtopenref) == '{') {
                 ast::CompoundStmt *fblock;
                 if (!parseCompoundStatement(fblock, newFunc)) return false;
@@ -338,7 +338,7 @@ bool parser::ParserInstance::parseFunction(ast::NameSpaceDecl *current) {
 }
 
 bool parser::ParserInstance::parseClass(ast::NameSpaceDecl *current) {
-    source::SrcLoc clsnameref;
+    src::SrcLoc clsnameref;
     if (lexer->getNextToken(&clsnameref) == lexer::TokenIdentifier) {
         std::string classname = lexer->getCurrentIdentifier();
         std::string baseclass = "";
@@ -348,7 +348,7 @@ bool parser::ParserInstance::parseClass(ast::NameSpaceDecl *current) {
         lexer->ignoreRelativePronounsIfAny();
         
         if (lexer->getCurrentToken() == lexer::TokenExtends || lexer->getCurrentToken() == ':') {
-            source::SrcLoc superclsref;
+            src::SrcLoc superclsref;
             if (lexer->getNextToken(&superclsref) == lexer::TokenIdentifier) {
                 baseclass = lexer->getCurrentIdentifier();
                 lexer->getNextToken();
@@ -365,7 +365,7 @@ bool parser::ParserInstance::parseClass(ast::NameSpaceDecl *current) {
         if (lexer->getCurrentToken() == ',' || lexer->getCurrentToken() == lexer::TokenImplements) {
             
             do {
-                source::SrcLoc lastidref;
+                src::SrcLoc lastidref;
                 if (lexer->getNextToken(&lastidref) == lexer::TokenIdentifier)
                     protocols.push_back(lexer->getCurrentIdentifier());
                 else {
@@ -378,7 +378,7 @@ bool parser::ParserInstance::parseClass(ast::NameSpaceDecl *current) {
             
         }
         
-        source::SrcLoc clsbodyref;
+        src::SrcLoc clsbodyref;
         if (lexer->getCurrentToken(&clsbodyref) == '{') {
             
             ast::ClassDecl *newclass = builder.createClassDecl(classname);
@@ -406,7 +406,7 @@ bool parser::ParserInstance::parseClass(ast::NameSpaceDecl *current) {
 }
 
 bool parser::ParserInstance::parseProtocol(ast::NameSpaceDecl *current) {
-    source::SrcLoc prtnameref;
+    src::SrcLoc prtnameref;
     if (lexer->getNextToken(&prtnameref) == lexer::TokenIdentifier) {
         std::string protocolname = lexer->getCurrentIdentifier();
         std::string baseprotocol = "";
@@ -414,7 +414,7 @@ bool parser::ParserInstance::parseProtocol(ast::NameSpaceDecl *current) {
         lexer->getNextToken();
         lexer->ignoreRelativePronounsIfAny();
         if (lexer->getCurrentToken() == lexer::TokenExtends || lexer->getCurrentToken() == ':') {
-            source::SrcLoc superprtref;
+            src::SrcLoc superprtref;
             if (lexer->getNextToken(&superprtref) == lexer::TokenIdentifier) {
                 baseprotocol = lexer->getCurrentIdentifier();
                 lexer->getNextToken();
@@ -425,7 +425,7 @@ bool parser::ParserInstance::parseProtocol(ast::NameSpaceDecl *current) {
             }
         }
         
-        source::SrcLoc prtbodyref;
+        src::SrcLoc prtbodyref;
         if (lexer->getCurrentToken(&prtbodyref) == '{') {
             
             while (lexer->getNextToken() != '}') {

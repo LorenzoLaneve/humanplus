@@ -65,12 +65,12 @@ bool hpc::CompilerInstance::executeInvocation() {
         return false;
     }
     
-    std::vector<source::SourceFile *> sourcefiles;
+    std::vector<src::SourceFile *> sourcefiles;
     
     parser::ParserInstance parser(getDiagnostics(), AST);
     for (fsys::File *ifile : frontendOpts.inputFiles) {
         if (ifile->getType() == fsys::SourceFile) {
-            if (parser.bindSourceFile(static_cast<source::SourceFile *>(ifile))) {
+            if (parser.bindSourceFile(static_cast<src::SourceFile *>(ifile))) {
                 parser.parse();
             
                 sourcefiles.push_back(parser.getSourceFile());
@@ -91,7 +91,7 @@ bool hpc::CompilerInstance::executeInvocation() {
     
     if (getDiagnostics().getErrorCount()) return false;
     
-    for (source::SourceFile *src : sourcefiles)
+    for (src::SourceFile *src : sourcefiles)
         if (ast::CompilationUnit *theUnit = AST->getUnitForFile(src)) {
             codegen::ModuleBuilder builder(*src->getModuleWrapper(), *targetInfo);
             builder.buildUnit(theUnit);
@@ -114,7 +114,7 @@ bool hpc::CompilerInstance::executeInvocation() {
         backend::BackendHelper backend(getDiagnostics(), getBackendOptions(), targetInfo);
         backend.bindTarget(targetInfo);
         
-        for (source::SourceFile *src : sourcefiles) {
+        for (src::SourceFile *src : sourcefiles) {
             backend.bindModule(src->getModuleWrapper()->getModule());
             
             backend.runPasses();
@@ -133,7 +133,7 @@ bool hpc::CompilerInstance::executeInvocation() {
         }
         
 #ifdef __hpc_fe_ir_debug
-        for (source::SourceFile *src : sourcefiles) src->getModuleWrapper()->dump();
+        for (src::SourceFile *src : sourcefiles) src->getModuleWrapper()->dump();
 #endif
         
         if (frontendOpts.outputType == fsys::Executable) {

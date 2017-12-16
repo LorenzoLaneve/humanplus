@@ -175,7 +175,7 @@ lexer::token_ty lexer::LexerInstance::getNewToken(source::SrcLoc *tkref) {
         if (isalpha(lastChar) || lastChar == '_') {
             suffixtype = 0;
             
-            source::SrcLoc suffixref;
+            src::SrcLoc suffixref;
             if (getNextToken(&suffixref) == TokenIdentifier) {
                 std::string suffix = currentIdentifier;
                 if (hasFP) {
@@ -397,23 +397,7 @@ lexer::token_ty lexer::LexerInstance::getNewToken(source::SrcLoc *tkref) {
     return returning;
 }
 
-lexer::token_ty lexer::LexerInstance::getNextToken(source::SrcLoc *tkref) {
-    lastRef = currentRef;
-    lastToken = currentToken;
-    return currentToken = getNewToken(tkref);
-}
-
-lexer::token_ty lexer::LexerInstance::getCurrentToken(source::SrcLoc *tkref) {
-    if (tkref) *tkref = currentRef;
-    return currentToken;
-}
-
-lexer::token_ty lexer::LexerInstance::getLastToken(source::SrcLoc *tkref) {
-    if (tkref) *tkref = lastRef;
-    return lastToken;
-}
-
-rt::utf7_char_ty lexer::LexerInstance::getASCIIChar(source::sourcechar quote) {
+rt::utf7_char_ty lexer::LexerInstance::getASCIIChar(src::sourcechar quote) {
     if (lastChar == '\\') { // TODO octal number character literal
         switch (lastChar = fetch()) {
             case '\\':

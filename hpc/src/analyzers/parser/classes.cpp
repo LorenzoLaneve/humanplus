@@ -17,12 +17,12 @@
 using namespace hpc;
 
 bool parser::ParserInstance::parseFieldDeclaration(ast::ClassDecl *current) {
-    source::SrcLoc lastidref;
+    src::SrcLoc lastidref;
     if (lexer->getNextToken(&lastidref) == lexer::TokenIdentifier) {
         while (1) {
             std::vector<ast::SymbolIdentifier> names;
             while (1) {
-                names.push_back({ lexer->getCurrentIdentifier(), new source::SrcLoc(lastidref) });
+                names.push_back({ lexer->getCurrentIdentifier(), new src::SrcLoc(lastidref) });
                 
                 if (lexer->getNextToken() == ',') {
                     if (lexer->getNextToken(&lastidref) != lexer::TokenIdentifier) {
@@ -34,7 +34,7 @@ bool parser::ParserInstance::parseFieldDeclaration(ast::ClassDecl *current) {
             }
             report_eof();
             
-            source::SrcLoc betkref;
+            src::SrcLoc betkref;
             if (lexer->getCurrentToken(&betkref) != lexer::TokenBe) {
                 report_eof();
                 diags.reportError(diag::ExpectedTokenBeAfterLetDeclaration, &betkref);
@@ -45,7 +45,7 @@ bool parser::ParserInstance::parseFieldDeclaration(ast::ClassDecl *current) {
             report_eof();
             
             if (lexer->getCurrentToken() == lexer::TokenAlias) {
-                source::SrcLoc oftkref;
+                src::SrcLoc oftkref;
                 if (lexer->getNextToken(&oftkref) == lexer::TokenIdentifier && lexer->getCurrentIdentifier() == "of") {
                     lexer->getNextToken();
                     ast::Type *original = parseType();
@@ -102,11 +102,11 @@ bool parser::ParserInstance::parseFieldDeclaration(ast::ClassDecl *current) {
                 }
             }
             
-            source::SrcLoc delimref;
+            src::SrcLoc delimref;
             lexer->getLastToken(&delimref);
             delimref = delimref.getNextPoint();
             if (lexer->getCurrentToken() == ',') {
-                source::SrcLoc newvarref;
+                src::SrcLoc newvarref;
                 if (lexer->getNextToken(&newvarref) != lexer::TokenIdentifier) {
                     report_eof();
                     diags.reportError(diag::ExpectedUnqualifiedIdentifier, &newvarref);

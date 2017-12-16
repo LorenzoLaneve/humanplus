@@ -15,7 +15,7 @@
 
 using namespace hpc;
 
-lexer::SourceReader::SourceReader(source::SourceFile &source) : source(source) {
+lexer::SourceReader::SourceReader(src::SourceFile &source) : source(source) {
     fp = fopen(source.getFileName().c_str(), "r");
     
     buffer = (unsigned char *)malloc(BUFFER_SIZE * sizeof(unsigned char));

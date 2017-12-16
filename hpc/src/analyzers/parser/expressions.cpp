@@ -21,7 +21,7 @@
 using namespace hpc;
 
 ast::Symbol parser::ParserInstance::parseSymbol() {
-    source::SrcLoc lastidref;
+    src::SrcLoc lastidref;
     lexer->getCurrentToken(&lastidref);
     ast::Symbol parsingsym(lexer->getCurrentIdentifier(), &lastidref);
     
@@ -40,12 +40,12 @@ ast::Symbol parser::ParserInstance::parseSymbol() {
 ast::Expr *parser::ParserInstance::parseMemberAccessExpression(ast::Expr *lhs) {
     if (!lhs) return nullptr;
     
-    source::SrcLoc operref;
+    src::SrcLoc operref;
     if (lexer->getCurrentToken(&operref) != lexer::TokenOperatorMemberAccess) {
         return lhs;
     }
     
-    source::SrcLoc memberidref;
+    src::SrcLoc memberidref;
     if (lexer->getNextToken(&memberidref) != lexer::TokenIdentifier) {
         diags.reportError(diag::ExpectedMemberIdentifier, &memberidref);
         return nullptr;
@@ -76,7 +76,7 @@ ast::Expr *parser::ParserInstance::parseHandSideExpression() {
     
     ast::Expr *hs = nullptr;
     
-    source::SrcLoc exprbeginref;
+    src::SrcLoc exprbeginref;
     switch (lexer->getCurrentToken(&exprbeginref)) {
         case lexer::TokenNull:
             hs = new ast::NullPointer(ast::BuiltinType::get(ast::BuiltinType::SignedInteger));
@@ -114,7 +114,7 @@ ast::Expr *parser::ParserInstance::parseHandSideExpression() {
         case lexer::TokenIdentifier: {
             ast::Symbol callsymbol = parseSymbol();
             
-            source::SrcLoc topidref;
+            src::SrcLoc topidref;
             lexer->getLastToken(&topidref);
             
             if (lexer->getCurrentToken() != '(') {
@@ -128,7 +128,7 @@ ast::Expr *parser::ParserInstance::parseHandSideExpression() {
             ast::FunctionCall *fcall = new ast::FunctionCall(callsymbol);
             lexer->getNextToken();
             
-            source::SrcLoc lastexprref;
+            src::SrcLoc lastexprref;
             while (lexer->getCurrentToken(&lastexprref) != ')') {
                 ast::Expr *argexpr = parseExpression();
                 if (!argexpr) {
@@ -138,7 +138,7 @@ ast::Expr *parser::ParserInstance::parseHandSideExpression() {
                 
                 fcall->addCallParameter(argexpr);
                 
-                source::SrcLoc commaref;
+                src::SrcLoc commaref;
                 if (lexer->getCurrentToken(&commaref) != ',' && lexer->getCurrentToken() != ')') {
                     if (!lexer->eof()) diags.reportError(diag::InvalidArgumentList, &commaref);
                     return nullptr;
@@ -152,7 +152,7 @@ ast::Expr *parser::ParserInstance::parseHandSideExpression() {
             lexer->getNextToken();
             hs = parseExpression();
             
-            source::SrcLoc closeref;
+            src::SrcLoc closeref;
             if (lexer->getCurrentToken(&closeref) != ')') {
                 if (!lexer->eof()) diags.reportError(diag::ExpectedClosedTuple, &closeref);
                 return nullptr;
@@ -168,7 +168,7 @@ ast::Expr *parser::ParserInstance::parseHandSideExpression() {
     if (hs) {
         hs->tokenRef(ast::PointToBeginOfExpression, exprbeginref);
         
-        source::SrcLoc exprendref;
+        src::SrcLoc exprendref;
         lexer->getCurrentToken(&exprendref);
         hs->tokenRef(ast::PointToEndOfExpression, exprendref);
     }
@@ -178,7 +178,7 @@ ast::Expr *parser::ParserInstance::parseHandSideExpression() {
 }
 
 ast::Expr *parser::ParserInstance::parseRightHandSideExpression(lexer::token_ty exprPrecedence, ast::Expr *lhs) {
-    source::SrcLoc operref;
+    src::SrcLoc operref;
     while (1) {
         int currentPrecedence = syntax::getOperatorPrecedence(lexer->getCurrentToken());
         
@@ -204,7 +204,7 @@ ast::Expr *parser::ParserInstance::parseRightHandSideExpression(lexer::token_ty 
 }
 
 ast::Expr *parser::ParserInstance::parseExpression() {
-    source::SrcLoc exprbeginref, exprendref;
+    src::SrcLoc exprbeginref, exprendref;
     lexer->getCurrentToken(&exprbeginref);
     
     ast::Expr *lhs = parseHandSideExpression();

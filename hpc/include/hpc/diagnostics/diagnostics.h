@@ -439,7 +439,7 @@ namespace hpc {
             /*!
              \brief The reference to the source file this diagnostic is about.
              */
-            source::SrcLoc *tkref;
+            src::SrcLoc *tkref;
             /*!
              \brief List of the params received.
              */
@@ -450,7 +450,7 @@ namespace hpc {
             unsigned paramsNeeded = 0;
             
         public:
-            Diagnostic(DiagEngine &engine, DiagLevel level, std::string text, source::SrcLoc *tkref = nullptr);
+            Diagnostic(DiagEngine &engine, DiagLevel level, std::string text, src::SrcLoc *tkref = nullptr);
             
             Diagnostic(DiagEngine &engine, Diagnostic &diagnostic) : Diagnostic(engine, diagnostic.level, diagnostic.text, diagnostic.tkref) {
                 params = diagnostic.params;
@@ -473,7 +473,7 @@ namespace hpc {
                 return params;
             }
             
-            inline source::SrcLoc *getSrcLoc() const {
+            inline src::SrcLoc *getSrcLoc() const {
                 return tkref;
             }
             
@@ -610,7 +610,7 @@ namespace hpc {
              \param params An array of strings which will be replaced in the displaying text.
              \see \c DiagID values to know what to put in \c params vector.
              */
-            Diagnostic &reportDiag(DiagLevel level, DiagID ID, source::SrcLoc *tkref = nullptr);
+            Diagnostic &reportDiag(DiagLevel level, DiagID ID, src::SrcLoc *tkref = nullptr);
             
             Diagnostic &reportDiag(Diagnostic *diag);
             /*!
@@ -620,7 +620,7 @@ namespace hpc {
              \param params An array of strings which will be replaced in the displaying text.
              \see \c DiagID values to know what to put in \c params vector.
              */
-            Diagnostic &reportCustomDiag(DiagLevel level, std::string text, source::SrcLoc *tkref = nullptr);
+            Diagnostic &reportCustomDiag(DiagLevel level, std::string text, src::SrcLoc *tkref = nullptr);
             /*!
              \brief Overload method to write an error diagnostic to the diagnostics engine to write it on the designed output.
              \param ID The ID for the diagnostic associated with the text to display to the user.
@@ -629,7 +629,7 @@ namespace hpc {
              \see \c DiagID values to know what to put in \c params vector.
              */
             
-            inline Diagnostic &reportError(DiagID ID, source::SrcLoc *tkref = nullptr) {
+            inline Diagnostic &reportError(DiagID ID, src::SrcLoc *tkref = nullptr) {
                 return reportDiag(diag::Error, ID, tkref);
             }
             /*!
@@ -639,7 +639,7 @@ namespace hpc {
              \param params An array of strings which will be replaced in the displaying text.
              \see \c DiagID values to know what to put in \c params vector.
              */
-            inline Diagnostic &reportWarning(DiagID ID, source::SrcLoc *tkref = nullptr) {
+            inline Diagnostic &reportWarning(DiagID ID, src::SrcLoc *tkref = nullptr) {
                 return reportDiag(diag::Warning, ID, tkref);
             }
             /*!
@@ -649,7 +649,7 @@ namespace hpc {
              \param params An array of strings which will be replaced in the displaying text.
              \see \c DiagID values to know what to put in \c params vector.
              */
-            inline Diagnostic &reportNote(DiagID ID, source::SrcLoc *tkref = nullptr) {
+            inline Diagnostic &reportNote(DiagID ID, src::SrcLoc *tkref = nullptr) {
                 return reportDiag(diag::Note, ID, tkref);
             }
             

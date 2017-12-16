@@ -54,7 +54,7 @@ fsys::InputFile *fsys::InputFile::fromFile(std::string fname) {
         .Default(Unknown);
     
     if (fty == SourceFile) {
-        return new source::SourceFile(fname);
+        return new src::SourceFile(fname);
     }
     
     return new fsys::InputFile(fname, fty);

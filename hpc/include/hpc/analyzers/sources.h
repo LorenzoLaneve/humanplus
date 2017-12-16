@@ -24,7 +24,7 @@ namespace hpc {
         class ModuleWrapper;
     }
     
-    namespace source {
+    namespace src {
         
         /*!
          \brief Type for characters read from source files.

@@ -15,7 +15,7 @@
 
 using namespace hpc;
 
-int lexer::LexerInstance::putDecimalConstant(std::string numberString, lexer::token_ty suffixtype, source::SrcLoc *literalRef) {
+int lexer::LexerInstance::putDecimalConstant(std::string numberString, lexer::token_ty suffixtype, src::SrcLoc *literalRef) {
     switch (suffixtype) {
         case TokenIntegerLiteral:
             if (util::dec_toi(numberString, currentInteger))
@@ -42,7 +42,7 @@ int lexer::LexerInstance::putDecimalConstant(std::string numberString, lexer::to
     return TokenDoubleLiteral;
 }
 
-int lexer::LexerInstance::putHexadecimalConstant(std::string numberString, lexer::token_ty suffixtype, source::SrcLoc *literalRef) {
+int lexer::LexerInstance::putHexadecimalConstant(std::string numberString, lexer::token_ty suffixtype, src::SrcLoc *literalRef) {
     switch (suffixtype) {
         case TokenIntegerLiteral:
             if (util::hex_toi(numberString, currentInteger))
@@ -65,7 +65,7 @@ int lexer::LexerInstance::putHexadecimalConstant(std::string numberString, lexer
     return TokenDoubleLiteral;
 }
 
-int lexer::LexerInstance::putBinaryConstant(std::string numberString, lexer::token_ty suffixtype, source::SrcLoc *literalRef) {
+int lexer::LexerInstance::putBinaryConstant(std::string numberString, lexer::token_ty suffixtype, src::SrcLoc *literalRef) {
     switch (suffixtype) {
         case lexer::TokenIntegerLiteral:
             if (util::bin_toi(numberString, currentInteger))
@@ -88,7 +88,7 @@ int lexer::LexerInstance::putBinaryConstant(std::string numberString, lexer::tok
     return lexer::TokenDoubleLiteral;
 }
 
-int lexer::LexerInstance::putOctalConstant(std::string numberString, lexer::token_ty suffixtype, source::SrcLoc *literalRef) {
+int lexer::LexerInstance::putOctalConstant(std::string numberString, lexer::token_ty suffixtype, src::SrcLoc *literalRef) {
     switch (suffixtype) {
         case TokenIntegerLiteral:
             if (util::oct_toi(numberString, currentInteger))

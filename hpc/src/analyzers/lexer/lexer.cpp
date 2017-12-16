@@ -15,9 +15,8 @@
 
 using namespace hpc;
 
-lexer::LexerInstance::LexerInstance(diag::DiagEngine &diags, source::SourceFile *sourceFile) : diags(diags), sourcefile(sourceFile) {
-    resetFetchCount(false);
-    resetTokenizer();
+lexer::LexerInstance::LexerInstance(diag::DiagEngine &diags, src::SourceFile &source) : diags(diags), source(source) {
+    open();
 }
 
 lexer::LexerInstance::~LexerInstance() {

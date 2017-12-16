@@ -27,7 +27,7 @@ namespace hpc {
             /*!
              \brief The object for the source file to be read.
              */
-            source::SourceFile &source;
+            src::SourceFile &source;
             /*!
              \brief The C file pointer pointing to the file being read.
              */
@@ -52,7 +52,7 @@ namespace hpc {
             /*!
              \brief A \c SrcLoc structure pointing to the last character the lexer read from this file.
              */
-            source::SrcLoc caret = {0, 0};
+            src::SrcLoc caret = {0, 0};
             
             /*!
              \brief Fills up the buffer by reading the characters in the file.
@@ -67,7 +67,7 @@ namespace hpc {
             /*!
              \brief Initializes the reader with the object for the source file to be read.
              */
-            SourceReader(source::SourceFile &source);
+            SourceReader(src::SourceFile &source);
             
             SourceReader(SourceReader &) = delete;
             SourceReader &operator=(SourceReader &) = delete;

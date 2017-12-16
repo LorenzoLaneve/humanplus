@@ -20,7 +20,7 @@ void parser::ParserInstance::bindAST(ast::AbstractSyntaxTree *astobj) {
     boundAST = astobj;
 }
 
-bool parser::ParserInstance::bindSourceFile(source::SourceFile *inputFile) {
+bool parser::ParserInstance::bindSourceFile(src::SourceFile *inputFile) {
     if (!inputFile->isOk()) {
         diags.reportError(diag::ErrorOpeningFile) << inputFile->getFileName();
         
@@ -43,7 +43,7 @@ bool parser::ParserInstance::bindSourceFile(source::SourceFile *inputFile) {
     return true;
 }
 
-source::SourceFile *parser::ParserInstance::getSourceFile() {
+src::SourceFile *parser::ParserInstance::getSourceFile() {
     assert(lexer && "No lexer.");
     assert(lexer->getSourceFile() && "No source file.");
     return lexer->getSourceFile();

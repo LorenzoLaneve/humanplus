@@ -66,11 +66,11 @@ namespace hpc {
              \brief Binds the source file with the given pathname to the lexer, and prepares it for reading.
              \return \c true if the file was opened successfully, \c false otherwise.
              */
-            bool bindSourceFile(source::SourceFile *inputFile);
+            bool bindSourceFile(src::SourceFile *inputFile);
             /*!
              \brief Returns the currently bound source file.
              */
-            source::SourceFile *getSourceFile();
+            src::SourceFile *getSourceFile();
             /*!
              \brief Unbinds the current source file and closes the lexer.
              */
