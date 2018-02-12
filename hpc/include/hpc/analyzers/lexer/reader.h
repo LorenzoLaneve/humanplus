@@ -7,8 +7,8 @@
 //
 //
 
-#ifndef __human_plus_compiler_reader
-#define __human_plus_compiler_reader
+#ifndef __human_plus_compiler_lexer_reader
+#define __human_plus_compiler_lexer_reader
 
 #include <hpc/analyzers/sources.h>
 
