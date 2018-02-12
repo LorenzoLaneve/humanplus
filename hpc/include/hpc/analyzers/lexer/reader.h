@@ -108,6 +108,12 @@ namespace hpc {
             inline int getFetchCount() const {
                 return fetchCount;
             }
+            /*!
+             \brief Returns a copy of the SrcLoc object describing the location of the last read character in the source.
+             */
+            inline src::SrcLoc *getCaret() const {
+                return new src::SrcLoc(caret);
+            }
             
             /*!
              \brief Closes the stream to the associated file.
