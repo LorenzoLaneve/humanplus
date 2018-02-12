@@ -10,15 +10,15 @@
 #ifndef __human_plus_compiler_operators
 #define __human_plus_compiler_operators
 
-#define __operator_is_compound_assignment(x) x<-400
-#define __operator_compound_assignment -500
+#define OP_COMPOUND_ASSIGNMENT -500
+#define OP_IS_COMPOUND_ASSIGNMENT(x) (x < -400)
 
-#define __operator_attach_assignment(x) x+__operator_compound_assignment
-#define __operator_detach_assignment(x) x-__operator_compound_assignment
+#define OP_ATTACH_ASSIGNMENT(x) (x + OP_COMPOUND_ASSIGNMENT)
+#define OP_DETACH_ASSIGNMENT(x) (x - OP_COMPOUND_ASSIGNMENT)
 
 namespace hpc {
     namespace lexer {
-        typedef int token_ty;
+        typedef int token_ty; // FIXME
     }
     
     namespace util {

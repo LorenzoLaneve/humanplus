@@ -32,8 +32,8 @@ void ast::BinaryExpr::castRHSToType(ast::Type *destination) {
 }
 
 void ast::BinaryExpr::expandCompoundAssignment() {
-    if (__operator_is_compound_assignment(oper)) {
-        rhs = BinaryExpr::create(lhs, __operator_detach_assignment(oper), rhs);
+    if (OP_IS_COMPOUND_ASSIGNMENT(oper)) {
+        rhs = BinaryExpr::create(lhs, OP_DETACH_ASSIGNMENT(oper), rhs);
         oper = lexer::TokenOperatorAssign;
     }
 }

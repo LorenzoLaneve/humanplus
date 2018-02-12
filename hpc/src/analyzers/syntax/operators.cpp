@@ -52,8 +52,8 @@ static std::map<lexer::token_ty, int> precedences = {
 void util::printOperator(lexer::token_ty oper) {
     assert(syntax::isOperator(oper) && "oper is not a valid Human Plus operator");
     
-    if (__operator_is_compound_assignment(oper)) {
-        printOperator(__operator_detach_assignment(oper));
+    if (OP_IS_COMPOUND_ASSIGNMENT(oper)) {
+        printOperator(OP_DETACH_ASSIGNMENT(oper));
         llvm::outs() << "=";
     } else
         
