@@ -16,8 +16,8 @@
 
 #include <sstream>
 
-#define emit_tokenref() currentRef = *sourcefile->getCaret(); if (tkref) *tkref = currentRef; resetFetchCount()
-#define tokenref_len(x) currentRef.length = x; if (tkref) *tkref = currentRef
+#define emit_tokenref() currentRef = *sourcefile->getCaret(); if (srcloc) *srcloc = currentRef; resetFetchCount()
+#define tokenref_len(x) currentRef.length = x; if (srcloc) *srcloc = currentRef
 
 #define lowerize(x) (x = tolower(x))
 
@@ -37,7 +37,7 @@ lexer::token_ty lexer::LexerInstance::getNewToken(source::SrcLoc *tkref) {
         
         if (currentIdentifier == "programmer") { // commento
             while ((lastChar = fetch()) != '\n') if (lastChar == EOF) return TokenEOF;
-            return getNextToken(tkref);
+            return getNextToken(srcloc);
         }
         tokenref_len(getFetchCount());
         
@@ -318,7 +318,7 @@ lexer::token_ty lexer::LexerInstance::getNewToken(source::SrcLoc *tkref) {
             if ((lastChar = fetch()) == '=') {
                 tokenref_len(getFetchCount());
                 lastChar = fetch();
-                return __operator_compound_assignment+TokenOperatorPlus;
+                return OP_COMPOUND_ASSIGNMENT+TokenOperatorPlus;
             } else {
                 tokenref_len(1);
                 return TokenOperatorPlus;
@@ -329,7 +329,7 @@ lexer::token_ty lexer::LexerInstance::getNewToken(source::SrcLoc *tkref) {
             if ((lastChar = fetch()) == '=') {
                 tokenref_len(getFetchCount());
                 lastChar = fetch();
-                return __operator_compound_assignment+TokenOperatorMinus;
+                return OP_COMPOUND_ASSIGNMENT+TokenOperatorMinus;
             } else {
                 tokenref_len(1);
                 return TokenOperatorMinus;
@@ -340,7 +340,7 @@ lexer::token_ty lexer::LexerInstance::getNewToken(source::SrcLoc *tkref) {
             if ((lastChar = fetch()) == '=') {
                 tokenref_len(getFetchCount());
                 lastChar = fetch();
-                return __operator_compound_assignment+TokenOperatorMultiply;
+                return OP_COMPOUND_ASSIGNMENT+TokenOperatorMultiply;
             } else {
                 tokenref_len(1);
                 return TokenOperatorMultiply;
@@ -359,7 +359,7 @@ lexer::token_ty lexer::LexerInstance::getNewToken(source::SrcLoc *tkref) {
             if ((lastChar = fetch()) == '=') {
                 tokenref_len(getFetchCount());
                 lastChar = fetch();
-                return __operator_compound_assignment+TokenOperatorDivide;
+                return OP_COMPOUND_ASSIGNMENT+TokenOperatorDivide;
             } else {
                 tokenref_len(1);
                 return TokenOperatorDivide;
@@ -370,7 +370,7 @@ lexer::token_ty lexer::LexerInstance::getNewToken(source::SrcLoc *tkref) {
             if ((lastChar = fetch()) == '=') {
                 tokenref_len(getFetchCount());
                 lastChar = fetch();
-                return __operator_compound_assignment+TokenOperatorRemainder;
+                return OP_COMPOUND_ASSIGNMENT+TokenOperatorRemainder;
             } else {
                 tokenref_len(1);
                 return TokenOperatorRemainder;

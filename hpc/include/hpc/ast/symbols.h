@@ -47,10 +47,10 @@ namespace hpc {
             /*!
              \brief Makes a new \c ast::Symbol, initializing it with the members for a first \c SymbolIdentifier object.
              \param symroot A string containing the first identifier
-             \param tkref A \c src::SrcLoc object pointing to the identifier in the source file.
+             \param srcloc A \c src::SrcLoc object pointing to the identifier in the source file.
              \see \c SymbolIdentifier for the structure in which the costructor arguments will be stored in the \c ast::Symbol object.
              */
-            Symbol(std::string symroot, src::SrcLoc *tkref = nullptr);
+            Symbol(std::string symroot, src::SrcLoc *srcloc = nullptr);
             
             
             Symbol(ast::SymbolIdentifier &symbolID);
@@ -106,16 +106,16 @@ namespace hpc {
             /*!
              \brief Adds a new identifier to the chain of the Symbol as last element.
              \param childsym A string containing the parsed unqualified identifier
-             \param tkref A \c src::SrcLoc object pointing to the identifier in the source code
+             \param srcloc A \c src::SrcLoc object pointing to the identifier in the source code
              */
-            void pushBackChild(std::string childsym, src::SrcLoc *tkref = nullptr);
+            void pushBackChild(std::string childsym, src::SrcLoc *srcloc = nullptr);
             
             /*!
              \brief Adds a new identifier to the chain of the Symbol as first element.
              \param childsym A string containing the parsed unqualified identifier
-             \param tkref A \c src::SrcLoc object pointing to the identifier in the source code
+             \param srcloc A \c src::SrcLoc object pointing to the identifier in the source code
              */
-            void pushFrontChild(std::string childsym, src::SrcLoc *tkref = nullptr);
+            void pushFrontChild(std::string childsym, src::SrcLoc *srcloc = nullptr);
             
             /*!
              \brief Returns a string containing the identifier in the Symbol at given index (starting from 0).

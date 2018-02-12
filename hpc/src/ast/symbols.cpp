@@ -13,8 +13,8 @@
 
 using namespace hpc;
 
-ast::Symbol::Symbol(std::string symroot, src::SrcLoc *tkref) {
-    pushBackChild(symroot, tkref);
+ast::Symbol::Symbol(std::string symroot, src::SrcLoc *srcloc) {
+    pushBackChild(symroot, srcloc);
 }
 
 ast::Symbol::Symbol(ast::SymbolIdentifier &symbolID) : Symbol(symbolID.identifier, symbolID.symref) {  }
@@ -31,12 +31,12 @@ ast::Symbol ast::Symbol::containerSymbol() const {
     return symclone;
 }
 
-void ast::Symbol::pushBackChild(std::string childsym, src::SrcLoc *tkref) {
-    sympath.push_back({childsym, tkref ? new src::SrcLoc(*tkref) : nullptr });
+void ast::Symbol::pushBackChild(std::string childsym, src::SrcLoc *srcloc) {
+    sympath.push_back({childsym, srcloc ? new src::SrcLoc(*srcloc) : nullptr });
 }
 
-void ast::Symbol::pushFrontChild(std::string childsym, src::SrcLoc *tkref) {
-    sympath.insert(sympath.begin(), {childsym, tkref ? new src::SrcLoc(*tkref) : nullptr });
+void ast::Symbol::pushFrontChild(std::string childsym, src::SrcLoc *srcloc) {
+    sympath.insert(sympath.begin(), {childsym, srcloc ? new src::SrcLoc(*srcloc) : nullptr });
 }
 
 std::string ast::Symbol::str() const {

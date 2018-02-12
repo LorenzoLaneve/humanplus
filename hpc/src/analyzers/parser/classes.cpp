@@ -34,10 +34,10 @@ bool parser::ParserInstance::parseFieldDeclaration(ast::ClassDecl *current) {
             }
             report_eof();
             
-            src::SrcLoc betkref;
-            if (lexer->getCurrentToken(&betkref) != lexer::TokenBe) {
+            src::SrcLoc besrcloc;
+            if (lexer->getCurrentToken(&besrcloc) != lexer::TokenBe) {
                 report_eof();
-                diags.reportError(diag::ExpectedTokenBeAfterLetDeclaration, &betkref);
+                diags.reportError(diag::ExpectedTokenBeAfterLetDeclaration, &besrcloc);
                 abort_parse();
             } else lexer->getNextToken();
             
@@ -45,8 +45,8 @@ bool parser::ParserInstance::parseFieldDeclaration(ast::ClassDecl *current) {
             report_eof();
             
             if (lexer->getCurrentToken() == lexer::TokenAlias) {
-                src::SrcLoc oftkref;
-                if (lexer->getNextToken(&oftkref) == lexer::TokenIdentifier && lexer->getCurrentIdentifier() == "of") {
+                src::SrcLoc ofsrcloc;
+                if (lexer->getNextToken(&ofsrcloc) == lexer::TokenIdentifier && lexer->getCurrentIdentifier() == "of") {
                     lexer->getNextToken();
                     ast::Type *original = parseType();
                     if (!original) { abort_parse(); }
@@ -60,7 +60,7 @@ bool parser::ParserInstance::parseFieldDeclaration(ast::ClassDecl *current) {
                     }
                 } else {
                     report_eof();
-                    diags.reportError(diag::ExpectedOfAfterAlias, &oftkref);
+                    diags.reportError(diag::ExpectedOfAfterAlias, &ofsrcloc);
                     abort_parse();
                 }
             } else {

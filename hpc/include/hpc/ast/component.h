@@ -109,7 +109,7 @@ namespace hpc {
             /*!
              \brief A \c std::map object containing the \c src::SrcLoc objects pointing the code which composed this \c ast::Component.
              */
-            std::map<TokenRole, src::SrcLoc *> tkrefs;
+            std::map<TokenRole, src::SrcLoc *> srclocs;
             
         protected:
             /*!
@@ -138,14 +138,14 @@ namespace hpc {
             
             /*!
              \brief Copies the given \c src::SrcLoc and bounds it to the current component, with a specific \c TokenRole, then returns it.
-             \param i The role the part of code pointed by \c tkref had generating the component
+             \param i The role the part of code pointed by \c srcloc had generating the component
              */
-            src::SrcLoc *tokenRef(TokenRole i, src::SrcLoc &tkref) { return tkrefs[i] = new src::SrcLoc(tkref); }
+            src::SrcLoc *tokenRef(TokenRole i, src::SrcLoc &srcloc) { return srclocs[i] = new src::SrcLoc(srcloc); }
             /*!
              \brief Returns a \c src::SrcLoc object which had a specific \c TokenRole when this component has been generated.
-             \param i The role the part of code pointed by \c tkref had generating the component
+             \param i The role the part of code pointed by \c srcloc had generating the component
              */
-            src::SrcLoc *tokenRef(TokenRole i) { return tkrefs[i]; }
+            src::SrcLoc *tokenRef(TokenRole i) { return srclocs[i]; }
             
             
             virtual ASTComponentKind getKind() const { return ASTCK_Component; }

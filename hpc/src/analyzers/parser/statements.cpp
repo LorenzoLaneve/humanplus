@@ -82,10 +82,10 @@ bool parser::ParserInstance::parseVarDeclarationStatement(ast::Stmt *&parsing, a
                 }
             }
             
-            src::SrcLoc betkref;
-            if (lexer->getCurrentToken(&betkref) != lexer::TokenBe) {
+            src::SrcLoc besrcloc;
+            if (lexer->getCurrentToken(&besrcloc) != lexer::TokenBe) {
                 report_eof();
-                diags.reportError(diag::ExpectedTokenBeAfterLetDeclaration, &betkref);
+                diags.reportError(diag::ExpectedTokenBeAfterLetDeclaration, &besrcloc);
                 abort_parse();
             }
             else lexer->getNextToken();

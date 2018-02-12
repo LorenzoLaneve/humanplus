@@ -70,10 +70,10 @@ bool parser::ParserInstance::parseGlobalLetDecl(ast::NameSpaceDecl *current) {
             }
             report_eof();
             
-            src::SrcLoc betkref;
-            if (lexer->getCurrentToken(&betkref) != lexer::TokenBe) {
+            src::SrcLoc besrcloc;
+            if (lexer->getCurrentToken(&besrcloc) != lexer::TokenBe) {
                 report_eof();
-                diags.reportError(diag::ExpectedTokenBeAfterLetDeclaration, &betkref);
+                diags.reportError(diag::ExpectedTokenBeAfterLetDeclaration, &besrcloc);
                 abort_parse();
             } else lexer->getNextToken();
             
@@ -119,8 +119,8 @@ bool parser::ParserInstance::parseGlobalLetDecl(ast::NameSpaceDecl *current) {
                         newgvar->tokenRef(ast::PointToVariableIdentifier, *gvid.symref);
                 }
             } else { // old alias declaration
-                src::SrcLoc oftkref;
-                if (lexer->getNextToken(&oftkref) == lexer::TokenIdentifier && lexer->getCurrentIdentifier() == "of") {
+                src::SrcLoc ofsrcloc;
+                if (lexer->getNextToken(&ofsrcloc) == lexer::TokenIdentifier && lexer->getCurrentIdentifier() == "of") {
                     lexer->getNextToken();
                     ast::Type *original = parseType();
                     if (!original) { abort_parse(); }
@@ -133,7 +133,7 @@ bool parser::ParserInstance::parseGlobalLetDecl(ast::NameSpaceDecl *current) {
                     }
                 } else {
                     report_eof();
-                    diags.reportError(diag::ExpectedOfAfterAlias, &oftkref);
+                    diags.reportError(diag::ExpectedOfAfterAlias, &ofsrcloc);
                     abort_parse();
                 }
             }
@@ -182,8 +182,8 @@ bool parser::ParserInstance::parseAliasDecl(ast::NameSpaceDecl *current) {
             }
             report_eof();
             
-            src::SrcLoc eqtkref;
-            if (lexer->getCurrentToken(&eqtkref) == '=' /*|| (lexer->getCurrentToken() == lexer::TokenIdentifier && lexer->getCurrentIdentifier() == "of")*/) {
+            src::SrcLoc eqsrcloc;
+            if (lexer->getCurrentToken(&eqsrcloc) == '=' /*|| (lexer->getCurrentToken() == lexer::TokenIdentifier && lexer->getCurrentIdentifier() == "of")*/) {
                 // FIXME "of" as token and lexer contexts
                 lexer->getNextToken();
                 ast::Type *original = parseType();

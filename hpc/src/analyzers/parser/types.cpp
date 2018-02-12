@@ -162,12 +162,12 @@ ast::Type *parser::ParserInstance::parseType(bool report) {
     
     if (!parsedType) {
         
-        src::SrcLoc curtkref;
-        if (lexer->getCurrentToken(&curtkref) == lexer::TokenNull) {
+        src::SrcLoc cursrcloc;
+        if (lexer->getCurrentToken(&cursrcloc) == lexer::TokenNull) {
             parsedType = ast::BuiltinType::get(ast::BuiltinType::Void);
             lexer->getNextToken();
         } else {
-            diags.reportError(diag::ExpectedType, &curtkref);
+            diags.reportError(diag::ExpectedType, &cursrcloc);
             return nullptr;
         }
     }

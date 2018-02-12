@@ -71,7 +71,7 @@ namespace hpc {
             /*!
              \brief Copy constructor.
              */
-            SrcLoc(SrcLoc &tkref);
+            SrcLoc(const SrcLoc &srcloc);
             
             /*!
              \brief Returns a new \c SrcLoc structure pointing to the character immediately next to the chunk of code pointed by this structure.
