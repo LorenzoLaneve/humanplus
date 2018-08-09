@@ -18,7 +18,7 @@ namespace hpc {
     
     namespace lexer {
         
-        typedef unsigned int fchar_t;
+        typedef long fchar_t;
         
         /*!
          \brief Class which provides utilities for reading a source file.
