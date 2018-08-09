@@ -86,6 +86,13 @@ namespace hpc {
             SrcLoc getNextPoint();
             
             /*!
+             \brief Returns a copy of the source location object.
+             */
+            inline SrcLoc *copy() const {
+                return new src::SrcLoc(*this);
+            }
+            
+            /*!
              \brief Returns a \c std::string with the format \c <line>:<column>
              */
             std::string str();
