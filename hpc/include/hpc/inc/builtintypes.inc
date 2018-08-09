@@ -1,3 +1,11 @@
+// => hpc/inc/builtintypes.inc
+//
+//                     The Human Plus Project
+//
+// This file is distributed under the University of Illinois/NCSA
+// Open Source License. See LICENSE.TXT for details.
+//
+//
 
 #ifndef __builtintype
 #error "__builtintype not defined before including builtintypes.inc"

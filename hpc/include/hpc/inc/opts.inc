@@ -1,3 +1,11 @@
+// => hpc/inc/opts.inc
+//
+//                     The Human Plus Project
+//
+// This file is distributed under the University of Illinois/NCSA
+// Open Source License. See LICENSE.TXT for details.
+//
+//
 
 #ifndef __opt
 #error "__opt not defined before including opts.inc"

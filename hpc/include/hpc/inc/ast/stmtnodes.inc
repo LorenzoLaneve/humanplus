@@ -1,3 +1,11 @@
+// => hpc/inc/ast/stmtnodes.inc
+//
+//                     The Human Plus Project
+//
+// This file is distributed under the University of Illinois/NCSA
+// Open Source License. See LICENSE.TXT for details.
+//
+//
 
 #ifndef __ast_node
 #error "__ast_node not defined before including stmtnodes.inc"

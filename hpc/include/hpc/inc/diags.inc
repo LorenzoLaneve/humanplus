@@ -1,3 +1,11 @@
+// => hpc/inc/diags.inc
+//
+//                     The Human Plus Project
+//
+// This file is distributed under the University of Illinois/NCSA
+// Open Source License. See LICENSE.TXT for details.
+//
+//
 
 #ifndef __predef_diag
 #error "__predef_diag not defined before including diags.inc"
