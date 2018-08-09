@@ -10,57 +10,82 @@
 #ifndef __human_plus_compiler_operators
 #define __human_plus_compiler_operators
 
-#define OP_COMPOUND_ASSIGNMENT -500
-#define OP_IS_COMPOUND_ASSIGNMENT(x) (x < -400)
+#define OP_COMPOUND_ASSIGNMENT -800
 
+/*!
+ \brief Returns whether the given token type is a compound assignment.
+ */
+#define OP_IS_COMPOUND_ASSIGNMENT(x) (x <= -700)
+
+/*!
+ \brief Returns the compound assignment for the given operator.
+ \note If the operator does not support compound assignment, this macro will return a meaningless token type.
+ */
 #define OP_ATTACH_ASSIGNMENT(x) (x + OP_COMPOUND_ASSIGNMENT)
+/*!
+ \brief Returns the operator extracted from the given compound assignment.
+ \note If the given operator is not a compound assignment, this macro will return a meaningless token type.
+ */
 #define OP_DETACH_ASSIGNMENT(x) (x - OP_COMPOUND_ASSIGNMENT)
 
 namespace hpc {
-    namespace lexer {
-        typedef int token_ty; // FIXME
-    }
-    
-    namespace util {
-        
-        /*!
-         \brief Prints \c oper as operator symbol
-         \param oper A \c Token value describing the operator.
-         \warning If \c !syntax::isOperator(oper) the output is undefined.
-         */
-        void printOperator(lexer::token_ty oper);
-    }
-    
     namespace syntax {
+        /*!
+         \brief Type for token types specified in this header. This is specified here only to avoid including tokens.h
+         */
+        typedef long OperatorToken;
         
         /*!
-         \brief Returns a number indicating the precedence of the given operator. Operators with higher precedence will be executed first. 
-         \code
-         5 + 3 * 4 = 5 + (3 * 4)
-         because precedence(*) > precedence(+)
-         \endcode
-         \note If \c !syntax::isOperator(token), 0 will be returned.
+         \brief Type to represent and order precedences.
          */
-        int getOperatorPrecedence(lexer::token_ty token);
-    
+        typedef unsigned int OperatorPrecedence;
+        
+        namespace prec {
+            /*!
+             \brief Predefined values for operators precedence.
+             */
+            typedef enum : unsigned {
+                Exponentiative      = 300,
+                Multiplicative      = 150,
+                Additive            = 130,
+                Comparative         = 110,
+                LogicalAnd          = 90,
+                LogicalOr           = 80,
+                Assignment          = 50
+            } PredefPrecedence;
+        }
+        
         /*!
-         \brief Returns whether the given token is an unary operator.
-         \returns \c true if \c token is an unary operator recognized by the lexer, \c false otherwise.
+         \brief Values indicating the associativity of a binary operator.
          */
-        bool isUnaryOperator(lexer::token_ty token);
+        typedef enum {
+            AssocLeftToRight,
+            AssocRightToLeft
+        } OperatorAssociativity;
+
+        /*!
+         \brief Returns the precedence value of the given binary operator token.
+         */
+        OperatorPrecedence getOperatorPrecedence(OperatorToken op);
+        /*!
+         \brief Returns the associativity value of the given binary operator token.
+         */
+        OperatorAssociativity getOperatorAssociativity(OperatorToken op);
         
         /*!
          \brief Returns whether the given token is a binary operator.
-         \returns \c true if \c token is a binary operator recognized by the lexer, \c false otherwise.
          */
-        bool isBinaryOperator(lexer::token_ty token);
-        
+        bool isBinaryOperator(OperatorToken op);
         /*!
-         \brief Returns whether the given token is an operator.
-         \returns \c true if \c token is an operator recognized by the lexer, \c false otherwise.
+         \brief Returns whether the given token is an unary operator.
          */
-        bool isOperator(lexer::token_ty token);
-        
+        bool isUnaryOperator(OperatorToken op);
+        /*!
+         \brief Returns whether the given token is an operator, either binary or unary.
+         */
+        inline bool isOperator(OperatorToken op) {
+            return isBinaryOperator(op) || isUnaryOperator(op);
+        }
     }
 }
 
