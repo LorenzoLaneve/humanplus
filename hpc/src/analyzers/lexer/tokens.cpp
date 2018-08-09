@@ -16,10 +16,7 @@ lexer::Token::~Token() {
     
     if (location)       delete location;
     if (identifier)     delete identifier;
-    if (intLiteral)     delete intLiteral;
-    if (uintLiteral)    delete uintLiteral;
-    if (longLiteral)    delete longLiteral;
-    if (ulongLiteral)   delete ulongLiteral;
-    if (floatLiteral)   delete floatLiteral;
-    if (doubleLiteral)  delete doubleLiteral;
+    if (numberLiteral)  delete numberLiteral;
+    if (charLiteral)    delete charLiteral;
+    if (stringLiteral)  delete stringLiteral;
 }

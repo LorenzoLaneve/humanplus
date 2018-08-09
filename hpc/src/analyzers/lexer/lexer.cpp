@@ -8,10 +8,7 @@
 //
 
 #include <hpc/analyzers/lexer/lexer.h>
-#include <hpc/analyzers/syntax/operators.h>
-#include <hpc/diagnostics/diagnostics.h>
 
-#include <sstream>
 
 using namespace hpc;
 
@@ -20,14 +17,43 @@ lexer::LexerInstance::LexerInstance(diag::DiagEngine &diags, src::SourceFile &so
 }
 
 lexer::LexerInstance::~LexerInstance() {
-    unbind();
+    close();
 }
 
-source::SourceFile *lexer::LexerInstance::getSourceFile() {
-    return sourcefile;
+void lexer::LexerInstance::open() {
+    reader = new SourceReader(source);
 }
 
-void lexer::LexerInstance::unbind() {
-    sourcefile->close();
-    sourcefile = nullptr;
+void lexer::LexerInstance::close() {
+    if (reader) {
+        delete reader;
+        reader = nullptr;
+    }
+}
+
+bool lexer::LexerInstance::escape() {
+    while (getCurrentToken() != ';' && getCurrentToken() != '}') {
+        // FIXME not only colons may be delimiters. A function to determine whether a given char is a statement delimiter should be provided.
+        
+        if (eof()) return false;
+        
+        if (getCurrentToken() == '{') {
+            unsigned long braces = 1;
+            while (braces) {
+                switch (getNextToken().getTokenType()) {
+                    case '{':
+                        braces++;
+                        break;
+                    case '}':
+                        braces--;
+                        break;
+                }
+            }
+            
+            break;
+        }
+        getNextToken();
+    }
+    getNextToken();
+    return true;
 }
