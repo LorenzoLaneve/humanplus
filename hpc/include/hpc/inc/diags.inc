@@ -29,7 +29,8 @@ __predef_diag(UnableToCreateLLVMTarget,             "unable to create target: %0
 __predef_diag(ErrorOpeningFile,                     "error reading '%0'")
 
 __predef_diag(ExponentHasNoDigits,                  "exponent has no digits")
-__predef_diag(InvalidCharacterLiteral,              "Invalid character sequence in literal here.")
+__predef_diag(InvalidCharacterLiteral,              "invalid character sequence in literal")
+__predef_diag(ExpectedHexadecimalDigit,             "expected hexadecimal digit")
 __predef_diag(InvalidDigitInBinaryConstant,         "invalid digit '%0' in binary constant")
 __predef_diag(InvalidDigitInOctalConstant,          "invalid digit '%0' in octal constant")
 
@@ -56,6 +57,9 @@ __predef_diag(ExpectedDelimiterAfterDoUntil,        "expected ';' after 'do/unti
 __predef_diag(ExpectedDelimiterAfterBreak,          "expected ';' after 'break' statement")
 __predef_diag(ExpectedDelimiterAfterContinue,       "expected ';' after 'continue' statement")
 __predef_diag(ExpectedMemberIdentifier,             "expected member identifier after access operation")
+__predef_diag(MultiCharConstant,                    "multi-character character constant")
+__predef_diag(InvalidEscapeSequenceInChar,          "invalid escape sequence in character literal")
+__predef_diag(InvalidEscapeSequenceInString,        "invalid escape sequence in string literal")
 __predef_diag(UnexpectedEOF,                        "unexpected end of file")
 
 __predef_diag(IncompatibleTypesInBinary,            "invalid operands to binary expression (%0 and %1)")
