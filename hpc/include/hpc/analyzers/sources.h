@@ -111,19 +111,10 @@ namespace hpc {
          */
         class SourceFile : public fsys::InputFile {
             /*!
-             \brief A C file pointer to the associated file.
-             \note This pointer is set to \c NULL when \c close() is called.
-             */
-            FILE *fp;
-            /*!
              \brief The wrapper for the LLVM module associated to this source file. All the IR generation for this source file will be handled by this module wrapper.
              */
             modules::ModuleWrapper *modulewrapper;
-            /*!
-             \brief A \c SrcLoc structure pointing to the last character the lexer read from this file.
-             */
-            SrcLoc caret = {0, 0};
-            
+
         public:
             /*!
              \brief Initializes the object with the pathname contained in \c filename and opens the stream to the file.
@@ -132,31 +123,13 @@ namespace hpc {
             /*!
              \brief When the object is destroyed, the associated file stream will be closed.
              */
-            virtual ~SourceFile();
-            
-            
-            inline bool isOk() const {
-                return fp;
-            }
+            virtual ~SourceFile() {  }
             
             /*!
              \brief Returns the LLVM module wrapper associated to this source file. All the IR generation for this file will be handled by this module wrapper.
              */
             modules::ModuleWrapper *getModuleWrapper();
-            /*!
-             \brief Returns a \c SrcLoc structure pointing to the last character the lexer read from this file.
-             */
-            SrcLoc *getCaret();
             
-            /*!
-             \brief Reads the next character from the associated file, and updates the caret.
-             */
-            sourcechar fetchChar();
-            
-            /*!
-             \brief Closes the stream with the associated file.
-             */
-            void close();
         };
         
     }
