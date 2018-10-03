@@ -21,7 +21,7 @@ message(STATUS "Detecting LLVM...")
 set(LLVM_DIR "${LLVM_BUILD_DIR}/lib/cmake/llvm")
 find_package(LLVM QUIET CONFIG)
 if(NOT LLVM_FOUND)
-    message(FATAL_ERROR "hpc needs LLVM 4.0.0 or newer. to be compiled.
+    message(FATAL_ERROR "hpc needs LLVM 4.0.0 to be compiled.
 You can download LLVM from the project site: http://llvm.org
 Build LLVM with CMake and pass LLVM build directory to Human Plus by setting LLVM_BUILD_DIR.")
 endif()
@@ -29,8 +29,8 @@ endif()
 message(STATUS "Detecting LLVM... - found")
 
 message(STATUS "Found LLVM (version ${LLVM_PACKAGE_VERSION})")
-if(${LLVM_PACKAGE_VERSION} VERSION_LESS "4.0.0")
-    message(FATAL_ERROR "The specified LLVM build in ${LLVM_BUILD_DIR} is too old (version ${LLVM_PACKAGE_VERSION}). hpc needs LLVM 4.0.0 or newer.")
+if(NOT (${LLVM_PACKAGE_VERSION} VERSION_EQUAL "4.0.0"))
+    message(FATAL_ERROR "The specified LLVM build in ${LLVM_BUILD_DIR} is too old or new (version ${LLVM_PACKAGE_VERSION}). hpc needs LLVM 4.0.0")
 endif()
 
 message(STATUS "Using LLVM build in ${LLVM_BUILD_DIR}")
