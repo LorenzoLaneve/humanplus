@@ -167,6 +167,11 @@ namespace hpc {
                 return getType(Symbol(symbolID));
             }
             
+            /*!
+             \brief Returns whether the namespace contains a declaration matching the given symbol.
+             */
+            bool hasDeclaration(ast::Symbol sympath);
+            
 
             llvm_rtti_impl(NameSpaceDecl);
         };

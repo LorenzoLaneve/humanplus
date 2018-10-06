@@ -123,3 +123,37 @@ ast::Type *ast::NameSpaceDecl::getType(ast::Symbol sympath) {
     return nullptr;
 }
 
+bool ast::NameSpaceDecl::hasDeclaration(ast::Symbol sympath) {
+    if (!sympath.isValid()) {
+        return false;
+    }
+    
+    ast::NameSpaceDecl *innerNS;
+    if (sympath.isNested()) {
+        innerNS = getInnerNameSpace(sympath.containerSymbol());
+        if (!innerNS) {
+            return false;
+        }
+    } else {
+        innerNS = this;
+    }
+    
+    sympath = ast::Symbol(sympath.getTopIdentifier().identifier);
+    
+    type_table::const_iterator theType = innerNS->types.find(sympath.getTopIdentifier().identifier);
+    if (theType != types.end()) {
+        return true;
+    }
+    
+    func_table::const_iterator theFunc = innerNS->functions.find(sympath.getTopIdentifier().identifier);
+    if (theFunc != functions.end()) {
+        return true;
+    }
+    
+    var_table::const_iterator theVar = innerNS->globalVars.find(sympath.getTopIdentifier().identifier);
+    if (theVar != globalVars.end()) {
+        return true;
+    }
+    
+    return false;
+}

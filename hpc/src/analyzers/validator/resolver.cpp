@@ -147,12 +147,16 @@ ast::Var *validator::SymbolResolver::getMatchingVariable(ast::Symbol sympath, in
 ast::NameSpaceDecl *validator::SymbolResolver::getInnermostMatchingNameSpace(ast::Symbol sympath) {
     ast::NameSpaceDecl *lib = currentNameSpace;
     
-    if (sympath.isNested()) {
-        while (lib && !lib->getInnerNameSpace(sympath.getRootIdentifier().identifier)) {
-            lib = lib->getContainer();
+    while (lib) {
+        ast::Symbol symbol = sympath;
+        if (lib->hasDeclaration(sympath)) {
+            return lib;
         }
+        
+        lib = lib->getContainer();
     }
-    return lib;
+    
+    return nullptr;
 }
 
 bool validator::SymbolResolver::getMatchingCandidateFunctions(CandidateFunctions &candidates, ast::Symbol sympath, bool noReport) {
