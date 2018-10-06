@@ -14,24 +14,24 @@
 // The real runtime library will be developed soon.
 //
 
-int _rdc() {
+int readChar() {
     return fgetc(stdin);
 }
 
-int _rdi() {
+int readInteger() {
     int x;
     fscanf(stdin, "%d", &x);
     return x;
 }
 
-int _wrtc(char x) {
+int writeChar(char x) {
     return putc(x, stdout);
 }
 
-int _wrti(int x) {
+int writeInteger(int x) {
     return printf("%d", x);
 }
 
-int _wrts(const char *s) {
+int writeString(const char *s) {
     return fputs(s, stdout);
 }
