@@ -18,8 +18,8 @@
 
 #define __hpc_debugging
 
-#define __hpc_fe_ast_debug
-#define __hpc_fe_ir_debug
+//#define __hpc_fe_ast_debug
+//#define __hpc_fe_ir_debug
 
 #if defined(__APPLE__) && defined(__MACH__)
 #define __human_plus_compiler_host_apple
