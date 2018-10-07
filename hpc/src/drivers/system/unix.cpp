@@ -26,17 +26,24 @@ int drivers::UnixDriver::invokeLinker(opts::LinkOptions &options) {
     // Call system linker
     std::ostringstream flags;
     flags << getLinkerPath();
-    flags << " -arch " << llvm::Triple::getArchTypeName(llvm::Triple(llvm::sys::getDefaultTargetTriple()).getArch()).str();
+    
+    flags << " /usr/lib/" << llvm::Triple::getArchTypeName(llvm::Triple(llvm::sys::getDefaultTargetTriple()).getArch()).str() << "-gnu-linux/crt1.o";
+    flags << " /usr/lib/" << llvm::Triple::getArchTypeName(llvm::Triple(llvm::sys::getDefaultTargetTriple()).getArch()).str() << "-gnu-linux/crti.o";
     
     flags << " -lc";
     flags << " -lhumanlogic";
     
-    if (!options.outputFile.empty())
-        flags << " -o " << util::bashEncode(options.outputFile);
-    
     for (fsys::File *file : options.inputFiles) {
         flags << " " << util::bashEncode(file->getFileName());
     }
+    
+    flags << " /usr/lib/" << llvm::Triple::getArchTypeName(llvm::Triple(llvm::sys::getDefaultTargetTriple()).getArch()).str() << "-gnu-linux/crtn.o";
+    
+    if (!options.outputFile.empty())
+        flags << " -o " << util::bashEncode(options.outputFile);
+    
+    // FIXME this should be passed to linux drivers
+    
     
     int linkexit = std::system(flags.str().c_str());
     
