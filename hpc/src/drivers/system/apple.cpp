@@ -14,6 +14,8 @@
 #include <llvm/ADT/Triple.h>
 #include <llvm/Support/Host.h>
 
+#include <sstream>
+
 using namespace hpc;
 
 std::string drivers::AppleDriver::getLinkerPath() {
@@ -49,7 +51,7 @@ std::string drivers::AppleDriver::getXcodeToolchainPath() {
 }
 
 void drivers::MacOSDriver::addOSLinkOptions(opts::LinkOptions &options, std::ostringstream &flags) {
-    flags << " -macosx_version_min 10.12.0"; // FIXME
+    flags << " -macosx_version_min 10.13.0"; // FIXME
     
     flags << " " << getXcodeToolchainPath() << "/usr/lib/clang/9.0.0/lib/darwin/libclang_rt.osx.a";
 }
