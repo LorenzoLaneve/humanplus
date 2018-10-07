@@ -8,8 +8,13 @@
 //
 
 #include <hpc/drivers/system/unix.h>
+#include <hpc/utils/printers.h>
+#include <hpc/utils/strings.h>
 
-#include <llvm/ADT/StringSwitch.h>
+#include <llvm/ADT/Triple.h>
+#include <llvm/Support/Host.h>
+
+#include <sstream>
 
 using namespace hpc;
 
@@ -19,7 +24,23 @@ std::string drivers::UnixDriver::getLinkerPath() {
 
 int drivers::UnixDriver::invokeLinker(opts::LinkOptions &options) {
     // Call system linker
-    return 1;
+    std::ostringstream flags;
+    flags << getLinkerPath();
+    flags << " -arch " << llvm::Triple::getArchTypeName(llvm::Triple(llvm::sys::getDefaultTargetTriple()).getArch()).str();
+    
+    flags << " -lc";
+    flags << " -lhumanlogic";
+    
+    if (!options.outputFile.empty())
+        flags << " -o " << util::bashEncode(options.outputFile);
+    
+    for (fsys::File *file : options.inputFiles) {
+        flags << " " << util::bashEncode(file->getFileName());
+    }
+    
+    int linkexit = std::system(flags.str().c_str());
+    
+    return WEXITSTATUS(linkexit);
 }
 
 fsys::FileType drivers::UnixDriver::typeForExtension(std::string fext) {
