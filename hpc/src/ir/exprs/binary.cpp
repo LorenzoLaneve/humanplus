@@ -111,7 +111,8 @@ void codegen::ModuleBuilder::visitComparisonExpr(ast::ComparisonExpr *expression
     llvm::Value *L = build(expression->getLHS());
     llvm::Value *R = build(expression->getRHS());
     
-    ast::Type *type = expression->evalType();
+    ast::Type *type = expression->getLHS()->evalType();
+    // LHS and RHS types are equal thanks to the validator.
     
     bool hasSign = hasNSW(*expression);
     
