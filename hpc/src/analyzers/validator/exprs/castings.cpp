@@ -37,6 +37,7 @@ void validator::ValidatorImpl::visitEvalExpr(ast::EvalExpr *cast) {
         case ast::TypeFormatInteger:
         case ast::TypeFormatUnsignedInteger:
         case ast::TypeFormatSignedInteger:
+        case ast::TypeFormatBoolean:
             break;
         default:
             validator.getDiags().reportError(diag::ExpressionIsNotEvaluable, cast->getExpression()->completeRef())
