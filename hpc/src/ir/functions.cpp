@@ -39,18 +39,21 @@ void codegen::ModuleBuilder::visitFunctionDecl(ast::FunctionDecl *function) {
         unsigned i = 0;
         for (auto &arg : irfunc->args()) {
             ast::Type *paramty = arguments[i++]->getType();
-            if (paramty->isIntegerType()) {
-                ast::BuiltinType *btype = static_cast<ast::BuiltinType *>(paramty);
-                
-                if (btype->getMagnitude() < 4) { // 4 is integer magnitude.
-                    // FIXME take 4 (4*8 = 32) from the targetting machine minimum integer type supported.
-                    irfunc->addAttribute(arg.getArgNo()+1, paramty->isSignedIntegerType() ? llvm::Attribute::SExt : llvm::Attribute::ZExt);
-                }
+            
+            if (paramty->isSignedIntegerType()) {
+                irfunc->addAttribute(arg.getArgNo()+1, llvm::Attribute::SExt);
             }
+            
+            if (paramty->isUnsignedIntegerType()) {
+                irfunc->addAttribute(arg.getArgNo()+1, llvm::Attribute::ZExt);
+            }
+            // FIXME This is not necessary for too large integer types (typically 32+ bits).
+            
         }
         
+        table.setValForComponent(function, irfunc);
         if (ast::CompoundStmt *statementsBlock = function->getStatementsBlock()) {
-            i = 0;
+            unsigned i = 0;
             for (auto &arg : irfunc->args()) {
                 arg.setName(arguments[i++]->getName());
             }
@@ -107,8 +110,6 @@ void codegen::ModuleBuilder::visitFunctionDecl(ast::FunctionDecl *function) {
         irfunc->addFnAttr(llvm::Attribute::UWTable);
         
         //assert(llvm::verifyFunction(&irfunc, &llvm::errs()) && "Function verification failed.");
-        
-        table.setValForComponent(function, irfunc);
     }
 }
 
