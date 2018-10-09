@@ -1,0 +1,59 @@
+// => tests/line.hmn
+//
+//                     The Human Plus Project
+//
+// This file is distributed under the University of Illinois/NCSA
+// Open Source License. See LICENSE.TXT for details.
+//
+//
+
+//
+// Program which takes two points and returns the average point (rounded to integers).
+//
+
+
+
+// Functions defined by humanlogic (io.c)
+
+nostalgic function readChar()                       returns an integer;
+nostalgic function readInteger()                    returns an integer;
+nostalgic function writeChar(char x)                returns an integer;
+nostalgic function writeInteger(int x)              returns an integer;
+nostalgic function writeString(constant char<- s)   returns an integer; // "<-" needs to be replaced with "?" and "!"
+
+
+class point {
+    let x, y be integer;
+}
+
+
+main {
+
+let a be a point;
+let b be a point;
+
+writeString("Insert point A:\n");
+writeString("X: ");
+a.x = readInteger();
+writeString("Y: ");
+a.y = readInteger();
+
+writeString("\nInsert point B:\n");
+writeString("X: ");
+b.x = readInteger();
+writeString("Y: ");
+b.y = readInteger();
+
+let c be a point;
+c.x = (a.x + b.x) / 2;
+c.y = (a.y + b.y) / 2;
+
+writeString("\nAverage point: (");
+writeInteger(c.x);
+writeString(", ");
+writeInteger(c.y);
+writeString(")\n");
+
+}
+
+

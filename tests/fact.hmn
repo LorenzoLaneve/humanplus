@@ -1,0 +1,51 @@
+// => tests/fact.hmn
+//
+//                     The Human Plus Project
+//
+// This file is distributed under the University of Illinois/NCSA
+// Open Source License. See LICENSE.TXT for details.
+//
+//
+
+//
+// Little program which computes the factorial of a number.
+//
+
+
+
+// Functions defined by humanlogic (io.c)
+
+nostalgic function readChar()                       returns an integer;
+nostalgic function readInteger()                    returns an integer;
+nostalgic function writeChar(char x)                returns an integer;
+nostalgic function writeInteger(int x)              returns an integer;
+nostalgic function writeString(constant char<- s)   returns an integer; // "<-" needs to be replaced with "?" and "!"
+
+
+function factorial(long x) returns a long {
+    return 1 if x <= 1;
+    return x * factorial(x - 1);
+}
+
+main {
+
+    writeString("Insert number: ");
+    let x be = readInteger();
+    let fact_x be = factorial(x);
+
+    writeString("\n\n");
+
+    writeInteger(x);
+    writeString("! = ");
+    writeInteger(fact_x);
+    writeString("\n");
+
+    // to be implemented.
+    // writeString("\(x)! = \(fact_x)");
+}
+
+
+
+
+
+
